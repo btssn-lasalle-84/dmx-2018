@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$class_d_m_x_projecteur.html" title="Definition de la classe DMXProjecteur." alt="" coords="7,112,116,141"/>
+<area shape="rect" id="node3" href="$class_d_m_x_laser.html" title="DMXLaser" alt="" coords="175,5,257,35"/>
+<area shape="rect" id="node5" href="$class_d_m_x_lyre.html" title="DMXLyre" alt="" coords="177,59,255,88"/>
+<area shape="rect" id="node7" href="$class_d_m_x_p_a_r.html" title="DMXPAR" alt="" coords="176,112,256,141"/>
+<area shape="rect" id="node9" href="$class_d_m_x_scanner.html" title="DMXScanner" alt="" coords="167,165,265,195"/>
+<area shape="rect" id="node11" href="$class_d_m_x_special.html" title="DMXSpecial" alt="" coords="169,219,263,248"/>
+</map>

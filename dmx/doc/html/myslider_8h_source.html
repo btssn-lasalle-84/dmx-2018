@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>DMX 2018:  Fichier source de myslider.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="icone-dmx.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">DMX 2018
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2018</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">myslider.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="myslider_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef MYSLIDER_H</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define MYSLIDER_H</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;QtGlobal&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#if QT_VERSION &gt;= 0x050000</span>
+<a name="l00006"></a>00006 <span class="preprocessor"></span><span class="preprocessor">#include &lt;QtWidgets&gt;</span> <span class="comment">/* tous les widgets de Qt5 */</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#else</span>
+<a name="l00008"></a>00008 <span class="preprocessor"></span><span class="preprocessor">#include &lt;QtGui&gt;</span> <span class="comment">/* tous les widgets de Qt4 */</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#endif</span>
+<a name="l00010"></a>00010 <span class="preprocessor"></span>
+<a name="l00021"></a><a class="code" href="myslider_8h.html#a33ebf0bf2d933d0b8c109dd66ae44f20">00021</a> <span class="preprocessor">#define VALEUR_MIN   0</span>
+<a name="l00022"></a><a class="code" href="myslider_8h.html#a3ffd7542567c9e93ed8c35c92269982f">00022</a> <span class="preprocessor"></span><span class="preprocessor">#define VALEUR_MAX   255</span>
+<a name="l00023"></a><a class="code" href="myslider_8h.html#aaef6ab17ceb9eeaf771117a8f57a552f">00023</a> <span class="preprocessor"></span><span class="preprocessor">#define NB_CANAUX    512</span>
+<a name="l00024"></a>00024 <span class="preprocessor"></span>
+<a name="l00025"></a><a class="code" href="myslider_8h.html#a0dae993824209b04f2892d5ce7f520a4">00025</a> <span class="preprocessor">#define NB_DIGIT     3</span>
+<a name="l00026"></a>00026 <span class="preprocessor"></span>
+<a name="l00027"></a><a class="code" href="class_my_slider.html">00027</a> <span class="keyword">class </span><a class="code" href="class_my_slider.html" title="Déclaration de la classe myslider permettant d&#39;instancier des widgets de type slider personnalisés...">MySlider</a> : <span class="keyword">public</span> QWidget
+<a name="l00028"></a>00028 {
+<a name="l00029"></a>00029         Q_OBJECT
+<a name="l00030"></a>00030     
+<a name="l00031"></a>00031 <span class="keyword">private</span>:
+<a name="l00032"></a><a class="code" href="class_my_slider.html#affea35c734cccbe84fdc7ccc65369ff0">00032</a>         QLCDNumber  *<a class="code" href="class_my_slider.html#affea35c734cccbe84fdc7ccc65369ff0">lcd</a>;
+<a name="l00033"></a><a class="code" href="class_my_slider.html#aa857e0fd66bbe9e68835cf715afbd834">00033</a>         QSlider     *<a class="code" href="class_my_slider.html#aa857e0fd66bbe9e68835cf715afbd834">s</a>;
+<a name="l00034"></a><a class="code" href="class_my_slider.html#a2272e893c12dd92879b47aa949dc8c62">00034</a>         QSpinBox    *<a class="code" href="class_my_slider.html#a2272e893c12dd92879b47aa949dc8c62">sb</a>;
+<a name="l00035"></a><a class="code" href="class_my_slider.html#a3381a735c16f947275705f94089a0f20">00035</a>         QLabel      *<a class="code" href="class_my_slider.html#a3381a735c16f947275705f94089a0f20">nom</a>;
+<a name="l00036"></a><a class="code" href="class_my_slider.html#a867f3dcbd1c072fcaf1f7f5c6db9ca01">00036</a>         <span class="keywordtype">bool</span>        <a class="code" href="class_my_slider.html#a867f3dcbd1c072fcaf1f7f5c6db9ca01">etat</a>;
+<a name="l00037"></a>00037         
+<a name="l00038"></a>00038 <span class="keyword">public</span>:
+<a name="l00039"></a>00039         <a class="code" href="class_my_slider.html#a9347f4991e76f35047c92f577902446a">MySlider</a>( QWidget *parent = 0, <span class="keywordtype">int</span> canal = 0, <span class="keywordtype">int</span> valeur = 0, QString nomCanal = QString(<span class="stringliteral">&quot;&quot;</span>) );
+<a name="l00040"></a>00040         <a class="code" href="class_my_slider.html#ad45852867942c85d8b4e0deb7dc3c631">~MySlider</a>();
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042         <span class="keywordtype">void</span> <a class="code" href="class_my_slider.html#a15108b2a8fb5c7170de982e7f5f09df1" title="active le ScrollBar sb">setCanalEnabled</a>(<span class="keywordtype">bool</span> <a class="code" href="class_my_slider.html#a867f3dcbd1c072fcaf1f7f5c6db9ca01">etat</a>);
+<a name="l00043"></a>00043         <span class="keywordtype">int</span> <a class="code" href="class_my_slider.html#a56c835841193ae5760f4cd8c4d3a7512" title="Assesseur de la valeur du SpinBox s.">getCanal</a>();
+<a name="l00044"></a>00044         <span class="keywordtype">int</span> <a class="code" href="class_my_slider.html#a792addb2365c31985218624dd5141d4a" title="Assesseur de la valeur du SpinBox s.">getValeur</a>();
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046 signals:
+<a name="l00047"></a>00047         <span class="keywordtype">void</span> <a class="code" href="class_my_slider.html#aaaeef2514e5d0ecd2e8e7505447c937d">sliderChange</a>(<span class="keywordtype">int</span> canal, <span class="keywordtype">int</span> valeur);
+<a name="l00048"></a>00048         <span class="keywordtype">void</span> <a class="code" href="class_my_slider.html#a2f6148f33d75c3024a5dcfb333de87df">valeurChange</a>(<span class="keywordtype">int</span> valeur);
+<a name="l00049"></a>00049         <span class="keywordtype">void</span> <a class="code" href="class_my_slider.html#a76ad13395cf4c74abdede8d14e19b25a">canalChange</a>(<span class="keywordtype">int</span> canal);
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051 <span class="keyword">private</span> slots:
+<a name="l00052"></a>00052         <span class="keywordtype">void</span> <a class="code" href="class_my_slider.html#a1d02e5ee36a59bbf2259be83dce11483" title="Emmeteur des signaux valeurChange et sliderChange.">changerValeur</a>(<span class="keywordtype">int</span> valeur);
+<a name="l00053"></a>00053         <span class="keywordtype">void</span> <a class="code" href="class_my_slider.html#a57d3d238b3ba8005310327eb51d1a712" title="Emmeteur des signaux canalChange et sliderChange.">changerCanal</a>(<span class="keywordtype">int</span> canal);
+<a name="l00054"></a>00054 
+<a name="l00055"></a>00055 <span class="keyword">public</span> slots:
+<a name="l00056"></a>00056         <span class="keywordtype">void</span> <a class="code" href="class_my_slider.html#ac860a7d8276752a9e3fab569a35190e5" title="Mutateur de la valeur du SpinBox s.">setValeur</a>(<span class="keywordtype">int</span> valeur);
+<a name="l00057"></a>00057         <span class="keywordtype">void</span> <a class="code" href="class_my_slider.html#a406251913c369c9b74e52bb8f1699bf0" title="Mutateur de la valeur du ScrollBar sb.">setCanal</a>(<span class="keywordtype">int</span> canal);
+<a name="l00058"></a>00058         <span class="keywordtype">void</span> <a class="code" href="class_my_slider.html#a9e260b3f87e5f708882f8f2e424ff033" title="Mutateur de la valeur du Label nom.">setNomCanal</a>(QString nomCanal);
+<a name="l00059"></a>00059         <span class="keywordtype">void</span> <a class="code" href="class_my_slider.html#acf5e679c2c3c15708002e6e265e59b65" title="Non utilisé">updateDMX</a>(<span class="keywordtype">int</span> canal, <span class="keywordtype">int</span> valeur);
+<a name="l00060"></a>00060         <span class="keywordtype">void</span> <a class="code" href="class_my_slider.html#a9eb6984e9d5360c86761a2d947b5efc6" title="Connexion/Déconnexion des slots et signaux de la classe MySlider.">setConnecte</a>(<span class="keywordtype">bool</span> <a class="code" href="class_my_slider.html#a867f3dcbd1c072fcaf1f7f5c6db9ca01">etat</a>);
+<a name="l00061"></a>00061 };
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063 <span class="preprocessor">#endif //MYSLIDER_H</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi Juin 7 2018 20:37:25 pour DMX 2018 par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<scenes>
+  <scene nom="Scene tournante 1" uuid="{5a5bbbef-1911-44a8-8fb7-c8bca7224c6f}">
+    <canal id="5">255</canal>
+  </scene>
+  <scene nom="Scene Tournante 2" uuid="{16e6fe5a-b726-4c2d-8243-223fe9739f5c}">
+    <canal id="34">255</canal>
+  </scene>
+  <scene nom="Scene rouge" uuid="{620b30c6-46ec-4d84-af44-b829cf07cf6c}">
+    <canal id="17">255</canal>
+    <canal id="22">255</canal>
+    <canal id="23">255</canal>
+    <canal id="26">255</canal>
+  </scene>
+  <scene nom="Scene bleue" uuid="{730b8d28-a36d-41ac-85b4-c2e007f61a35}">
+    <canal id="19">255</canal>
+    <canal id="25">255</canal>
+  </scene>
+</scenes>

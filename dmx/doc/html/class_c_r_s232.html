@@ -1,0 +1,1310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>DMX 2018: Référence de la classe CRS232</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="icone-dmx.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">DMX 2018
+   &#160;<span id="projectnumber">0.8</span>
+   </div>
+   <div id="projectbrief">BTS SN 2018</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-methods">Fonctions membres privées</a> &#124;
+<a href="#pri-attribs">Attributs privés</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe CRS232</div>  </div>
+</div><!--header-->
+<div class="contents">
+<!-- doxytag: class="CRS232" -->
+<p><code>#include &lt;<a class="el" href="rs232_8h_source.html">rs232.h</a>&gt;</code></p>
+
+<p><a href="class_c_r_s232-members.html">Liste de tous les membres</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#aaed08f8a3b355663e7048f815059ea0c">CRS232</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#af0570125bbbf679b332fbd0a578274ca">OpenSerial</a> (string port)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#aafac28b2199c4c799f039c300d5f952a">OpenSerial</a> (string port, int flags)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#ad2b85670a61a293744054d2d10cdf056">CloseSerial</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#adb8c4a81737d6762af8c00a4e9672b3d">WaitingData</a> (<a class="el" href="rs232_8h.html#a4783fb2dbe7e03f4ddba4b4e7eeba60f">Pending</a> pending=<a class="el" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403adfd3ca7840de6b30fc0ca91091753030">pendingInput</a>, <a class="el" href="rs232_8h.html#af412159e5cef839836a5e7b19ee75d1c">timeout_t</a> timeout=<a class="el" href="rs232_8h.html#a74f2d4c747bce0b8f7f7c1f48e651876">TIMEOUT_INF</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#aa6fdd15db5cc32a9edfb961813153005">RecvBufferEX</a> (<a class="el" href="types_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> *buffer, <a class="el" href="types_8h.html#ad342ac907eb044443153a22f964bf0af">DWORD</a> len, <a class="el" href="types_8h.html#ad342ac907eb044443153a22f964bf0af">DWORD</a> <a class="el" href="class_c_r_s232.html#a3a7e8906a8696f6df5f152bfb65f137c">read_total_timeout</a>=0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#aab90156596efb6afaacd471daa0f4a04">RecvByte</a> (<a class="el" href="types_8h.html#ad342ac907eb044443153a22f964bf0af">DWORD</a> timeout=0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#af5866081536f1f84b7e5725ed6c856d7">SendBuffer</a> (<a class="el" href="types_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> *buffer, <a class="el" href="types_8h.html#ad342ac907eb044443153a22f964bf0af">DWORD</a> len)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#a9425bef732f8383372f91c2d7e5902e7">SendByte</a> (<a class="el" href="types_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> buffer)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#a464205173ca224cfc1d442538ed1108d">SetSerialParams</a> (long speed=-1, int bits=-1, int parity=-1, int stops=-1, int flow_control=-1)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#a47736fc11ea8c84a898c6c203a5b478e">SetCustomBaudRate</a> (int baud_rate=250000)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#a8344cd3a229ad9cb1e8fdede7440c475">Purge</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#a7b7ccbd5c791be1db5d61176aa346cfb">WaitForTxEmpty</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#acc194cf92f3a0fafb42486c862b75c87">SendBreak</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#a48867b06ea8a6414fbd0fb2e9d03f1cb">SetSerialTimeouts</a> (long init_read, long while_read)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#a07643d0f399c2ca1486437f9228c6924">SetSerialBreak</a> (int state)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#a83b476471994c539d364599b05fe792a">SetSerialDTR</a> (int dtr)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#a25bf37fb22f2edbf815b0ed48397b190">SetSerialRTS</a> (int rts)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#a3e8c6a80aad8f2233fb939ca85ac0447">GetSerialDSR</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#ab8a5cc1b7c51df67e91f3b2c4fc7dd9c">GetSerialCTS</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#ad2040f3f9530bab263aff423bcb6cb09">SetSerialRTSDTR</a> (int state)</td></tr>
+<tr><td colspan="2"><h2><a name="pri-methods"></a>
+Fonctions membres privées</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#af8d5702391369e1c0fd21efaa7506b75">flushInput</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#a7937a41e618d11aaecb92381ab3f695c">flushOutput</a> (void)</td></tr>
+<tr><td colspan="2"><h2><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#a508c300a3fe187a5dec7b9e26f8ab62d">actual_speed</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#a2f9cae78f31be90855c37da7a96d08fa">actual_bits</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#afb4bbb2fae6d5eac38d1804c87cbe79d">actual_parity</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#a367fe001dd70ab89bbe86bc0bf530279">actual_stops</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#a7a1c088ac127e846d48e1ea77ea590e4">actual_flowcontrol</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct termios&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#a86f8a1bf1888abc7f024fa3678bbc282">old_termios</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#a3a7e8906a8696f6df5f152bfb65f137c">read_total_timeout</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html#a955bd22f2a8720a2e74aae23488235d5">read_interval_timeout</a></td></tr>
+</table>
+<hr/><h2>Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="aaed08f8a3b355663e7048f815059ea0c"></a><!-- doxytag: member="CRS232::CRS232" ref="aaed08f8a3b355663e7048f815059ea0c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_r_s232.html#aaed08f8a3b355663e7048f815059ea0c">CRS232::CRS232</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>.</p>
+<div class="fragment"><pre class="fragment">{
+    this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> = -1;
+}
+</pre></div>
+</div>
+</div>
+<hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="ad2b85670a61a293744054d2d10cdf056"></a><!-- doxytag: member="CRS232::CloseSerial" ref="ad2b85670a61a293744054d2d10cdf056" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_c_r_s232.html#ad2b85670a61a293744054d2d10cdf056">CRS232::CloseSerial</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>.</p>
+
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#a2a033c11730613fc06396055a2776eec">EnttecDMXUSB::closePort()</a>, et <a class="el" href="class_c_r_s232.html#af0570125bbbf679b332fbd0a578274ca">OpenSerial()</a>.</p>
+<div class="fragment"><pre class="fragment">{
+<span class="preprocessor">        #ifdef DEBUG_RS232</span>
+<span class="preprocessor"></span>                std::cerr &lt;&lt; <span class="stringliteral">&quot; CRS232::CloseSerial() &quot;</span> &lt;&lt; std::endl;
+<span class="preprocessor">        #endif</span>
+<span class="preprocessor"></span>        close(this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>);
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="af8d5702391369e1c0fd21efaa7506b75"></a><!-- doxytag: member="CRS232::flushInput" ref="af8d5702391369e1c0fd21efaa7506b75" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_r_s232.html#af8d5702391369e1c0fd21efaa7506b75">CRS232::flushInput</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, et <a class="el" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>.</p>
+
+<p>Référencé par <a class="el" href="class_c_r_s232.html#a8344cd3a229ad9cb1e8fdede7440c475">Purge()</a>.</p>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordflow">if</span> ( this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> == <a class="code" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a> ) <span class="keywordflow">return</span> 0;
+    tcflush(this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, TCIFLUSH);
+    <span class="keywordflow">return</span> 1;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a7937a41e618d11aaecb92381ab3f695c"></a><!-- doxytag: member="CRS232::flushOutput" ref="a7937a41e618d11aaecb92381ab3f695c" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_r_s232.html#a7937a41e618d11aaecb92381ab3f695c">CRS232::flushOutput</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, et <a class="el" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>.</p>
+
+<p>Référencé par <a class="el" href="class_c_r_s232.html#a8344cd3a229ad9cb1e8fdede7440c475">Purge()</a>.</p>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordflow">if</span> ( this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> == <a class="code" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a> ) <span class="keywordflow">return</span> 0;
+    tcflush(this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, TCOFLUSH);
+    <span class="keywordflow">return</span> 1;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="ab8a5cc1b7c51df67e91f3b2c4fc7dd9c"></a><!-- doxytag: member="CRS232::GetSerialCTS" ref="ab8a5cc1b7c51df67e91f3b2c4fc7dd9c" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_r_s232.html#ab8a5cc1b7c51df67e91f3b2c4fc7dd9c">CRS232::GetSerialCTS</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="errcode_8h.html#a1359b167ba60537816bb03ea98c559af">E2ERR_OPENFAILED</a>, <a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, et <a class="el" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>.</p>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordtype">int</span> result = <a class="code" href="errcode_8h.html#a1359b167ba60537816bb03ea98c559af">E2ERR_OPENFAILED</a>;
+    <span class="keywordtype">int</span> flags; 
+
+    <span class="keywordflow">if</span> ( this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> == <a class="code" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a> ) <span class="keywordflow">return</span> 0;
+    <span class="keywordflow">if</span> (ioctl(<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>,TIOCMGET, &amp;flags) != -1)
+        result = (flags &amp; TIOCM_CTS); 
+
+    <span class="keywordflow">return</span> result;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a3e8c6a80aad8f2233fb939ca85ac0447"></a><!-- doxytag: member="CRS232::GetSerialDSR" ref="a3e8c6a80aad8f2233fb939ca85ac0447" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_r_s232.html#a3e8c6a80aad8f2233fb939ca85ac0447">CRS232::GetSerialDSR</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="errcode_8h.html#a1359b167ba60537816bb03ea98c559af">E2ERR_OPENFAILED</a>, <a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, et <a class="el" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>.</p>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordtype">int</span> result = <a class="code" href="errcode_8h.html#a1359b167ba60537816bb03ea98c559af">E2ERR_OPENFAILED</a>;
+    <span class="keywordtype">int</span> flags; 
+
+    <span class="keywordflow">if</span> ( this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> == <a class="code" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a> ) <span class="keywordflow">return</span> 0;
+    <span class="keywordflow">if</span> (ioctl(<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>,TIOCMGET, &amp;flags) != -1)
+        result = (flags &amp; TIOCM_DSR); 
+
+    <span class="keywordflow">return</span> result;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="af0570125bbbf679b332fbd0a578274ca"></a><!-- doxytag: member="CRS232::OpenSerial" ref="af0570125bbbf679b332fbd0a578274ca" args="(string port)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_r_s232.html#af0570125bbbf679b332fbd0a578274ca">CRS232::OpenSerial</a> </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="class_c_r_s232.html#ad2b85670a61a293744054d2d10cdf056">CloseSerial()</a>, <a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, et <a class="el" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>.</p>
+
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#ad5fb6a61aa37ae15b95e800b3329d62a">EnttecDMXUSB::openPort()</a>.</p>
+<div class="fragment"><pre class="fragment">{
+   <span class="keywordtype">int</span> res;
+
+   <span class="keywordflow">if</span> ( this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> != <a class="code" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a> ) <a class="code" href="class_c_r_s232.html#ad2b85670a61a293744054d2d10cdf056">CloseSerial</a>();
+ 
+   <span class="keywordflow">if</span> ((this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> = open(port.c_str(),O_RDWR|O_NONBLOCK)) == -1) res = -1;
+   <span class="keywordflow">else</span>   res = 0;
+<span class="preprocessor">   #ifdef DEBUG_RS232</span>
+<span class="preprocessor"></span>                std::cerr &lt;&lt; <span class="stringliteral">&quot; CRS232::OpenSerial() &quot;</span> &lt;&lt; port &lt;&lt; <span class="stringliteral">&quot; -&gt; &quot;</span> &lt;&lt; this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> &lt;&lt; <span class="stringliteral">&quot; (&quot;</span> &lt;&lt; res &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt; std::endl;
+<span class="preprocessor">        #endif</span>
+<span class="preprocessor"></span>   <span class="keywordflow">return</span> res;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="aafac28b2199c4c799f039c300d5f952a"></a><!-- doxytag: member="CRS232::OpenSerial" ref="aafac28b2199c4c799f039c300d5f952a" args="(string port, int flags)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_r_s232.html#af0570125bbbf679b332fbd0a578274ca">CRS232::OpenSerial</a> </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="class_c_r_s232.html#ad2b85670a61a293744054d2d10cdf056">CloseSerial()</a>, <a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, et <a class="el" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>.</p>
+<div class="fragment"><pre class="fragment">{
+   <span class="keywordtype">int</span> res;
+
+   <span class="keywordflow">if</span> ( this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> != <a class="code" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a> ) <a class="code" href="class_c_r_s232.html#ad2b85670a61a293744054d2d10cdf056">CloseSerial</a>(); 
+   <span class="keywordflow">if</span> ((this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> = open(port.c_str(), flags)) == -1) res = -1;
+   <span class="keywordflow">else</span>   res = 0;
+<span class="preprocessor">   #ifdef DEBUG_RS232</span>
+<span class="preprocessor"></span>        std::cerr &lt;&lt; <span class="stringliteral">&quot; CRS232::OpenSerial() &quot;</span> &lt;&lt; port &lt;&lt; <span class="stringliteral">&quot; -&gt; &quot;</span> &lt;&lt; this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> &lt;&lt; <span class="stringliteral">&quot; (&quot;</span> &lt;&lt; res &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt; std::endl;
+<span class="preprocessor">    #endif</span>
+<span class="preprocessor"></span>   <span class="keywordflow">return</span> res;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a8344cd3a229ad9cb1e8fdede7440c475"></a><!-- doxytag: member="CRS232::Purge" ref="a8344cd3a229ad9cb1e8fdede7440c475" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_c_r_s232.html#a8344cd3a229ad9cb1e8fdede7440c475">CRS232::Purge</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="class_c_r_s232.html#af8d5702391369e1c0fd21efaa7506b75">flushInput()</a>, et <a class="el" href="class_c_r_s232.html#a7937a41e618d11aaecb92381ab3f695c">flushOutput()</a>.</p>
+
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#ad5fb6a61aa37ae15b95e800b3329d62a">EnttecDMXUSB::openPort()</a>.</p>
+<div class="fragment"><pre class="fragment">{
+   <a class="code" href="class_c_r_s232.html#af8d5702391369e1c0fd21efaa7506b75">flushInput</a>();
+   <a class="code" href="class_c_r_s232.html#a7937a41e618d11aaecb92381ab3f695c">flushOutput</a>();
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="aa6fdd15db5cc32a9edfb961813153005"></a><!-- doxytag: member="CRS232::RecvBufferEX" ref="aa6fdd15db5cc32a9edfb961813153005" args="(BYTE *buffer, DWORD len, DWORD read_total_timeout=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="class_c_r_s232.html#aa6fdd15db5cc32a9edfb961813153005">CRS232::RecvBufferEX</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ad342ac907eb044443153a22f964bf0af">DWORD</a>&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ad342ac907eb044443153a22f964bf0af">DWORD</a>&#160;</td>
+          <td class="paramname"><em>read_total_timeout</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="errcode_8h.html#a1157489cbbb51914628e5608a1bcc11a">E2P_TIMEOUT</a>, <a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, et <a class="el" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>.</p>
+
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#a7e7738cf543b306d8083ae0fe443605d">EnttecDMXUSB::recieve()</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordtype">int</span> retval = 0;
+
+   <span class="keywordflow">if</span> ( <a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> != <a class="code" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a> )
+        {
+                <span class="keywordtype">long</span> nread, nleft;
+                <a class="code" href="types_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> *ptr;
+
+                nleft = len;
+                ptr = buffer;
+
+                <span class="comment">/* Wait up to N seconds. */</span>
+                <span class="keyword">struct </span>timeval tv;
+
+                tv.tv_sec = <a class="code" href="class_c_r_s232.html#a3a7e8906a8696f6df5f152bfb65f137c">read_total_timeout</a> / 1000;
+                tv.tv_usec = (<a class="code" href="class_c_r_s232.html#a3a7e8906a8696f6df5f152bfb65f137c">read_total_timeout</a> % 1000) * 1000;
+
+                <span class="keywordflow">while</span> (nleft &gt; 0)
+                {
+                        fd_set rfds;
+                        <span class="keywordtype">int</span> rval;
+
+                        <span class="comment">/* Watch file fd to see when it has input. */</span>
+                        FD_ZERO(&amp;rfds);
+                        FD_SET(<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, &amp;rfds);
+
+                        rval = select(<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>+1, &amp;rfds, NULL, NULL, &amp;tv);
+                        <span class="keywordflow">if</span> (rval &lt; 0)   <span class="comment">//Error</span>
+                        {
+                                nleft = -1;
+                                <span class="keywordflow">break</span>;
+                        }
+                        <span class="keywordflow">else</span>
+                        <span class="keywordflow">if</span> (rval == 0)  <span class="comment">//Timeout</span>
+                        {
+                                nleft = -1;
+                                retval = <a class="code" href="errcode_8h.html#a1157489cbbb51914628e5608a1bcc11a">E2P_TIMEOUT</a>;
+                                <span class="keywordflow">break</span>;
+                        }
+                        <span class="keywordflow">else</span>                    <span class="comment">//Ok</span>
+                        {
+                                nread = read(<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, ptr, nleft);
+                                <span class="keywordflow">if</span> (nread &lt; 0)
+                                {
+                                        nleft = -1;
+                                        <span class="keywordflow">break</span>;  <span class="comment">//Error</span>
+                                }
+                        }
+
+                        nleft -= nread;
+                        ptr   += nread;
+                }
+
+                <span class="keywordflow">if</span> (nleft &gt;= 0)
+                        retval = (len - nleft);
+        }
+        
+<span class="preprocessor">        #ifdef DEBUG_RS232</span>
+<span class="preprocessor"></span>        <a class="code" href="types_8h.html#ad342ac907eb044443153a22f964bf0af">DWORD</a> i;
+                std::cerr &lt;&lt; <span class="stringliteral">&quot; CRS232::RecvBufferEX() : &quot;</span> ;
+        <span class="keywordflow">for</span>(i=0;i&lt;len;i++)
+                fprintf(stderr, <span class="stringliteral">&quot;0x%02x &quot;</span>, *(buffer+i));
+        fprintf(stderr, <span class="stringliteral">&quot;\n&quot;</span>);
+<span class="preprocessor">        #endif</span>
+<span class="preprocessor"></span>        <span class="keywordflow">return</span> retval;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="aab90156596efb6afaacd471daa0f4a04"></a><!-- doxytag: member="CRS232::RecvByte" ref="aab90156596efb6afaacd471daa0f4a04" args="(DWORD timeout=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> <a class="el" href="class_c_r_s232.html#aab90156596efb6afaacd471daa0f4a04">CRS232::RecvByte</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ad342ac907eb044443153a22f964bf0af">DWORD</a>&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, et <a class="el" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>.</p>
+
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#a7e7738cf543b306d8083ae0fe443605d">EnttecDMXUSB::recieve()</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordtype">int</span> ret=0;
+        <span class="keywordtype">char</span> carlu=<span class="charliteral">&#39; &#39;</span>;
+
+    <span class="keywordflow">if</span> ( this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> == <a class="code" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a> ) <span class="keywordflow">return</span> 0;
+        ret = read(this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>,&amp;carlu,1);
+        
+<span class="preprocessor">        #ifdef DEBUG_RS232</span>
+<span class="preprocessor"></span>                printf(<span class="stringliteral">&quot; CRS232::RecvByte() : 0x%02X\n&quot;</span>, (<a class="code" href="types_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>)carlu);
+<span class="preprocessor">        #endif</span>
+<span class="preprocessor"></span>        <span class="keywordflow">return</span> carlu;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="acc194cf92f3a0fafb42486c862b75c87"></a><!-- doxytag: member="CRS232::SendBreak" ref="acc194cf92f3a0fafb42486c862b75c87" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_r_s232.html#acc194cf92f3a0fafb42486c862b75c87">CRS232::SendBreak</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, et <a class="el" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>.</p>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordflow">if</span> ( this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> == <a class="code" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a> ) <span class="keywordflow">return</span> 0;
+    tcsendbreak(this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, 0);
+    <span class="keywordflow">return</span> 1;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="af5866081536f1f84b7e5725ed6c856d7"></a><!-- doxytag: member="CRS232::SendBuffer" ref="af5866081536f1f84b7e5725ed6c856d7" args="(BYTE *buffer, DWORD len)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="class_c_r_s232.html#af5866081536f1f84b7e5725ed6c856d7">CRS232::SendBuffer</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ad342ac907eb044443153a22f964bf0af">DWORD</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, et <a class="el" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>.</p>
+
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#a8ae3b0adea61804b19d94880f5b4fabf">EnttecDMXUSB::sendPacket()</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <a class="code" href="types_8h.html#ad342ac907eb044443153a22f964bf0af">DWORD</a> i;
+<span class="preprocessor">        #ifdef DEBUG_RS232</span>
+<span class="preprocessor"></span>                std::cerr &lt;&lt; <span class="stringliteral">&quot; CRS232::SendBuffer() : &quot;</span> ;
+                <span class="keywordflow">for</span>(i=0;i&lt;len;i++)
+                                fprintf(stderr, <span class="stringliteral">&quot;0x%02x &quot;</span>, *(buffer+i));
+                        fprintf(stderr, <span class="stringliteral">&quot;\n&quot;</span>);
+<span class="preprocessor">        #endif</span>
+<span class="preprocessor"></span>        <span class="keywordtype">int</span> nwritten, retval = -1;
+
+    <span class="keywordflow">if</span> ( this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> == <a class="code" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a> ) <span class="keywordflow">return</span> 0;
+        <span class="keywordflow">for</span>(i=0;i&lt;len;i++)
+        {
+                nwritten = write(this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, buffer+i, 1);
+                <span class="keywordflow">if</span> (nwritten &lt;= 0)
+                        <span class="keywordflow">return</span> retval;  <span class="comment">//return error</span>
+        }
+        <span class="keywordflow">return</span> len;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a9425bef732f8383372f91c2d7e5902e7"></a><!-- doxytag: member="CRS232::SendByte" ref="a9425bef732f8383372f91c2d7e5902e7" args="(BYTE buffer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="class_c_r_s232.html#a9425bef732f8383372f91c2d7e5902e7">CRS232::SendByte</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, et <a class="el" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>.</p>
+
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#a8ae3b0adea61804b19d94880f5b4fabf">EnttecDMXUSB::sendPacket()</a>.</p>
+<div class="fragment"><pre class="fragment">{
+   <a class="code" href="types_8h.html#ad342ac907eb044443153a22f964bf0af">DWORD</a> len = 1;
+   
+<span class="preprocessor">        #ifdef DEBUG_RS232</span>
+<span class="preprocessor"></span>                std::cerr &lt;&lt; <span class="stringliteral">&quot; CRS232::SendByte() : &quot;</span> ;
+                fprintf(stderr, <span class="stringliteral">&quot;0x%02x &quot;</span>, buffer);
+                fprintf(stderr, <span class="stringliteral">&quot;\n&quot;</span>);
+<span class="preprocessor">        #endif</span>
+<span class="preprocessor"></span>        <span class="keywordtype">int</span> nwritten, retval = -1;
+
+    <span class="keywordflow">if</span> ( this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> == <a class="code" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a> ) <span class="keywordflow">return</span> 0;
+        nwritten = write(this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, &amp;buffer, 1);
+        <span class="keywordflow">if</span> (nwritten &lt;= 0)
+                <span class="keywordflow">return</span> retval;  <span class="comment">//return error</span>
+
+        <span class="keywordflow">return</span> len;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a47736fc11ea8c84a898c6c203a5b478e"></a><!-- doxytag: member="CRS232::SetCustomBaudRate" ref="a47736fc11ea8c84a898c6c203a5b478e" args="(int baud_rate=250000)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_r_s232.html#a47736fc11ea8c84a898c6c203a5b478e">CRS232::SetCustomBaudRate</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>baud_rate</em> = <code>250000</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, et <a class="el" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>.</p>
+
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#ad5fb6a61aa37ae15b95e800b3329d62a">EnttecDMXUSB::openPort()</a>.</p>
+<div class="fragment"><pre class="fragment">{
+    <span class="keyword">struct </span>serial_struct advsettings;
+
+    <span class="keywordflow">if</span> ( this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> == <a class="code" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a> ) <span class="keywordflow">return</span> 0;
+    ioctl(<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, TIOCGSERIAL, &amp;advsettings);
+<span class="preprocessor">    #ifdef DEBUG_RS232</span>
+<span class="preprocessor"></span>        std::cerr &lt;&lt; <span class="stringliteral">&quot; CRS232::SetCustomBaudRate() : &quot;</span> &lt;&lt; baud_rate &lt;&lt; std::endl;
+        fprintf(stderr, <span class="stringliteral">&quot;Avant -&gt; Baudbase : %i Divisor : %i \n&quot;</span>, advsettings.baud_base, advsettings.custom_divisor);
+<span class="preprocessor">    #endif</span>
+<span class="preprocessor"></span> 
+    advsettings.flags = (advsettings.flags &amp; ~ASYNC_SPD_MASK) | ASYNC_SPD_CUST;
+    advsettings.custom_divisor = advsettings.baud_base / baud_rate;
+
+<span class="preprocessor">    #ifdef DEBUG_RS232</span>
+<span class="preprocessor"></span>        std::cerr &lt;&lt; <span class="stringliteral">&quot; CRS232::SetCustomBaudRate() : &quot;</span> &lt;&lt; baud_rate &lt;&lt; std::endl;
+        fprintf(stderr, <span class="stringliteral">&quot;Apr�s -&gt; Baudbase : %i Divisor : %i \n&quot;</span>,advsettings.baud_base,advsettings.custom_divisor);
+<span class="preprocessor">    #endif</span>
+<span class="preprocessor"></span>
+    ioctl(<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, TIOCSSERIAL, &amp;advsettings);
+    <span class="keywordflow">return</span> 1;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a07643d0f399c2ca1486437f9228c6924"></a><!-- doxytag: member="CRS232::SetSerialBreak" ref="a07643d0f399c2ca1486437f9228c6924" args="(int state)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_r_s232.html#a07643d0f399c2ca1486437f9228c6924">CRS232::SetSerialBreak</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="errcode_8h.html#a1359b167ba60537816bb03ea98c559af">E2ERR_OPENFAILED</a>, <a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, et <a class="el" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>.</p>
+
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#a8ae3b0adea61804b19d94880f5b4fabf">EnttecDMXUSB::sendPacket()</a>.</p>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordtype">int</span> result = <a class="code" href="errcode_8h.html#a1359b167ba60537816bb03ea98c559af">E2ERR_OPENFAILED</a>;
+
+    <span class="keywordflow">if</span> ( this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> == <a class="code" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a> ) <span class="keywordflow">return</span> 0;
+<span class="preprocessor">#if defined(TIOCSBRK) &amp;&amp; defined(TIOCCBRK) //check if available for compilation </span>
+<span class="preprocessor"></span>    <span class="keywordflow">if</span> (state) 
+        result = ioctl(<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>,TIOCSBRK,0); 
+    <span class="keywordflow">else</span> 
+        result = ioctl(<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>,TIOCCBRK,0); 
+<span class="preprocessor">        #ifdef DEBUG_RS232</span>
+<span class="preprocessor"></span>                std::cerr &lt;&lt; <span class="stringliteral">&quot; CRS232::SetSerialBreak() : &quot;</span> &lt;&lt; state &lt;&lt; std::endl;
+<span class="preprocessor">        #endif</span>
+<span class="preprocessor"></span><span class="preprocessor">#else </span>
+<span class="preprocessor"></span><span class="preprocessor">    #ifndef DEBUG_RS232</span>
+<span class="preprocessor"></span>    fprintf(stderr, <span class="stringliteral">&quot; CRS232::SetSerialBreak can&#39;t get IOCTL\n&quot;</span>);
+<span class="preprocessor">    #endif</span>
+<span class="preprocessor"></span><span class="preprocessor">#endif </span>
+<span class="preprocessor"></span>    <span class="keywordflow">return</span> result;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a83b476471994c539d364599b05fe792a"></a><!-- doxytag: member="CRS232::SetSerialDTR" ref="a83b476471994c539d364599b05fe792a" args="(int dtr)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_r_s232.html#a83b476471994c539d364599b05fe792a">CRS232::SetSerialDTR</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dtr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="errcode_8h.html#a1359b167ba60537816bb03ea98c559af">E2ERR_OPENFAILED</a>, <a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, et <a class="el" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>.</p>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordtype">int</span> result = <a class="code" href="errcode_8h.html#a1359b167ba60537816bb03ea98c559af">E2ERR_OPENFAILED</a>;
+    <span class="keywordtype">int</span> flags; 
+
+    <span class="keywordflow">if</span> ( this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> == <a class="code" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a> ) <span class="keywordflow">return</span> 0;
+    ioctl(<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>,TIOCMGET, &amp;flags); 
+    <span class="keywordflow">if</span> (dtr)
+        flags |= TIOCM_DTR; 
+    <span class="keywordflow">else</span>
+        flags &amp;= ~TIOCM_DTR; 
+    result = ioctl(<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>,TIOCMSET, &amp;flags); 
+
+    <span class="keywordflow">return</span> result;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a464205173ca224cfc1d442538ed1108d"></a><!-- doxytag: member="CRS232::SetSerialParams" ref="a464205173ca224cfc1d442538ed1108d" args="(long speed=&#45;1, int bits=&#45;1, int parity=&#45;1, int stops=&#45;1, int flow_control=&#45;1)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_r_s232.html#a464205173ca224cfc1d442538ed1108d">CRS232::SetSerialParams</a> </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>speed</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bits</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>parity</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>stops</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flow_control</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="class_c_r_s232.html#a2f9cae78f31be90855c37da7a96d08fa">actual_bits</a>, <a class="el" href="class_c_r_s232.html#a7a1c088ac127e846d48e1ea77ea590e4">actual_flowcontrol</a>, <a class="el" href="class_c_r_s232.html#afb4bbb2fae6d5eac38d1804c87cbe79d">actual_parity</a>, <a class="el" href="class_c_r_s232.html#a508c300a3fe187a5dec7b9e26f8ab62d">actual_speed</a>, <a class="el" href="class_c_r_s232.html#a367fe001dd70ab89bbe86bc0bf530279">actual_stops</a>, <a class="el" href="errcode_8h.html#a1359b167ba60537816bb03ea98c559af">E2ERR_OPENFAILED</a>, <a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, et <a class="el" href="errcode_8h.html#aba51915c87d64af47fb1cc59348961c9">OK</a>.</p>
+
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#ad5fb6a61aa37ae15b95e800b3329d62a">EnttecDMXUSB::openPort()</a>.</p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordtype">int</span> result = <a class="code" href="errcode_8h.html#a1359b167ba60537816bb03ea98c559af">E2ERR_OPENFAILED</a>;
+
+        <span class="keywordflow">if</span> ( <a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> != -1 )
+        {
+                <span class="keywordflow">if</span> (speed &gt;= 300 &amp;&amp; speed &lt;= 115200)
+                        <a class="code" href="class_c_r_s232.html#a508c300a3fe187a5dec7b9e26f8ab62d">actual_speed</a> = speed;
+                <span class="keywordflow">if</span> (bits &gt;= 1 &amp;&amp; bits &lt;= 16)
+                        <a class="code" href="class_c_r_s232.html#a2f9cae78f31be90855c37da7a96d08fa">actual_bits</a> = bits;
+                <span class="keywordflow">if</span> (parity == <span class="charliteral">&#39;N&#39;</span> || parity == <span class="charliteral">&#39;E&#39;</span> || parity == <span class="charliteral">&#39;O&#39;</span>)
+                        <a class="code" href="class_c_r_s232.html#afb4bbb2fae6d5eac38d1804c87cbe79d">actual_parity</a> = parity;
+                <span class="keywordflow">if</span> (stops &gt;= 1 &amp;&amp; stops &lt;= 2)
+                        <a class="code" href="class_c_r_s232.html#a367fe001dd70ab89bbe86bc0bf530279">actual_stops</a> = stops;
+                <span class="keywordflow">if</span> (flow_control &gt;= 0 &amp;&amp; flow_control &lt;= 2)
+                        <a class="code" href="class_c_r_s232.html#a7a1c088ac127e846d48e1ea77ea590e4">actual_flowcontrol</a> = flow_control;
+
+                <span class="keyword">struct </span>termios termios;
+
+                <span class="keywordflow">if</span> ( tcgetattr(<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, &amp;termios) != 0 )
+                        <span class="keywordflow">return</span> result;
+
+                cfmakeraw(&amp;termios);
+                termios.c_cflag |= CLOCAL;              <span class="comment">//Disable modem status line check</span>
+
+                <span class="comment">//Flow control</span>
+                <span class="keywordflow">if</span> (<a class="code" href="class_c_r_s232.html#a7a1c088ac127e846d48e1ea77ea590e4">actual_flowcontrol</a> == 0)
+                {
+                        termios.c_cflag &amp;= ~CRTSCTS;    <span class="comment">//Disable hardware flow control</span>
+                        termios.c_iflag &amp;= ~(IXON|IXOFF);       <span class="comment">//Disable software flow control</span>
+                }
+                <span class="keywordflow">else</span>
+                <span class="keywordflow">if</span> (<a class="code" href="class_c_r_s232.html#a7a1c088ac127e846d48e1ea77ea590e4">actual_flowcontrol</a> == 1)
+                {
+                        termios.c_cflag |= CRTSCTS;
+                        termios.c_iflag &amp;= ~(IXON|IXOFF);
+                }
+                <span class="keywordflow">else</span>
+                {
+                        termios.c_cflag &amp;= ~CRTSCTS;
+                        termios.c_iflag |= (IXON|IXOFF);
+                }
+
+                <span class="comment">//Set size of bits</span>
+                termios.c_cflag &amp;= ~CSIZE;
+                <span class="keywordflow">if</span> (<a class="code" href="class_c_r_s232.html#a2f9cae78f31be90855c37da7a96d08fa">actual_bits</a> &lt;= 5)
+                        termios.c_cflag |= CS5;
+                <span class="keywordflow">else</span>
+                <span class="keywordflow">if</span> (<a class="code" href="class_c_r_s232.html#a2f9cae78f31be90855c37da7a96d08fa">actual_bits</a> == 6)
+                        termios.c_cflag |= CS6;
+                <span class="keywordflow">else</span>
+                <span class="keywordflow">if</span> (<a class="code" href="class_c_r_s232.html#a2f9cae78f31be90855c37da7a96d08fa">actual_bits</a> == 7)
+                        termios.c_cflag |= CS7;
+                <span class="keywordflow">else</span>
+                        termios.c_cflag |= CS8;
+
+                <span class="comment">//Set stop bits</span>
+                <span class="keywordflow">if</span> (<a class="code" href="class_c_r_s232.html#a367fe001dd70ab89bbe86bc0bf530279">actual_stops</a> == 2)
+                        termios.c_cflag |= CSTOPB;
+                <span class="keywordflow">else</span>
+                        termios.c_cflag &amp;= ~CSTOPB;
+
+                <span class="comment">//Set parity bit</span>
+                <span class="keywordflow">if</span> (<a class="code" href="class_c_r_s232.html#afb4bbb2fae6d5eac38d1804c87cbe79d">actual_parity</a> == <span class="charliteral">&#39;N&#39;</span>)
+                {
+                        termios.c_cflag &amp;= ~PARENB;
+                }
+                <span class="keywordflow">else</span>
+                <span class="keywordflow">if</span> (<a class="code" href="class_c_r_s232.html#afb4bbb2fae6d5eac38d1804c87cbe79d">actual_parity</a> == <span class="charliteral">&#39;E&#39;</span>)
+                {
+                        termios.c_cflag |= PARENB;
+                        termios.c_cflag &amp;= ~PARODD;
+                }
+                <span class="keywordflow">else</span>
+                {       <span class="comment">//&#39;O&#39;</span>
+                        termios.c_cflag |= (PARENB|PARODD);
+                }
+
+                <span class="comment">//Set speed</span>
+                speed_t baudrate;
+                <span class="keywordflow">switch</span> (speed)
+                {
+                <span class="keywordflow">case</span> 300:
+                        baudrate = B300;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 600:
+                        baudrate = B600;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 1200:
+                        baudrate = B1200;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 2400:
+                        baudrate = B2400;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 4800:
+                        baudrate = B4800;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 9600:
+                        baudrate = B9600;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 19200:
+                        baudrate = B19200;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 38400:
+                        baudrate = B38400;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 57600:
+                        baudrate = B57600;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 115200:
+                        baudrate = B115200;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 230400:
+                        baudrate = B230400;
+                        <span class="keywordflow">break</span>;
+        <span class="keywordflow">case</span> 2500000:
+                baudrate = B2500000;
+                <span class="keywordflow">break</span>;
+        <span class="keywordflow">case</span> 4000000:
+                baudrate = B4000000;
+                <span class="keywordflow">break</span>;
+                <span class="keywordflow">default</span>:
+                        baudrate = B9600;
+                        <span class="keywordflow">break</span>;
+                }
+                cfsetispeed(&amp;termios,baudrate);
+                cfsetospeed(&amp;termios,baudrate);
+
+                termios.c_cc[VMIN] = 1;
+                termios.c_cc[VTIME] = 0;
+
+                <span class="keywordflow">if</span> ( tcsetattr(<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, TCSANOW, &amp;termios) == 0 )
+                {
+                        fcntl(this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>,F_SETFL,fcntl(this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>,F_GETFL)&amp;~O_NONBLOCK);
+                        result = <a class="code" href="errcode_8h.html#aba51915c87d64af47fb1cc59348961c9">OK</a>;
+                }
+        }
+<span class="preprocessor">    #ifdef DEBUG_RS232</span>
+<span class="preprocessor"></span>    std::cerr &lt;&lt; <span class="stringliteral">&quot; CRS232::SetSerialParams() : &quot;</span> &lt;&lt; result &lt;&lt; std::endl;
+    <span class="keywordflow">if</span>(result &lt; 0)
+      perror(<span class="stringliteral">&quot; CRS232::SetSerialParams() &quot;</span>);
+<span class="preprocessor">    #endif</span>
+<span class="preprocessor"></span>   
+    <span class="keywordflow">return</span> result;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a25bf37fb22f2edbf815b0ed48397b190"></a><!-- doxytag: member="CRS232::SetSerialRTS" ref="a25bf37fb22f2edbf815b0ed48397b190" args="(int rts)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_r_s232.html#a25bf37fb22f2edbf815b0ed48397b190">CRS232::SetSerialRTS</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rts</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="errcode_8h.html#a1359b167ba60537816bb03ea98c559af">E2ERR_OPENFAILED</a>, <a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, et <a class="el" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>.</p>
+
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#ad5fb6a61aa37ae15b95e800b3329d62a">EnttecDMXUSB::openPort()</a>.</p>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordtype">int</span> result = <a class="code" href="errcode_8h.html#a1359b167ba60537816bb03ea98c559af">E2ERR_OPENFAILED</a>;
+    <span class="keywordtype">int</span> flags; 
+
+    <span class="keywordflow">if</span> ( this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> == <a class="code" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a> ) <span class="keywordflow">return</span> 0;
+    ioctl(<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>,TIOCMGET, &amp;flags); 
+    <span class="keywordflow">if</span> (rts)
+        flags |= TIOCM_RTS; 
+    <span class="keywordflow">else</span>
+        flags &amp;= ~TIOCM_RTS; <span class="comment">// Set RTS High ?</span>
+    result = ioctl(<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>,TIOCMSET, &amp;flags); 
+
+    <span class="keywordflow">return</span> result;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="ad2040f3f9530bab263aff423bcb6cb09"></a><!-- doxytag: member="CRS232::SetSerialRTSDTR" ref="ad2040f3f9530bab263aff423bcb6cb09" args="(int state)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_r_s232.html#ad2040f3f9530bab263aff423bcb6cb09">CRS232::SetSerialRTSDTR</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="errcode_8h.html#a1359b167ba60537816bb03ea98c559af">E2ERR_OPENFAILED</a>, <a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, et <a class="el" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>.</p>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordtype">int</span> result = <a class="code" href="errcode_8h.html#a1359b167ba60537816bb03ea98c559af">E2ERR_OPENFAILED</a>;
+    <span class="keywordtype">int</span> flags; 
+
+    <span class="keywordflow">if</span> ( this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> == <a class="code" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a> ) <span class="keywordflow">return</span> 0;
+    ioctl(<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>,TIOCMGET, &amp;flags); 
+    <span class="keywordflow">if</span> (state)
+    {
+        flags |= (TIOCM_RTS|TIOCM_DTR); 
+    }
+    <span class="keywordflow">else</span>
+    {
+        flags &amp;= ~(TIOCM_RTS|TIOCM_DTR); 
+    }
+    result = ioctl(<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>,TIOCMSET, &amp;flags); 
+
+    <span class="keywordflow">return</span> result;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a48867b06ea8a6414fbd0fb2e9d03f1cb"></a><!-- doxytag: member="CRS232::SetSerialTimeouts" ref="a48867b06ea8a6414fbd0fb2e9d03f1cb" args="(long init_read, long while_read)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_r_s232.html#a48867b06ea8a6414fbd0fb2e9d03f1cb">CRS232::SetSerialTimeouts</a> </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>init_read</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>while_read</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="errcode_8h.html#a1359b167ba60537816bb03ea98c559af">E2ERR_OPENFAILED</a>, <a class="el" href="errcode_8h.html#aba51915c87d64af47fb1cc59348961c9">OK</a>, <a class="el" href="class_c_r_s232.html#a955bd22f2a8720a2e74aae23488235d5">read_interval_timeout</a>, et <a class="el" href="class_c_r_s232.html#a3a7e8906a8696f6df5f152bfb65f137c">read_total_timeout</a>.</p>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordtype">long</span> result = <a class="code" href="errcode_8h.html#a1359b167ba60537816bb03ea98c559af">E2ERR_OPENFAILED</a>;
+
+    <span class="keywordflow">if</span> (while_read &gt;= 0)
+        <a class="code" href="class_c_r_s232.html#a955bd22f2a8720a2e74aae23488235d5">read_interval_timeout</a> = while_read;
+    <span class="keywordflow">if</span> (init_read &gt;= 0)
+        <a class="code" href="class_c_r_s232.html#a3a7e8906a8696f6df5f152bfb65f137c">read_total_timeout</a> = init_read;
+
+    result = <a class="code" href="errcode_8h.html#aba51915c87d64af47fb1cc59348961c9">OK</a>;
+
+    <span class="keywordflow">return</span> result;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a7b7ccbd5c791be1db5d61176aa346cfb"></a><!-- doxytag: member="CRS232::WaitForTxEmpty" ref="a7b7ccbd5c791be1db5d61176aa346cfb" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_c_r_s232.html#a7b7ccbd5c791be1db5d61176aa346cfb">CRS232::WaitForTxEmpty</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, et <a class="el" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>.</p>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordflow">if</span> ( <a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> != <a class="code" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a> )
+        tcdrain(<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>);
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="adb8c4a81737d6762af8c00a4e9672b3d"></a><!-- doxytag: member="CRS232::WaitingData" ref="adb8c4a81737d6762af8c00a4e9672b3d" args="(Pending pending=pendingInput, timeout_t timeout=TIMEOUT_INF)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_r_s232.html#adb8c4a81737d6762af8c00a4e9672b3d">CRS232::WaitingData</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs232_8h.html#a4783fb2dbe7e03f4ddba4b4e7eeba60f">Pending</a>&#160;</td>
+          <td class="paramname"><em>pending</em> = <code><a class="el" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403adfd3ca7840de6b30fc0ca91091753030">pendingInput</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs232_8h.html#af412159e5cef839836a5e7b19ee75d1c">timeout_t</a>&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code><a class="el" href="rs232_8h.html#a74f2d4c747bce0b8f7f7c1f48e651876">TIMEOUT_INF</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, <a class="el" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>, <a class="el" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403a6434a0ceaaf916d81bf6cd1864069c6f">pendingError</a>, <a class="el" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403adfd3ca7840de6b30fc0ca91091753030">pendingInput</a>, <a class="el" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403a4e7a62ac5b61aba22c039a2c7141ff99">pendingOutput</a>, et <a class="el" href="rs232_8h.html#a74f2d4c747bce0b8f7f7c1f48e651876">TIMEOUT_INF</a>.</p>
+
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#a7e7738cf543b306d8083ae0fe443605d">EnttecDMXUSB::recieve()</a>.</p>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordtype">int</span> status;
+    <span class="keyword">struct </span>timeval tv;
+    fd_set grp;
+    <span class="keyword">struct </span>timeval *tvp = &amp;tv;
+
+    <span class="keywordflow">if</span> ( this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> == <a class="code" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a> ) <span class="keywordflow">return</span> 0;
+    <span class="keywordflow">if</span>(timeout == <a class="code" href="rs232_8h.html#a74f2d4c747bce0b8f7f7c1f48e651876">TIMEOUT_INF</a>)
+        tvp = NULL;
+    <span class="keywordflow">else</span>
+    {
+        tv.tv_usec = (timeout % 1000) * 1000;
+        tv.tv_sec = timeout / 1000;
+    }
+    
+    FD_ZERO(&amp;grp);
+    FD_SET(this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, &amp;grp);
+    <span class="keywordflow">switch</span>(pending)
+    {
+    <span class="keywordflow">case</span> <a class="code" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403adfd3ca7840de6b30fc0ca91091753030">pendingInput</a>:
+        status = select(this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> + 1, &amp;grp, NULL, NULL, tvp);
+        <span class="keywordflow">break</span>;
+    <span class="keywordflow">case</span> <a class="code" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403a4e7a62ac5b61aba22c039a2c7141ff99">pendingOutput</a>:
+        status = select(this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> + 1, NULL, &amp;grp, NULL, tvp);
+        <span class="keywordflow">break</span>;
+    <span class="keywordflow">case</span> <a class="code" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403a6434a0ceaaf916d81bf6cd1864069c6f">pendingError</a>:
+        status = select(this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a> + 1, NULL, NULL, &amp;grp, tvp);
+        <span class="keywordflow">break</span>;
+    }
+    <span class="keywordflow">if</span>(status &lt; 1)
+        <span class="keywordflow">return</span> 0;
+    
+    <span class="keywordflow">if</span>(FD_ISSET(this-&gt;<a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>, &amp;grp))
+        <span class="keywordflow">return</span> 1;
+    <span class="keywordflow">return</span> 0;
+}
+</pre></div>
+</div>
+</div>
+<hr/><h2>Documentation des données membres</h2>
+<a class="anchor" id="a2f9cae78f31be90855c37da7a96d08fa"></a><!-- doxytag: member="CRS232::actual_bits" ref="a2f9cae78f31be90855c37da7a96d08fa" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_r_s232.html#a2f9cae78f31be90855c37da7a96d08fa">CRS232::actual_bits</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_c_r_s232.html#a464205173ca224cfc1d442538ed1108d">SetSerialParams()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a1c088ac127e846d48e1ea77ea590e4"></a><!-- doxytag: member="CRS232::actual_flowcontrol" ref="a7a1c088ac127e846d48e1ea77ea590e4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_r_s232.html#a7a1c088ac127e846d48e1ea77ea590e4">CRS232::actual_flowcontrol</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_c_r_s232.html#a464205173ca224cfc1d442538ed1108d">SetSerialParams()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afb4bbb2fae6d5eac38d1804c87cbe79d"></a><!-- doxytag: member="CRS232::actual_parity" ref="afb4bbb2fae6d5eac38d1804c87cbe79d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_r_s232.html#afb4bbb2fae6d5eac38d1804c87cbe79d">CRS232::actual_parity</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_c_r_s232.html#a464205173ca224cfc1d442538ed1108d">SetSerialParams()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a508c300a3fe187a5dec7b9e26f8ab62d"></a><!-- doxytag: member="CRS232::actual_speed" ref="a508c300a3fe187a5dec7b9e26f8ab62d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="class_c_r_s232.html#a508c300a3fe187a5dec7b9e26f8ab62d">CRS232::actual_speed</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_c_r_s232.html#a464205173ca224cfc1d442538ed1108d">SetSerialParams()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a367fe001dd70ab89bbe86bc0bf530279"></a><!-- doxytag: member="CRS232::actual_stops" ref="a367fe001dd70ab89bbe86bc0bf530279" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_r_s232.html#a367fe001dd70ab89bbe86bc0bf530279">CRS232::actual_stops</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_c_r_s232.html#a464205173ca224cfc1d442538ed1108d">SetSerialParams()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaabf2d7bfe736160af853e79e0d17e60"></a><!-- doxytag: member="CRS232::fd" ref="aaabf2d7bfe736160af853e79e0d17e60" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">CRS232::fd</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_c_r_s232.html#ad2b85670a61a293744054d2d10cdf056">CloseSerial()</a>, <a class="el" href="class_c_r_s232.html#aaed08f8a3b355663e7048f815059ea0c">CRS232()</a>, <a class="el" href="class_c_r_s232.html#af8d5702391369e1c0fd21efaa7506b75">flushInput()</a>, <a class="el" href="class_c_r_s232.html#a7937a41e618d11aaecb92381ab3f695c">flushOutput()</a>, <a class="el" href="class_c_r_s232.html#ab8a5cc1b7c51df67e91f3b2c4fc7dd9c">GetSerialCTS()</a>, <a class="el" href="class_c_r_s232.html#a3e8c6a80aad8f2233fb939ca85ac0447">GetSerialDSR()</a>, <a class="el" href="class_c_r_s232.html#af0570125bbbf679b332fbd0a578274ca">OpenSerial()</a>, <a class="el" href="class_c_r_s232.html#aa6fdd15db5cc32a9edfb961813153005">RecvBufferEX()</a>, <a class="el" href="class_c_r_s232.html#aab90156596efb6afaacd471daa0f4a04">RecvByte()</a>, <a class="el" href="class_c_r_s232.html#acc194cf92f3a0fafb42486c862b75c87">SendBreak()</a>, <a class="el" href="class_c_r_s232.html#af5866081536f1f84b7e5725ed6c856d7">SendBuffer()</a>, <a class="el" href="class_c_r_s232.html#a9425bef732f8383372f91c2d7e5902e7">SendByte()</a>, <a class="el" href="class_c_r_s232.html#a47736fc11ea8c84a898c6c203a5b478e">SetCustomBaudRate()</a>, <a class="el" href="class_c_r_s232.html#a07643d0f399c2ca1486437f9228c6924">SetSerialBreak()</a>, <a class="el" href="class_c_r_s232.html#a83b476471994c539d364599b05fe792a">SetSerialDTR()</a>, <a class="el" href="class_c_r_s232.html#a464205173ca224cfc1d442538ed1108d">SetSerialParams()</a>, <a class="el" href="class_c_r_s232.html#a25bf37fb22f2edbf815b0ed48397b190">SetSerialRTS()</a>, <a class="el" href="class_c_r_s232.html#ad2040f3f9530bab263aff423bcb6cb09">SetSerialRTSDTR()</a>, <a class="el" href="class_c_r_s232.html#a7b7ccbd5c791be1db5d61176aa346cfb">WaitForTxEmpty()</a>, et <a class="el" href="class_c_r_s232.html#adb8c4a81737d6762af8c00a4e9672b3d">WaitingData()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a86f8a1bf1888abc7f024fa3678bbc282"></a><!-- doxytag: member="CRS232::old_termios" ref="a86f8a1bf1888abc7f024fa3678bbc282" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct termios <a class="el" href="class_c_r_s232.html#a86f8a1bf1888abc7f024fa3678bbc282">CRS232::old_termios</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a955bd22f2a8720a2e74aae23488235d5"></a><!-- doxytag: member="CRS232::read_interval_timeout" ref="a955bd22f2a8720a2e74aae23488235d5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="class_c_r_s232.html#a955bd22f2a8720a2e74aae23488235d5">CRS232::read_interval_timeout</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_c_r_s232.html#a48867b06ea8a6414fbd0fb2e9d03f1cb">SetSerialTimeouts()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a7e8906a8696f6df5f152bfb65f137c"></a><!-- doxytag: member="CRS232::read_total_timeout" ref="a3a7e8906a8696f6df5f152bfb65f137c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="class_c_r_s232.html#a3a7e8906a8696f6df5f152bfb65f137c">CRS232::read_total_timeout</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_c_r_s232.html#a48867b06ea8a6414fbd0fb2e9d03f1cb">SetSerialTimeouts()</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li><a class="el" href="rs232_8h_source.html">rs232.h</a></li>
+<li><a class="el" href="rs232_8cpp.html">rs232.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Samedi Mars 24 2018 10:21:41 pour DMX 2018 par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

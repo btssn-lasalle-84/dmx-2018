@@ -1,0 +1,454 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>DMX 2018: Référence du fichier enttecdmxusb.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="icone-dmx.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">DMX 2018
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2018</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#enum-members">Énumérations</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier enttecdmxusb.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Declaration de la classe <a class="el" href="class_enttec_d_m_x_u_s_b.html" title="Classe permettant la communication avec l&#39;interface Enttec.">EnttecDMXUSB</a>.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;iomanip&gt;</code><br/>
+<code>#include &lt;string&gt;</code><br/>
+<code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;unistd.h&gt;</code><br/>
+<code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;math.h&gt;</code><br/>
+<code>#include &lt;string.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="qextserialport_8h_source.html">qextserialport.h</a>&quot;</code><br/>
+</div>
+<p><a href="enttecdmxusb_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enttec_d_m_x_u_s_b.html">EnttecDMXUSB</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Classe permettant la communication avec l'interface Enttec.  <a href="class_enttec_d_m_x_u_s_b.html#details">Plus de détails...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enttecdmxusb_8h.html#a82cf7e7ee94b7255006fd9dc7baf84c8">NB_CANAUX_MAX</a>&#160;&#160;&#160;512</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enttecdmxusb_8h.html#a3a1a45e8619f9d8912ba29cee6f5eeb5">NB_INTERFACES</a>&#160;&#160;&#160;2</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enttecdmxusb_8h.html#ab2392ee42ea3b131873e103824f32552">DEBUG_DMX_USB</a></td></tr>
+<tr><td colspan="2"><h2><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enttecdmxusb_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="enttecdmxusb_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enttecdmxusb_8h.html#ab2b262dc76f08d358589ae387491646b">TDmxArray</a> [<a class="el" href="enttecdmxusb_8h.html#a82cf7e7ee94b7255006fd9dc7baf84c8">NB_CANAUX_MAX</a>+1]</td></tr>
+<tr><td colspan="2"><h2><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enttecdmxusb_8h.html#ab78630d384c7a8430eed5571388467a2">EnttecInterfaces</a> { <a class="el" href="enttecdmxusb_8h.html#ab78630d384c7a8430eed5571388467a2a75a3237f0ef4c927c8a054c4edbec895">OPEN_DMX_USB</a>, 
+<a class="el" href="enttecdmxusb_8h.html#ab78630d384c7a8430eed5571388467a2aa44e11b83ec2e288b8c1e6b1e0468f9f">DMX_USB_PRO</a>
+ }</td></tr>
+<tr><td colspan="2"><h2><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enttecdmxusb_8h.html#a0792d07a4fb3da554c924b6b9417b677">nomInterfaces</a> [][20]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enttecdmxusb_8h.html#a68b60c3aaafb675e192e9aac87c3ee36">PKT_SOM</a> = 0x7E</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enttecdmxusb_8h.html#a48b5c770cefbc98cef25bd73aa295cef">PKT_EOM</a> = 0xE7</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enttecdmxusb_8h.html#a71c633bf2767fef290900b74091360fe">PKT_GETCFG</a> = 3</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enttecdmxusb_8h.html#afd7232c7afb2a84d6e9093dadc9017c3">PKT_SETCFG</a> = 4</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enttecdmxusb_8h.html#ab49eb2967e39f9edf2fe32474e314262">PKT_GETSERIAL</a> = 10</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enttecdmxusb_8h.html#a13ea8a7033cf60afc3e46482f196de29">PKT_DMXOUT</a> = 6</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enttecdmxusb_8h.html#a450d587ea64a78fa7097c06f964d8e4b">PKT_DMXIN</a> = 5</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enttecdmxusb_8h.html#aa83002f632889d43bc7169c7b2c6f4d7">PKT_DMX_RDM</a> = 7</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enttecdmxusb_8h.html#acc646748cb382d704011f61486daa3c6">PKT_DMXIN_MODE</a> = 8</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enttecdmxusb_8h.html#aab4faae0e1af078ff28587c17f3b2395">PKT_DMXIN_UPDATE</a> = 9</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enttecdmxusb_8h.html#ae32237fd0961b36401a69635c374e599">USER_DATA_SIZE</a> = 508</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enttecdmxusb_8h.html#acee37e45456a67a46bd0bea7569609cd">D_TIMEOUT</a> = 100</td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><dl class="author"><dt><b>Auteur:</b></dt><dd>Thierry Vaira</dd></dl>
+<dl class="version"><dt><b>Version:</b></dt><dd>1.0 </dd></dl>
+</div><hr/><h2>Documentation des macros</h2>
+<a class="anchor" id="ab2392ee42ea3b131873e103824f32552"></a><!-- doxytag: member="enttecdmxusb.h::DEBUG_DMX_USB" ref="ab2392ee42ea3b131873e103824f32552" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="enttecdmxusb_8h.html#ab2392ee42ea3b131873e103824f32552">DEBUG_DMX_USB</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a82cf7e7ee94b7255006fd9dc7baf84c8"></a><!-- doxytag: member="enttecdmxusb.h::NB_CANAUX_MAX" ref="a82cf7e7ee94b7255006fd9dc7baf84c8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="enttecdmxusb_8h.html#a82cf7e7ee94b7255006fd9dc7baf84c8">NB_CANAUX_MAX</a>&#160;&#160;&#160;512</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#a09a74d50f0307f3b2cf7d330ecde329c">EnttecDMXUSB::EnttecDMXUSB()</a>, <a class="el" href="class_enttec_d_m_x_u_s_b.html#ad5fb6a61aa37ae15b95e800b3329d62a">EnttecDMXUSB::openPort()</a>, <a class="el" href="class_enttec_d_m_x_u_s_b.html#a481a5db8552c557302f682ba506ed3fd">EnttecDMXUSB::ResetCanauxDMX()</a>, <a class="el" href="class_enttec_d_m_x_u_s_b.html#a57b31a83de2e1936973dd09c0e877e42">EnttecDMXUSB::SendDatasDMX()</a>, <a class="el" href="class_enttec_d_m_x_u_s_b.html#aca73788b7a53da0a97f98d1c7643543c">EnttecDMXUSB::SetCanalDMX()</a>, et <a class="el" href="class_enttec_d_m_x_u_s_b.html#aeadf0a746edc361687d86448427a4ef5">EnttecDMXUSB::SetNbCanauxDMX()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a1a45e8619f9d8912ba29cee6f5eeb5"></a><!-- doxytag: member="enttecdmxusb.h::NB_INTERFACES" ref="a3a1a45e8619f9d8912ba29cee6f5eeb5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="enttecdmxusb_8h.html#a3a1a45e8619f9d8912ba29cee6f5eeb5">NB_INTERFACES</a>&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Documentation des définitions de type</h2>
+<a class="anchor" id="a0c8186d9b9b7880309c27230bbb5e69d"></a><!-- doxytag: member="enttecdmxusb.h::byte" ref="a0c8186d9b9b7880309c27230bbb5e69d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned char <a class="el" href="enttecdmxusb_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab2b262dc76f08d358589ae387491646b"></a><!-- doxytag: member="enttecdmxusb.h::TDmxArray" ref="ab2b262dc76f08d358589ae387491646b" args="[NB_CANAUX_MAX+1]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="enttecdmxusb_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a> <a class="el" href="enttecdmxusb_8h.html#ab2b262dc76f08d358589ae387491646b">TDmxArray</a>[<a class="el" href="enttecdmxusb_8h.html#a82cf7e7ee94b7255006fd9dc7baf84c8">NB_CANAUX_MAX</a>+1]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Documentation du type de l'énumération</h2>
+<a class="anchor" id="ab78630d384c7a8430eed5571388467a2"></a><!-- doxytag: member="enttecdmxusb.h::EnttecInterfaces" ref="ab78630d384c7a8430eed5571388467a2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="enttecdmxusb_8h.html#ab78630d384c7a8430eed5571388467a2">EnttecInterfaces</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>Valeurs énumérées: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="ab78630d384c7a8430eed5571388467a2a75a3237f0ef4c927c8a054c4edbec895"></a><!-- doxytag: member="OPEN_DMX_USB" ref="ab78630d384c7a8430eed5571388467a2a75a3237f0ef4c927c8a054c4edbec895" args="" -->OPEN_DMX_USB</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ab78630d384c7a8430eed5571388467a2aa44e11b83ec2e288b8c1e6b1e0468f9f"></a><!-- doxytag: member="DMX_USB_PRO" ref="ab78630d384c7a8430eed5571388467a2aa44e11b83ec2e288b8c1e6b1e0468f9f" args="" -->DMX_USB_PRO</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+<div class="fragment"><pre class="fragment">{
+    <a class="code" href="enttecdmxusb_8h.html#ab78630d384c7a8430eed5571388467a2a75a3237f0ef4c927c8a054c4edbec895">OPEN_DMX_USB</a>, <span class="comment">// 0</span>
+    <a class="code" href="enttecdmxusb_8h.html#ab78630d384c7a8430eed5571388467a2aa44e11b83ec2e288b8c1e6b1e0468f9f">DMX_USB_PRO</a> <span class="comment">// 1</span>
+};
+</pre></div>
+</div>
+</div>
+<hr/><h2>Documentation des variables</h2>
+<a class="anchor" id="acee37e45456a67a46bd0bea7569609cd"></a><!-- doxytag: member="enttecdmxusb.h::D_TIMEOUT" ref="acee37e45456a67a46bd0bea7569609cd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="enttecdmxusb_8h.html#acee37e45456a67a46bd0bea7569609cd">D_TIMEOUT</a> = 100</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0792d07a4fb3da554c924b6b9417b677"></a><!-- doxytag: member="enttecdmxusb.h::nomInterfaces" ref="a0792d07a4fb3da554c924b6b9417b677" args="[][20]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char <a class="el" href="enttecdmxusb_8h.html#a0792d07a4fb3da554c924b6b9417b677">nomInterfaces</a>[][20]<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><pre class="fragment"> {
+    <span class="stringliteral">&quot;Enttec OPEN DMX USB&quot;</span>,
+    <span class="stringliteral">&quot;Enttec DMX USB PRO&quot;</span>
+}
+</pre></div>
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#a3ee843bf5dcd2d223409458cbedd3f5c">EnttecDMXUSB::GetNomInterface()</a>, et <a class="el" href="class_enttec_d_m_x_u_s_b.html#a8ae3b0adea61804b19d94880f5b4fabf">EnttecDMXUSB::sendPacket()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa83002f632889d43bc7169c7b2c6f4d7"></a><!-- doxytag: member="enttecdmxusb.h::PKT_DMX_RDM" ref="aa83002f632889d43bc7169c7b2c6f4d7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="enttecdmxusb_8h.html#aa83002f632889d43bc7169c7b2c6f4d7">PKT_DMX_RDM</a> = 7</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a450d587ea64a78fa7097c06f964d8e4b"></a><!-- doxytag: member="enttecdmxusb.h::PKT_DMXIN" ref="a450d587ea64a78fa7097c06f964d8e4b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="enttecdmxusb_8h.html#a450d587ea64a78fa7097c06f964d8e4b">PKT_DMXIN</a> = 5</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#ad5fb6a61aa37ae15b95e800b3329d62a">EnttecDMXUSB::openPort()</a>, <a class="el" href="class_enttec_d_m_x_u_s_b.html#a7e7738cf543b306d8083ae0fe443605d">EnttecDMXUSB::recieve()</a>, <a class="el" href="class_enttec_d_m_x_u_s_b.html#ac29e36f2661a35d64d499098897d81f0">EnttecDMXUSB::widgetRecieveAllMode()</a>, et <a class="el" href="class_enttec_d_m_x_u_s_b.html#a2c77e5e553aa398782e3e9bda912cf2d">EnttecDMXUSB::widgetRecieveOnChangeMode()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acc646748cb382d704011f61486daa3c6"></a><!-- doxytag: member="enttecdmxusb.h::PKT_DMXIN_MODE" ref="acc646748cb382d704011f61486daa3c6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="enttecdmxusb_8h.html#acc646748cb382d704011f61486daa3c6">PKT_DMXIN_MODE</a> = 8</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#ac29e36f2661a35d64d499098897d81f0">EnttecDMXUSB::widgetRecieveAllMode()</a>, et <a class="el" href="class_enttec_d_m_x_u_s_b.html#a2c77e5e553aa398782e3e9bda912cf2d">EnttecDMXUSB::widgetRecieveOnChangeMode()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aab4faae0e1af078ff28587c17f3b2395"></a><!-- doxytag: member="enttecdmxusb.h::PKT_DMXIN_UPDATE" ref="aab4faae0e1af078ff28587c17f3b2395" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="enttecdmxusb_8h.html#aab4faae0e1af078ff28587c17f3b2395">PKT_DMXIN_UPDATE</a> = 9</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#a7e7738cf543b306d8083ae0fe443605d">EnttecDMXUSB::recieve()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a13ea8a7033cf60afc3e46482f196de29"></a><!-- doxytag: member="enttecdmxusb.h::PKT_DMXOUT" ref="a13ea8a7033cf60afc3e46482f196de29" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="enttecdmxusb_8h.html#a13ea8a7033cf60afc3e46482f196de29">PKT_DMXOUT</a> = 6</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#a57b31a83de2e1936973dd09c0e877e42">EnttecDMXUSB::SendDatasDMX()</a>, et <a class="el" href="class_enttec_d_m_x_u_s_b.html#a1a2f0ed930e669dabbf2aa1c67b6d47c">EnttecDMXUSB::SendDMX()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a48b5c770cefbc98cef25bd73aa295cef"></a><!-- doxytag: member="enttecdmxusb.h::PKT_EOM" ref="a48b5c770cefbc98cef25bd73aa295cef" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="enttecdmxusb_8h.html#a48b5c770cefbc98cef25bd73aa295cef">PKT_EOM</a> = 0xE7</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#a7e7738cf543b306d8083ae0fe443605d">EnttecDMXUSB::recieve()</a>, et <a class="el" href="class_enttec_d_m_x_u_s_b.html#a8ae3b0adea61804b19d94880f5b4fabf">EnttecDMXUSB::sendPacket()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a71c633bf2767fef290900b74091360fe"></a><!-- doxytag: member="enttecdmxusb.h::PKT_GETCFG" ref="a71c633bf2767fef290900b74091360fe" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="enttecdmxusb_8h.html#a71c633bf2767fef290900b74091360fe">PKT_GETCFG</a> = 3</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#a7e7738cf543b306d8083ae0fe443605d">EnttecDMXUSB::recieve()</a>, et <a class="el" href="class_enttec_d_m_x_u_s_b.html#ad1b51a0dd2a246b9d008afe10fb3c82f">EnttecDMXUSB::widgetRequestConfig()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab49eb2967e39f9edf2fe32474e314262"></a><!-- doxytag: member="enttecdmxusb.h::PKT_GETSERIAL" ref="ab49eb2967e39f9edf2fe32474e314262" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="enttecdmxusb_8h.html#ab49eb2967e39f9edf2fe32474e314262">PKT_GETSERIAL</a> = 10</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#a7e7738cf543b306d8083ae0fe443605d">EnttecDMXUSB::recieve()</a>, et <a class="el" href="class_enttec_d_m_x_u_s_b.html#a0a084f727162b3602395f51c8f4f0a28">EnttecDMXUSB::widgetRequestSerial()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afd7232c7afb2a84d6e9093dadc9017c3"></a><!-- doxytag: member="enttecdmxusb.h::PKT_SETCFG" ref="afd7232c7afb2a84d6e9093dadc9017c3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="enttecdmxusb_8h.html#afd7232c7afb2a84d6e9093dadc9017c3">PKT_SETCFG</a> = 4</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a68b60c3aaafb675e192e9aac87c3ee36"></a><!-- doxytag: member="enttecdmxusb.h::PKT_SOM" ref="a68b60c3aaafb675e192e9aac87c3ee36" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="enttecdmxusb_8h.html#a68b60c3aaafb675e192e9aac87c3ee36">PKT_SOM</a> = 0x7E</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#a7e7738cf543b306d8083ae0fe443605d">EnttecDMXUSB::recieve()</a>, et <a class="el" href="class_enttec_d_m_x_u_s_b.html#a8ae3b0adea61804b19d94880f5b4fabf">EnttecDMXUSB::sendPacket()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae32237fd0961b36401a69635c374e599"></a><!-- doxytag: member="enttecdmxusb.h::USER_DATA_SIZE" ref="ae32237fd0961b36401a69635c374e599" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="enttecdmxusb_8h.html#ae32237fd0961b36401a69635c374e599">USER_DATA_SIZE</a> = 508</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi Juin 7 2018 20:37:25 pour DMX 2018 par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

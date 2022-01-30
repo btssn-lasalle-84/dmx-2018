@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<appareils nbAppareils="6">
+  <appareil nom="Lyre1" nbCanaux="6" type="LYRE" uuid="{6bd378fd-51ba-4657-8526-1965d346261d}">
+    <canal id="1">Shutter</canal>
+    <canal id="2">Gobo</canal>
+    <canal id="3">Gobo rotation</canal>
+    <canal id="4">Color</canal>
+    <canal id="5">Pan</canal>
+    <canal id="6">Tilt</canal>
+  </appareil>
+  <appareil nom="Laser" nbCanaux="10" type="LASER" uuid="{59f74db0-3410-49c1-8d54-abec59334b3f}">
+    <canal id="7">Mode de contrôle</canal>
+    <canal id="8"/>
+    <canal id="9">Extinction</canal>
+    <canal id="10">Images</canal>
+    <canal id="11">Rotation</canal>
+    <canal id="12">Sens Horizontal/Vertical</canal>
+    <canal id="13">Stretch Horizontal/Vertical</canal>
+    <canal id="14">Vitesse</canal>
+    <canal id="15">Vitesse Draw</canal>
+    <canal id="16">Taille</canal>
+  </appareil>
+  <appareil nom="Par LED1" nbCanaux="6" type="PAR LED" uuid="{d04313d3-d40d-4f62-8f65-c23f30b00758}">
+    <canal id="17">Rouge</canal>
+    <canal id="18">Vert</canal>
+    <canal id="19">Bleu</canal>
+    <canal id="20">Couleurs PreEnregistrées</canal>
+    <canal id="21">Clignotement</canal>
+    <canal id="22">Luminosité</canal>
+  </appareil>
+  <appareil nom="Par LED 2" nbCanaux="4" type="PAR LED" uuid="{064a3f9e-2ae0-43a2-9989-570ed4b2e317}">
+    <canal id="23">Rouge</canal>
+    <canal id="24">Vert</canal>
+    <canal id="25">Bleu</canal>
+    <canal id="26">Intensité</canal>
+  </appareil>
+  <appareil nom="Scanner" nbCanaux="4" type="SCANNER" uuid="{a797e9a6-2270-4aa7-b25b-0e5e91c55082}">
+    <canal id="27">PAN</canal>
+    <canal id="28">TILT</canal>
+    <canal id="29">PATTERN</canal>
+    <canal id="30">STROBE</canal>
+  </appareil>
+  <appareil nom="Lyre2" nbCanaux="5" type="LYRE" uuid="{2f00720e-1c30-44d2-867f-00a3d2825d3e}">
+    <canal id="31">Vibration</canal>
+    <canal id="32">Pattern</canal>
+    <canal id="33">Couleur</canal>
+    <canal id="34">PAN</canal>
+    <canal id="35">TILT</canal>
+  </appareil>
+</appareils>

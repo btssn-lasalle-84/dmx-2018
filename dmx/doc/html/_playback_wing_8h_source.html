@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>DMX 2018:  Fichier source de PlaybackWing.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="icone-dmx.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">DMX 2018
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2018</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">PlaybackWing.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_playback_wing_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef PLAYBACKWING__H</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define PLAYBACKWING__H</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="xmlutilitaire_8h.html" title="Déclaration de la classe XMLUtilitaire.">xmlutilitaire.h</a>&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="console_8h.html">console.h</a>&quot;</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &lt;QUdpSocket&gt;</span>
+<a name="l00019"></a>00019 
+<a name="l00020"></a><a class="code" href="_playback_wing_8h.html#a6f6792413a8db3e0cee188bcaccf94ed">00020</a> <span class="preprocessor">#define PORT_ENTTEC      3330 //Enttec Port</span>
+<a name="l00021"></a>00021 <span class="preprocessor"></span>
+<a name="l00022"></a>00022 <span class="comment">// Protocole Wings (cf. wings_API.pdf)</span>
+<a name="l00023"></a><a class="code" href="_playback_wing_8h.html#a0d2609dfa68d3c4b2d9cdf8fe0e714f1">00023</a> <span class="preprocessor">#define INDEX_FIRMWARE 4 //nombre d&#39;octets de l&#39;index de la trame Wing</span>
+<a name="l00024"></a><a class="code" href="_playback_wing_8h.html#a8403bb2a021b52df77a6abf8a64fdd95">00024</a> <span class="preprocessor"></span><span class="preprocessor">#define INDEX_FLAGS 5 //type matériel</span>
+<a name="l00025"></a><a class="code" href="_playback_wing_8h.html#a0132cd4e770adecdcc2d2ab002f0c720">00025</a> <span class="preprocessor"></span><span class="preprocessor">#define INDEX_TOUCHES_CONTROLE 6 // cf. wings_API.pdf page 2</span>
+<a name="l00026"></a>00026 <span class="preprocessor"></span>
+<a name="l00027"></a><a class="code" href="_playback_wing_8h.html#a6a37808afac57dbd8d35c0a8639c9357">00027</a> <span class="preprocessor">#define LG_MESSAGE_WODD 28 //taille du message WODD</span>
+<a name="l00028"></a>00028 <span class="preprocessor"></span>
+<a name="l00029"></a><a class="code" href="_playback_wing_8h.html#aa4c72a5eaf095b3894451265d8a9e140">00029</a> <span class="preprocessor">#define FADER_NUMERO_0 15 //fader numero 1 en partant de la gauche, cf. wings_API.pdf page 3</span>
+<a name="l00030"></a><a class="code" href="_playback_wing_8h.html#a7121312464069d43f3a2489942c7251f">00030</a> <span class="preprocessor"></span><span class="preprocessor">#define FADER_NUMERO_1 16</span>
+<a name="l00031"></a><a class="code" href="_playback_wing_8h.html#af99544d106dc9d3f246a5bfb68c226ae">00031</a> <span class="preprocessor"></span><span class="preprocessor">#define FADER_NUMERO_2 17</span>
+<a name="l00032"></a><a class="code" href="_playback_wing_8h.html#aa9d0867a01b2856e33014ae3924694bf">00032</a> <span class="preprocessor"></span><span class="preprocessor">#define FADER_NUMERO_3 18</span>
+<a name="l00033"></a><a class="code" href="_playback_wing_8h.html#a7ddc71e1e3e778caa6a908f8a1257b3e">00033</a> <span class="preprocessor"></span><span class="preprocessor">#define FADER_NUMERO_4 19</span>
+<a name="l00034"></a><a class="code" href="_playback_wing_8h.html#a76ddb14cc3cc40021265f9693e7d4fae">00034</a> <span class="preprocessor"></span><span class="preprocessor">#define FADER_NUMERO_5 20</span>
+<a name="l00035"></a><a class="code" href="_playback_wing_8h.html#a31f8947d6f7e57d98b611943c7fd63da">00035</a> <span class="preprocessor"></span><span class="preprocessor">#define FADER_NUMERO_6 21</span>
+<a name="l00036"></a><a class="code" href="_playback_wing_8h.html#abec9d0fce6a8b6b407ec60e643d4491b">00036</a> <span class="preprocessor"></span><span class="preprocessor">#define FADER_NUMERO_7 22</span>
+<a name="l00037"></a><a class="code" href="_playback_wing_8h.html#a730aa998de658d7198f58e6df4ef4f9b">00037</a> <span class="preprocessor"></span><span class="preprocessor">#define FADER_NUMERO_8 23</span>
+<a name="l00038"></a><a class="code" href="_playback_wing_8h.html#a8e9a2d3ad4dd958f03cb6d50d3a56a1f">00038</a> <span class="preprocessor"></span><span class="preprocessor">#define FADER_NUMERO_9 24</span>
+<a name="l00039"></a>00039 <span class="preprocessor"></span>
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041 <span class="comment">// Gestion état des touches</span>
+<a name="l00042"></a><a class="code" href="_playback_wing_8h.html#a8386b89daf8ec3a1805554fd95b80a9e">00042</a> <span class="preprocessor">#define KEY_PRESSED 0</span>
+<a name="l00043"></a><a class="code" href="_playback_wing_8h.html#ada3a4be515b3527c1691ce080655877f">00043</a> <span class="preprocessor"></span><span class="preprocessor">#define KEY_RELEASED 1</span>
+<a name="l00044"></a>00044 <span class="preprocessor"></span><span class="comment">// Touches de controles</span>
+<a name="l00045"></a><a class="code" href="_playback_wing_8h.html#af7813ee8c85154e76928f5f1c1acf2ea">00045</a> <span class="preprocessor">#define PAGE_UP     7</span>
+<a name="l00046"></a><a class="code" href="_playback_wing_8h.html#aa6e25cc2f8865bc6d5102488bcc35229">00046</a> <span class="preprocessor"></span><span class="preprocessor">#define PAGE_DOWN   6</span>
+<a name="l00047"></a><a class="code" href="_playback_wing_8h.html#ab303ee384877c80cb8855bf0113faf88">00047</a> <span class="preprocessor"></span><span class="preprocessor">#define BACK        5</span>
+<a name="l00048"></a><a class="code" href="_playback_wing_8h.html#a277a950c725b69e43a1dae2993119fd4">00048</a> <span class="preprocessor"></span><span class="preprocessor">#define GO          4</span>
+<a name="l00049"></a>00049 <span class="preprocessor"></span>
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051 
+<a name="l00059"></a><a class="code" href="struct_etat_touches_controle.html">00059</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00060"></a>00060 {
+<a name="l00061"></a><a class="code" href="struct_etat_touches_controle.html#ade34d7bfb772f53ced39a8cac46a7c4b">00061</a>     <span class="keywordtype">int</span> <a class="code" href="struct_etat_touches_controle.html#ade34d7bfb772f53ced39a8cac46a7c4b">touchePageUp</a>;
+<a name="l00062"></a><a class="code" href="struct_etat_touches_controle.html#a26dfef7a16da5b00525df9632dd11f20">00062</a>     <span class="keywordtype">int</span> <a class="code" href="struct_etat_touches_controle.html#a26dfef7a16da5b00525df9632dd11f20">touchePageDown</a>;
+<a name="l00063"></a><a class="code" href="struct_etat_touches_controle.html#a5ef6ffa2e3993f71f34b36b559732e3c">00063</a>     <span class="keywordtype">int</span> <a class="code" href="struct_etat_touches_controle.html#a5ef6ffa2e3993f71f34b36b559732e3c">toucheBack</a>;
+<a name="l00064"></a><a class="code" href="struct_etat_touches_controle.html#a57dd04557e893e1c82708fe8883cbc9d">00064</a>     <span class="keywordtype">int</span> <a class="code" href="struct_etat_touches_controle.html#a57dd04557e893e1c82708fe8883cbc9d">toucheGo</a>;
+<a name="l00065"></a>00065 } <a class="code" href="struct_etat_touches_controle.html" title="Structure permettant de stocker les valeurs des touches de contrôle (Page Up, Page Back...">EtatTouchesControle</a>;
+<a name="l00066"></a>00066 
+<a name="l00074"></a><a class="code" href="struct_etat_faders.html">00074</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00075"></a>00075 {
+<a name="l00076"></a><a class="code" href="struct_etat_faders.html#a65bb1556f7013ded643f3486d45d18f4">00076</a>     <span class="keywordtype">int</span> <a class="code" href="struct_etat_faders.html#a65bb1556f7013ded643f3486d45d18f4">fader0</a>;
+<a name="l00077"></a><a class="code" href="struct_etat_faders.html#a08c6dfabeeeb804083b99d85b5f609d2">00077</a>     <span class="keywordtype">int</span> <a class="code" href="struct_etat_faders.html#a08c6dfabeeeb804083b99d85b5f609d2">fader1</a>;
+<a name="l00078"></a><a class="code" href="struct_etat_faders.html#a1f31b97ad997b9f7489ff011bb23c021">00078</a>     <span class="keywordtype">int</span> <a class="code" href="struct_etat_faders.html#a1f31b97ad997b9f7489ff011bb23c021">fader2</a>;
+<a name="l00079"></a><a class="code" href="struct_etat_faders.html#a4c8829c524906b4bef43d5f50f16e38e">00079</a>     <span class="keywordtype">int</span> <a class="code" href="struct_etat_faders.html#a4c8829c524906b4bef43d5f50f16e38e">fader3</a>;
+<a name="l00080"></a><a class="code" href="struct_etat_faders.html#abeeba22965e1bbd148b9183d543a72b4">00080</a>     <span class="keywordtype">int</span> <a class="code" href="struct_etat_faders.html#abeeba22965e1bbd148b9183d543a72b4">fader4</a>;
+<a name="l00081"></a><a class="code" href="struct_etat_faders.html#a62f8a8fa59dc0a952770778719e29666">00081</a>     <span class="keywordtype">int</span> <a class="code" href="struct_etat_faders.html#a62f8a8fa59dc0a952770778719e29666">fader5</a>;
+<a name="l00082"></a><a class="code" href="struct_etat_faders.html#a6d040434da11eabd1d33b523c5023981">00082</a>     <span class="keywordtype">int</span> <a class="code" href="struct_etat_faders.html#a6d040434da11eabd1d33b523c5023981">fader6</a>;
+<a name="l00083"></a><a class="code" href="struct_etat_faders.html#a177642415fa2926595e5a12ee48f187d">00083</a>     <span class="keywordtype">int</span> <a class="code" href="struct_etat_faders.html#a177642415fa2926595e5a12ee48f187d">fader7</a>;
+<a name="l00084"></a><a class="code" href="struct_etat_faders.html#aaf49078456b1ecb6054a03cfb4c18d97">00084</a>     <span class="keywordtype">int</span> <a class="code" href="struct_etat_faders.html#aaf49078456b1ecb6054a03cfb4c18d97">fader8</a>;
+<a name="l00085"></a><a class="code" href="struct_etat_faders.html#a7da7b469c0f6d6fb64bf46003fec15b6">00085</a>     <span class="keywordtype">int</span> <a class="code" href="struct_etat_faders.html#a7da7b469c0f6d6fb64bf46003fec15b6">fader9</a>;
+<a name="l00086"></a>00086 
+<a name="l00087"></a>00087 } <a class="code" href="struct_etat_faders.html" title="Structure permettant de stocker les valeurs des faders.">EtatFaders</a>;
+<a name="l00088"></a>00088 
+<a name="l00089"></a>00089 <span class="keyword">class </span><a class="code" href="class_x_m_l_utilitaire.html" title="Classe gérant les fichiers XML de l&#39;application.">XMLUtilitaire</a>;
+<a name="l00090"></a>00090 
+<a name="l00102"></a><a class="code" href="class_playback_wing.html">00102</a> <span class="keyword">class </span><a class="code" href="class_playback_wing.html" title="la classe gérant la console wing">PlaybackWing</a> : <span class="keyword">public</span> QObject
+<a name="l00103"></a>00103 {
+<a name="l00104"></a>00104    Q_OBJECT
+<a name="l00105"></a>00105 
+<a name="l00106"></a>00106    <span class="keyword">public</span>:
+<a name="l00107"></a>00107 
+<a name="l00108"></a>00108       <a class="code" href="class_playback_wing.html#a21148153293a032dbaab09879cb17f2c" title="Constructeur, créé et connecte le socket udp.">PlaybackWing</a>(QObject *pParent = 0);
+<a name="l00109"></a>00109       <a class="code" href="class_playback_wing.html#aa9bac51ec3d87c27ce3f4bc2f81aaa2f" title="Destructeur.">~PlaybackWing</a>();
+<a name="l00110"></a>00110 
+<a name="l00111"></a>00111       <span class="keywordtype">void</span> <a class="code" href="class_playback_wing.html#a8f399255669ba9a6688b380628ace5bb" title="Connecte le slot ReceptionnerDatagrames à la possibilité de lire la trame.">demarrer</a>();
+<a name="l00112"></a>00112       QList&lt;Console&gt; <a class="code" href="class_playback_wing.html#ae626d3f48e305f2aa3b3bb862f505c94">getListeConsoles</a>();
+<a name="l00113"></a>00113       QString <a class="code" href="class_playback_wing.html#a907b36ffebe58cd7c9c9fe8011c54554" title="Retourne l&#39;adresse IP d&#39;une console par rapport à son numéro dans la liste consoles.">getAdresseIPConsole</a>(<span class="keywordtype">int</span> numeroConsole);
+<a name="l00114"></a>00114       quint16 <a class="code" href="class_playback_wing.html#a9a27152c2eb53250852f2238c27ebcb0">getPort</a>(<span class="keywordtype">int</span> numeroConsole);
+<a name="l00115"></a>00115       <span class="keywordtype">int</span> <a class="code" href="class_playback_wing.html#a7d9de60d7a04c252efbd2f3ed8ca631a" title="Retourne le nombre de console dans la liste consoles.">getNombreConsoles</a>();
+<a name="l00116"></a>00116       QList&lt;Console&gt;::iterator <a class="code" href="class_playback_wing.html#a2620963322577008a12bfb63a8a3a275">getDebutListeConsoles</a>();
+<a name="l00117"></a>00117       <a class="code" href="struct_console.html" title="Structure comprenant les diférents paramètre d&#39;une interface.">Console</a> <a class="code" href="class_playback_wing.html#ad7744c4183d90677acc73f8e6c048f77">getConsole</a>(<span class="keywordtype">int</span> numeroConsole);
+<a name="l00118"></a>00118 
+<a name="l00119"></a>00119       <span class="keywordtype">void</span> <a class="code" href="class_playback_wing.html#a2272ba56d7affa4e50546572a4a0c094">ajouterConsoleListe</a>(QString adresseIP, QString port);
+<a name="l00120"></a>00120       <span class="keywordtype">void</span> <a class="code" href="class_playback_wing.html#ad099bd789f515d7a08e5c8a22fdb0000">supprimerConsoleListe</a>(QList&lt;Console&gt;::iterator it);
+<a name="l00121"></a>00121 
+<a name="l00122"></a>00122    <span class="keyword">public</span> slots:
+<a name="l00123"></a>00123       <span class="keywordtype">void</span> <a class="code" href="class_playback_wing.html#a7ce11083d02fa06bc51df1d25becb22d" title="Réceptionne les données envoyées par la console.">ReceptionnerDatagrammes</a>();
+<a name="l00124"></a>00124       <span class="keywordtype">void</span> <a class="code" href="class_playback_wing.html#afb9a651e07b4b42367b7a415f2c30761" title="envoi la valeur du canal de départ actuel à la console afin Playback Wing de l&#39;afficher sur l&#39;écran L...">envoyerCanalDepartWing</a>(<span class="keywordtype">int</span> canalDepart);
+<a name="l00125"></a>00125       <span class="keywordtype">void</span> <a class="code" href="class_playback_wing.html#aa2bb4e5b9503297cf3baad0430fec16a" title="Enregistre les modifications apportées a la console.">enregistrerModificationConsole</a>(<a class="code" href="struct_console.html" title="Structure comprenant les diférents paramètre d&#39;une interface.">Console</a> console, <span class="keywordtype">int</span> numeroConsoleAModifier);
+<a name="l00126"></a>00126 
+<a name="l00127"></a>00127    signals :
+<a name="l00128"></a>00128       <span class="keywordtype">void</span> <a class="code" href="class_playback_wing.html#aad271e1681b4e265de40dcbd5662aa1e">terminer</a>();
+<a name="l00129"></a>00129       <span class="keywordtype">void</span> <a class="code" href="class_playback_wing.html#adba46478863fdd204d8486c580f15e20">envoyerEtatTouchesControle</a>(<a class="code" href="struct_etat_touches_controle.html" title="Structure permettant de stocker les valeurs des touches de contrôle (Page Up, Page Back...">EtatTouchesControle</a> <a class="code" href="class_playback_wing.html#afcf88506b21e327e4bb9f0d7ba8ed7dc">etatTouchesControle</a>);
+<a name="l00130"></a>00130       <span class="keywordtype">void</span> <a class="code" href="class_playback_wing.html#a93be5141ecbab9957dfb84fb8ffebdc7">envoyerEtatFaders</a>(<a class="code" href="struct_etat_faders.html" title="Structure permettant de stocker les valeurs des faders.">EtatFaders</a> <a class="code" href="class_playback_wing.html#af383bee36486149a43593bf6565ddc23">etatFaders</a>);
+<a name="l00131"></a>00131 
+<a name="l00132"></a>00132    <span class="keyword">private</span>:
+<a name="l00133"></a><a class="code" href="class_playback_wing.html#af503173794324a44eb061b380de288b4">00133</a>       <a class="code" href="class_x_m_l_utilitaire.html" title="Classe gérant les fichiers XML de l&#39;application.">XMLUtilitaire</a> *<a class="code" href="class_playback_wing.html#af503173794324a44eb061b380de288b4" title="Utilitaire de gestion des fichiers xml.">utilitaireDocuments</a>; 
+<a name="l00134"></a><a class="code" href="class_playback_wing.html#ab6efc243c556267a18de3c0705be81fa">00134</a>       QList&lt;Console&gt; <a class="code" href="class_playback_wing.html#ab6efc243c556267a18de3c0705be81fa">consoles</a>;
+<a name="l00135"></a>00135 
+<a name="l00136"></a><a class="code" href="class_playback_wing.html#a87f10455c1be0b93f71fd0ac13947626">00136</a>       QUdpSocket *<a class="code" href="class_playback_wing.html#a87f10455c1be0b93f71fd0ac13947626">udpSocket</a>;
+<a name="l00137"></a><a class="code" href="class_playback_wing.html#a7d828087b11406c936b21a4f5c47e789">00137</a>       <span class="keywordtype">bool</span> <a class="code" href="class_playback_wing.html#a7d828087b11406c936b21a4f5c47e789">statut</a>;
+<a name="l00138"></a><a class="code" href="class_playback_wing.html#afcf88506b21e327e4bb9f0d7ba8ed7dc">00138</a>       <a class="code" href="struct_etat_touches_controle.html" title="Structure permettant de stocker les valeurs des touches de contrôle (Page Up, Page Back...">EtatTouchesControle</a> <a class="code" href="class_playback_wing.html#afcf88506b21e327e4bb9f0d7ba8ed7dc">etatTouchesControle</a>;
+<a name="l00139"></a><a class="code" href="class_playback_wing.html#af383bee36486149a43593bf6565ddc23">00139</a>       <a class="code" href="struct_etat_faders.html" title="Structure permettant de stocker les valeurs des faders.">EtatFaders</a> <a class="code" href="class_playback_wing.html#af383bee36486149a43593bf6565ddc23">etatFaders</a>;
+<a name="l00140"></a>00140 
+<a name="l00141"></a>00141       <span class="keywordtype">int</span>  <a class="code" href="class_playback_wing.html#aac03d3291bbd40c12967823c6cfe175e" title="Verifie que la trame reçue est bien une trame WODD.">VerifierDatagramme</a>(<span class="keywordtype">char</span> *donneesBrutes, <span class="keywordtype">int</span> nbOctets);
+<a name="l00142"></a>00142       <span class="keywordtype">int</span>  <a class="code" href="class_playback_wing.html#a1e1e96bc11564d3caf535916ef73cb5b" title="Traite les données envoyées par la console.">TraiterDatagramme</a>(<span class="keyword">const</span> QByteArray &amp;datagramme);
+<a name="l00143"></a>00143       <span class="keywordtype">int</span>  <a class="code" href="class_playback_wing.html#a9133ea5f81c3dfbf6a3c111eef603581" title="Débugue le datagramme.">debuguerDatagramme</a>(<span class="keywordtype">char</span> *donneesBrutes, <span class="keywordtype">int</span> nbOctets);
+<a name="l00144"></a>00144       <span class="keywordtype">void</span> <a class="code" href="class_playback_wing.html#a993c107f4eaba02948a73d47add34945" title="Decode les trames si une touche de contrôle est appuyée.">DecoderTouchesControle</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> champTouche);
+<a name="l00145"></a>00145       <span class="keywordtype">void</span> <a class="code" href="class_playback_wing.html#a0c836486501637f6a9d626ae70e2c9d6" title="Attribue les valeurs des faders depuis la trame wing.">ExtraireFaders</a>(<span class="keyword">const</span> QByteArray &amp;datagramme);
+<a name="l00146"></a>00146 };
+<a name="l00147"></a>00147 
+<a name="l00148"></a>00148 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi Juin 7 2018 20:37:25 pour DMX 2018 par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

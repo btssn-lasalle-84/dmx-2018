@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>DMX 2018:  Fichier source de IHM.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="icone-dmx.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">DMX 2018
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2018</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">IHM.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_i_h_m_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef IHM__H</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define IHM__H</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &lt;QtGlobal&gt;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#if QT_VERSION &gt;= 0x050000</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span><span class="preprocessor">#include &lt;QtWidgets&gt;</span> <span class="comment">/* tous les widgets de Qt5 */</span>
+<a name="l00019"></a>00019 <span class="preprocessor">#else</span>
+<a name="l00020"></a>00020 <span class="preprocessor"></span><span class="preprocessor">#include &lt;QtGui&gt;</span> <span class="comment">/* tous les widgets de Qt4 */</span>
+<a name="l00021"></a>00021 <span class="preprocessor">#endif</span>
+<a name="l00022"></a>00022 <span class="preprocessor"></span><span class="preprocessor">#include &lt;QTimer&gt;</span>
+<a name="l00023"></a>00023 <span class="preprocessor">#include &quot;<a class="code" href="interface_8h.html">interface.h</a>&quot;</span>
+<a name="l00024"></a>00024 <span class="preprocessor">#include &quot;<a class="code" href="_playback_wing_8h.html" title="Déclaration de la classe PlaybackWing.">PlaybackWing.h</a>&quot;</span>
+<a name="l00025"></a>00025 <span class="preprocessor">#include &quot;<a class="code" href="myslider_8h.html">myslider.h</a>&quot;</span>
+<a name="l00026"></a>00026 <span class="preprocessor">#include &quot;<a class="code" href="id_projecteur_sauvegarde_8h.html">idProjecteurSauvegarde.h</a>&quot;</span>
+<a name="l00027"></a>00027 <span class="preprocessor">#include &quot;<a class="code" href="scene_8h.html" title="Déclaration des structures Scene et SceneSequence.">scene.h</a>&quot;</span>
+<a name="l00028"></a>00028 <span class="preprocessor">#include &quot;<a class="code" href="sequence_8h.html" title="Déclaration de la structure Sequence.">sequence.h</a>&quot;</span>
+<a name="l00029"></a>00029 <span class="preprocessor">#include &quot;spectacle.h&quot;</span>
+<a name="l00030"></a>00030 <span class="preprocessor">#include &quot;<a class="code" href="_thread_attente_8h.html" title="Déclaration de la classe ThreadAttente.">ThreadAttente.h</a>&quot;</span>
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032 <span class="comment">//#define NB_PAGES        10</span>
+<a name="l00033"></a><a class="code" href="_i_h_m_8h.html#a32a5fbdcd051b8958d69a70a59a8203e">00033</a> <span class="preprocessor">#define NB_TAB_MAIN     4</span>
+<a name="l00034"></a><a class="code" href="_i_h_m_8h.html#ae384df2687241332ac364b3eb3d609bf">00034</a> <span class="preprocessor"></span><span class="preprocessor">#define NB_SLIDERS      10</span>
+<a name="l00035"></a><a class="code" href="_i_h_m_8h.html#aaef6ab17ceb9eeaf771117a8f57a552f">00035</a> <span class="preprocessor"></span><span class="preprocessor">#define NB_CANAUX       512</span>
+<a name="l00036"></a><a class="code" href="_i_h_m_8h.html#a939eeef544a0132fe2ee3f4e92bd1d7e">00036</a> <span class="preprocessor"></span><span class="preprocessor">#define NB_PROJECTEURS  32</span>
+<a name="l00037"></a>00037 <span class="preprocessor"></span>
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039 <span class="keyword">class </span><a class="code" href="class_enttec_d_m_x_u_s_b.html" title="Classe permettant la communication avec l&#39;interface Enttec.">EnttecDMXUSB</a>;
+<a name="l00040"></a>00040 <span class="keyword">class </span><a class="code" href="class_d_m_x_projecteur.html" title="Definition de la classe DMXProjecteur.">DMXProjecteur</a>;
+<a name="l00041"></a>00041 <span class="keyword">class </span><a class="code" href="class_x_m_l_utilitaire.html" title="Classe gérant les fichiers XML de l&#39;application.">XMLUtilitaire</a>;
+<a name="l00042"></a>00042 
+<a name="l00055"></a><a class="code" href="class_i_h_m.html">00055</a> <span class="keyword">class </span><a class="code" href="class_i_h_m.html" title="Définition de la classe IHM.">IHM</a> : <span class="keyword">public</span> QWidget
+<a name="l00056"></a>00056 {
+<a name="l00057"></a>00057         Q_OBJECT
+<a name="l00058"></a>00058         
+<a name="l00059"></a>00059     <span class="keyword">private</span>:
+<a name="l00060"></a><a class="code" href="class_i_h_m.html#ab1339775fec3c17b39f00e785b4cae1e">00060</a>         <span class="keywordtype">int</span> <a class="code" href="class_i_h_m.html#ab1339775fec3c17b39f00e785b4cae1e">incrementTemporisation</a>;
+<a name="l00061"></a><a class="code" href="class_i_h_m.html#ac0d7f623cc01c4064857f327ed28992a">00061</a>         QList&lt;Interface&gt; <a class="code" href="class_i_h_m.html#ac0d7f623cc01c4064857f327ed28992a" title="Liste d&#39;interfaces Enttex USB.">interfaces</a>; 
+<a name="l00062"></a><a class="code" href="class_i_h_m.html#a4e5f1c29006fa18f4911e81af0fa5b46">00062</a>         QVector&lt;Scene&gt; <a class="code" href="class_i_h_m.html#a4e5f1c29006fa18f4911e81af0fa5b46" title="Liste des scenes enregistrées depuis le fichier scenes.xml.">scenes</a>; 
+<a name="l00063"></a><a class="code" href="class_i_h_m.html#a1bcaa86acd96dd24dcd7460201460a27">00063</a>         QVector&lt;Sequence&gt; <a class="code" href="class_i_h_m.html#a1bcaa86acd96dd24dcd7460201460a27" title="Liste des sequences enregistrées depuis le fichier sequences.xml.">sequences</a>; 
+<a name="l00064"></a><a class="code" href="class_i_h_m.html#a3277f5718c00c8cb748194bfbc5317dd">00064</a>         QVector&lt;Spectacle&gt; <a class="code" href="class_i_h_m.html#a3277f5718c00c8cb748194bfbc5317dd" title="Liste des spectacles enregistrés depuis le fichier spectacles.xml.">spectacles</a>; 
+<a name="l00065"></a><a class="code" href="class_i_h_m.html#abe5964fa51ff66cd1810c16db30d0b91">00065</a>         <a class="code" href="struct_scene.html" title="Structure permettant de représenter le contenu d&#39;un plan d&#39;éclairage d&#39;appareils XML.">Scene</a> <a class="code" href="class_i_h_m.html#abe5964fa51ff66cd1810c16db30d0b91" title="cache d&#39;un objet Scene retenu dans cet espace mémoire avant d&#39;etre implémenté dans un conteneur...">cacheScene</a>; 
+<a name="l00066"></a><a class="code" href="class_i_h_m.html#ae2264a40119f6b0b66a5778ffde86d64">00066</a>         <a class="code" href="struct_sequence.html" title="Structure permettant de représenter le contenu d&#39;une séquence d&#39;enchainement de scènes temporisées...">Sequence</a> <a class="code" href="class_i_h_m.html#ae2264a40119f6b0b66a5778ffde86d64" title="cache d&#39;un objet Sequence retenu dans cet espace mémoire avant d&#39;etre implémenté dans un conteneur...">cacheSequence</a>; 
+<a name="l00067"></a><a class="code" href="class_i_h_m.html#a9155ac5491ea5f4f4db73a76ad2bc174">00067</a>         Spectacle <a class="code" href="class_i_h_m.html#a9155ac5491ea5f4f4db73a76ad2bc174" title="cache d&#39;un objet Spectacle retenu dans cet espace mémoire avant d&#39;etre implémenté dans un conteneur...">cacheSpectacle</a>; 
+<a name="l00068"></a><a class="code" href="class_i_h_m.html#a08ed5231beddc8cf0dcde3b646a67d0b">00068</a>         <a class="code" href="class_enttec_d_m_x_u_s_b.html" title="Classe permettant la communication avec l&#39;interface Enttec.">EnttecDMXUSB</a> *<a class="code" href="class_i_h_m.html#a08ed5231beddc8cf0dcde3b646a67d0b" title="Association vers la classe EnttecDMXUSB.">interfaceDMX</a>; 
+<a name="l00069"></a><a class="code" href="class_i_h_m.html#a9d915144c57a367d89ab1959b503d493">00069</a>         <a class="code" href="class_playback_wing.html" title="la classe gérant la console wing">PlaybackWing</a> *<a class="code" href="class_i_h_m.html#a9d915144c57a367d89ab1959b503d493" title="Association vers la classe PlaybackWing.">wing</a>; 
+<a name="l00070"></a><a class="code" href="class_i_h_m.html#a1fcd854322f24e7b45d1178423df18ef">00070</a>         QVector&lt;DMXProjecteur*&gt; <a class="code" href="class_i_h_m.html#a1fcd854322f24e7b45d1178423df18ef" title="rampe de projecteurs DMX">projecteursDMX</a>; 
+<a name="l00071"></a><a class="code" href="class_i_h_m.html#af6cb3f0c132b4461a3513fec3aec623f">00071</a>         <a class="code" href="class_x_m_l_utilitaire.html" title="Classe gérant les fichiers XML de l&#39;application.">XMLUtilitaire</a> *<a class="code" href="class_i_h_m.html#af6cb3f0c132b4461a3513fec3aec623f" title="Utilitaire de gestion des fichiers xml.">utilitaireDocuments</a>; 
+<a name="l00072"></a><a class="code" href="class_i_h_m.html#a02b021dee0c8b9278cafbb38d9172130">00072</a>         <span class="keywordtype">int</span> <a class="code" href="class_i_h_m.html#a02b021dee0c8b9278cafbb38d9172130">nbAppareils</a>;
+<a name="l00073"></a><a class="code" href="class_i_h_m.html#a8e3bc572697eebe332155d000b26166f">00073</a>         <span class="keywordtype">int</span> <a class="code" href="class_i_h_m.html#a8e3bc572697eebe332155d000b26166f">canalDepartFaders</a>;
+<a name="l00074"></a><a class="code" href="class_i_h_m.html#a3baf7a9dd30c908648805160203fa6d5">00074</a>         <span class="keywordtype">bool</span> <a class="code" href="class_i_h_m.html#a3baf7a9dd30c908648805160203fa6d5">pilotageIHMActif</a>;
+<a name="l00075"></a><a class="code" href="class_i_h_m.html#a3f6d6bd57dbb52225d242df9aa8cadc5">00075</a>         <span class="keywordtype">bool</span> <a class="code" href="class_i_h_m.html#a3f6d6bd57dbb52225d242df9aa8cadc5">pilotageDMXActif</a>;
+<a name="l00076"></a>00076 
+<a name="l00077"></a>00077         <span class="comment">// Les onglets</span>
+<a name="l00078"></a><a class="code" href="class_i_h_m.html#a3be75b11596ad7fe6f758058ca57decf">00078</a>         QTabWidget *<a class="code" href="class_i_h_m.html#a3be75b11596ad7fe6f758058ca57decf">ongletsPrincipaux</a>;
+<a name="l00079"></a><a class="code" href="class_i_h_m.html#afebcf45f79fd999756c1930722838895">00079</a>         QTabWidget *<a class="code" href="class_i_h_m.html#afebcf45f79fd999756c1930722838895">optionsCreations</a>;
+<a name="l00080"></a><a class="code" href="class_i_h_m.html#afe4966ca2c2e9205da68a0b7305e8140">00080</a>         QTabWidget *<a class="code" href="class_i_h_m.html#afe4966ca2c2e9205da68a0b7305e8140">optionsParametres</a>;
+<a name="l00081"></a><a class="code" href="class_i_h_m.html#a8ab307b73aab34f3d46b5f4e514b3de9">00081</a>         QTabWidget *<a class="code" href="class_i_h_m.html#a8ab307b73aab34f3d46b5f4e514b3de9">optionsSpectacles</a>;
+<a name="l00082"></a>00082         <span class="comment">// Les pages</span>
+<a name="l00083"></a><a class="code" href="class_i_h_m.html#a3f973c9742f2bef98f9172a7eabdb7ab">00083</a>         QWidget *<a class="code" href="class_i_h_m.html#a3f973c9742f2bef98f9172a7eabdb7ab">pageAssembler</a>;
+<a name="l00084"></a><a class="code" href="class_i_h_m.html#af55870b2bb925510ba8a4e696bea1b33">00084</a>         QWidget *<a class="code" href="class_i_h_m.html#af55870b2bb925510ba8a4e696bea1b33">pageCreer</a>;
+<a name="l00085"></a><a class="code" href="class_i_h_m.html#af367bcb2d10dae6bef50c1883b7fc714">00085</a>         QWidget *<a class="code" href="class_i_h_m.html#af367bcb2d10dae6bef50c1883b7fc714">pageJouer</a>;
+<a name="l00086"></a><a class="code" href="class_i_h_m.html#ad5a52ded611384ce3dfba28ff856cbee">00086</a>         QWidget *<a class="code" href="class_i_h_m.html#ad5a52ded611384ce3dfba28ff856cbee">pagePiloter</a>;
+<a name="l00087"></a><a class="code" href="class_i_h_m.html#aa5b0dcf8079f545c9a6d7df92388f863">00087</a>         QWidget *<a class="code" href="class_i_h_m.html#aa5b0dcf8079f545c9a6d7df92388f863">parametresInterface</a>;
+<a name="l00088"></a><a class="code" href="class_i_h_m.html#a7e4771c0ca61a7a0d17c978c3282c0df">00088</a>         QWidget *<a class="code" href="class_i_h_m.html#a7e4771c0ca61a7a0d17c978c3282c0df">parametresProjecteurs</a>;
+<a name="l00089"></a><a class="code" href="class_i_h_m.html#aec99b2063d8c501f683a29044e7ea518">00089</a>         QWidget *<a class="code" href="class_i_h_m.html#aec99b2063d8c501f683a29044e7ea518">parametresConsoles</a>;
+<a name="l00090"></a><a class="code" href="class_i_h_m.html#ae7b77b88391af5cc8c454f5f5ea4c481">00090</a>         QWidget *<a class="code" href="class_i_h_m.html#ae7b77b88391af5cc8c454f5f5ea4c481">pagesSpectacles</a>[2];
+<a name="l00091"></a>00091         <span class="comment">//Les fenetres</span>
+<a name="l00092"></a><a class="code" href="class_i_h_m.html#a5746f7e0e741e155b8034e198ee003f7">00092</a>         QDialog* <a class="code" href="class_i_h_m.html#a5746f7e0e741e155b8034e198ee003f7">fenetreNouveauProjecteur</a>;
+<a name="l00093"></a><a class="code" href="class_i_h_m.html#a5aaff91a2d01db5cdb05a15f8befe1ab">00093</a>         QDialog* <a class="code" href="class_i_h_m.html#a5aaff91a2d01db5cdb05a15f8befe1ab">fenetreNouvelleScene</a>;
+<a name="l00094"></a><a class="code" href="class_i_h_m.html#abdc1e25bb37e2a664c947f8d6b131120">00094</a>         QDialog* <a class="code" href="class_i_h_m.html#abdc1e25bb37e2a664c947f8d6b131120">fenetreNouvelleSequence</a>;
+<a name="l00095"></a><a class="code" href="class_i_h_m.html#a1916c7253b68dba0fed78bb4569d8866">00095</a>         QDialog* <a class="code" href="class_i_h_m.html#a1916c7253b68dba0fed78bb4569d8866">fenetreInformationsAppareil</a>;
+<a name="l00096"></a><a class="code" href="class_i_h_m.html#ab194e961a0cbf66c45117eceac178a9f">00096</a>         QDialog* <a class="code" href="class_i_h_m.html#ab194e961a0cbf66c45117eceac178a9f">fenetreCanauxScene</a>;
+<a name="l00097"></a><a class="code" href="class_i_h_m.html#ad339e166564c04b83fa0ddffe8af9f2a">00097</a>         QDialog *<a class="code" href="class_i_h_m.html#ad339e166564c04b83fa0ddffe8af9f2a">fenetreModifierConsole</a>;
+<a name="l00098"></a>00098         <span class="comment">// Les widgets</span>
+<a name="l00099"></a><a class="code" href="class_i_h_m.html#a10a2a75cf15148bc82325379564c67e6">00099</a>         <a class="code" href="class_my_slider.html" title="Déclaration de la classe myslider permettant d&#39;instancier des widgets de type slider personnalisés...">MySlider</a> *<a class="code" href="class_i_h_m.html#a10a2a75cf15148bc82325379564c67e6">slidersCanaux</a>[<a class="code" href="_i_h_m_8h.html#ae384df2687241332ac364b3eb3d609bf">NB_SLIDERS</a>];
+<a name="l00100"></a><a class="code" href="class_i_h_m.html#ad7da6e6728bffb71817b288746002e80">00100</a>         QScrollArea *<a class="code" href="class_i_h_m.html#ad7da6e6728bffb71817b288746002e80">listeProjecteursEnregistres</a>;
+<a name="l00101"></a><a class="code" href="class_i_h_m.html#ac2552ff2aaff52b004e58120c5a21ad8">00101</a>         QPushButton *<a class="code" href="class_i_h_m.html#ac2552ff2aaff52b004e58120c5a21ad8">boutonNouveauProjecteur</a>;
+<a name="l00102"></a><a class="code" href="class_i_h_m.html#a6ffb0300d12788301a2b870db7aa2139">00102</a>         QPushButton *<a class="code" href="class_i_h_m.html#a6ffb0300d12788301a2b870db7aa2139">boutonSupprimerTousProjecteurs</a>;
+<a name="l00103"></a><a class="code" href="class_i_h_m.html#a2371638929c428c6e723b6dce2816913">00103</a>         QComboBox *<a class="code" href="class_i_h_m.html#a2371638929c428c6e723b6dce2816913">listeChoixPilotage</a>;
+<a name="l00104"></a><a class="code" href="class_i_h_m.html#a2ad04565a7b0298bfc27e1b92f7f5868">00104</a>         QComboBox *<a class="code" href="class_i_h_m.html#a2ad04565a7b0298bfc27e1b92f7f5868">listeProjecteursPilotage</a>;
+<a name="l00105"></a><a class="code" href="class_i_h_m.html#aaa7d2e616dac1bb090cd55baf3bcd9e4">00105</a>         QPushButton *<a class="code" href="class_i_h_m.html#aaa7d2e616dac1bb090cd55baf3bcd9e4">boutonIncrementationCanal</a>;
+<a name="l00106"></a><a class="code" href="class_i_h_m.html#a47ff057a9bfb59e1254db0df93008ec8">00106</a>         QPushButton *<a class="code" href="class_i_h_m.html#a47ff057a9bfb59e1254db0df93008ec8">boutonDecrementationCanal</a>;
+<a name="l00107"></a><a class="code" href="class_i_h_m.html#a51730b7435381c2c2562952955945c1c">00107</a>         QLabel *<a class="code" href="class_i_h_m.html#a51730b7435381c2c2562952955945c1c">labelNom</a>;
+<a name="l00108"></a><a class="code" href="class_i_h_m.html#a76c8e9b0012abd257ba715039805a742">00108</a>         QLineEdit *<a class="code" href="class_i_h_m.html#a76c8e9b0012abd257ba715039805a742">choixNom</a>;
+<a name="l00109"></a><a class="code" href="class_i_h_m.html#a7af52a49a0bc49a861efca7c3d3af1cf">00109</a>         QLabel *<a class="code" href="class_i_h_m.html#a7af52a49a0bc49a861efca7c3d3af1cf">labelType</a>;
+<a name="l00110"></a><a class="code" href="class_i_h_m.html#a5b71349b09df4bafbe9d65e329800759">00110</a>         QComboBox *<a class="code" href="class_i_h_m.html#a5b71349b09df4bafbe9d65e329800759">choixTypes</a>;
+<a name="l00111"></a><a class="code" href="class_i_h_m.html#a741c8bca17a9fc724f7dacaa8f054078">00111</a>         QLabel *<a class="code" href="class_i_h_m.html#a741c8bca17a9fc724f7dacaa8f054078">labelNBCanaux</a>;
+<a name="l00112"></a><a class="code" href="class_i_h_m.html#a30c3a572999ce9f9125adf2c1e697cde">00112</a>         QSpinBox *<a class="code" href="class_i_h_m.html#a30c3a572999ce9f9125adf2c1e697cde">choixNBCanaux</a>;
+<a name="l00113"></a><a class="code" href="class_i_h_m.html#af3b3b0442e36a973a5be9eb228b61017">00113</a>         QLabel *<a class="code" href="class_i_h_m.html#af3b3b0442e36a973a5be9eb228b61017">labelCanalDepart</a>;
+<a name="l00114"></a><a class="code" href="class_i_h_m.html#a19b461fbd7d2486200ec9a4338630911">00114</a>         QSpinBox *<a class="code" href="class_i_h_m.html#a19b461fbd7d2486200ec9a4338630911">choixCanalDepart</a>;
+<a name="l00115"></a><a class="code" href="class_i_h_m.html#a117550af7870ce3a9b1e99919f87118e">00115</a>         QLabel *<a class="code" href="class_i_h_m.html#a117550af7870ce3a9b1e99919f87118e">labelNomCanaux</a>;
+<a name="l00116"></a><a class="code" href="class_i_h_m.html#aed6e64ac40ed71e7232497a372b87186">00116</a>         QLineEdit *<a class="code" href="class_i_h_m.html#aed6e64ac40ed71e7232497a372b87186">nomsCanaux</a>[10];
+<a name="l00117"></a><a class="code" href="class_i_h_m.html#a4206f44421c5c974c0f419d5b76af082">00117</a>         QPushButton *<a class="code" href="class_i_h_m.html#a4206f44421c5c974c0f419d5b76af082">boutonEnregistrer</a>;
+<a name="l00118"></a>00118 
+<a name="l00119"></a><a class="code" href="class_i_h_m.html#af0357c4edc4e3681f3a15492c7876b73">00119</a>         QLabel *<a class="code" href="class_i_h_m.html#af0357c4edc4e3681f3a15492c7876b73">labelInformationsCanalDepart</a>;
+<a name="l00120"></a><a class="code" href="class_i_h_m.html#a49362f7d826cfc2e9dba6213438f4646">00120</a>         QLabel *<a class="code" href="class_i_h_m.html#a49362f7d826cfc2e9dba6213438f4646">labelInformationsCanaux</a>[10];
+<a name="l00121"></a><a class="code" href="class_i_h_m.html#a4e0631eaf15182c1d7bdc0ee706aeef4">00121</a>         QScrollArea *<a class="code" href="class_i_h_m.html#a4e0631eaf15182c1d7bdc0ee706aeef4">listeInformationsCanaux</a>;
+<a name="l00122"></a>00122 
+<a name="l00123"></a><a class="code" href="class_i_h_m.html#aa663d541209934a4c5118898f988f76c">00123</a>         QLabel *<a class="code" href="class_i_h_m.html#aa663d541209934a4c5118898f988f76c">labelInterface</a>;
+<a name="l00124"></a><a class="code" href="class_i_h_m.html#a43d6ae8d31bfbc776d68b7cbc5f204d8">00124</a>         QComboBox *<a class="code" href="class_i_h_m.html#a43d6ae8d31bfbc776d68b7cbc5f204d8">listeChoixInterface</a>;
+<a name="l00125"></a><a class="code" href="class_i_h_m.html#acb7c4534de1f547b37729193bc8d3d89">00125</a>         QComboBox *<a class="code" href="class_i_h_m.html#acb7c4534de1f547b37729193bc8d3d89">listeTypeInterface</a>;
+<a name="l00126"></a><a class="code" href="class_i_h_m.html#ac3b4d46f7e0c1aacf96880dbe89609bb">00126</a>         QPushButton *<a class="code" href="class_i_h_m.html#ac3b4d46f7e0c1aacf96880dbe89609bb">boutonDetecterInterface</a>;
+<a name="l00127"></a><a class="code" href="class_i_h_m.html#a5a0083526f3b7fa80cc41bdd99efa033">00127</a>         QTextEdit *<a class="code" href="class_i_h_m.html#a5a0083526f3b7fa80cc41bdd99efa033">resultatDetectionInterface</a>;        
+<a name="l00128"></a>00128 
+<a name="l00129"></a><a class="code" href="class_i_h_m.html#a0b3c0286609a898566ea7d5f5ff7755f">00129</a>         QLabel *<a class="code" href="class_i_h_m.html#a0b3c0286609a898566ea7d5f5ff7755f">labelScenesDisponibles</a>;
+<a name="l00130"></a><a class="code" href="class_i_h_m.html#a7806f57713c5e9b17b09eaddfc231f9b">00130</a>         QComboBox *<a class="code" href="class_i_h_m.html#a7806f57713c5e9b17b09eaddfc231f9b">choixScenesDisponibles</a>;
+<a name="l00131"></a><a class="code" href="class_i_h_m.html#a63ab5c059a39b8e0ffa26fc5147e8787">00131</a>         QPushButton *<a class="code" href="class_i_h_m.html#a63ab5c059a39b8e0ffa26fc5147e8787">boutonexecuterScene</a>;
+<a name="l00132"></a><a class="code" href="class_i_h_m.html#a4ee8e148f689d3e55968407dd2611185">00132</a>         QPushButton *<a class="code" href="class_i_h_m.html#a4ee8e148f689d3e55968407dd2611185">boutonModifierScene</a>;
+<a name="l00133"></a><a class="code" href="class_i_h_m.html#afa2716d73cff8592d865e9c14520b8a8">00133</a>         QPushButton *<a class="code" href="class_i_h_m.html#afa2716d73cff8592d865e9c14520b8a8">boutonSupprimerScene</a>;
+<a name="l00134"></a><a class="code" href="class_i_h_m.html#add2a8fce9587626e42ab67aa70860014">00134</a>         QPushButton *<a class="code" href="class_i_h_m.html#add2a8fce9587626e42ab67aa70860014">boutonNouvelleScene</a>;
+<a name="l00135"></a><a class="code" href="class_i_h_m.html#a050495988513da4de48530e23798a606">00135</a>         QPushButton *<a class="code" href="class_i_h_m.html#a050495988513da4de48530e23798a606">boutonSupprimerToutesScenes</a>;
+<a name="l00136"></a>00136 
+<a name="l00137"></a><a class="code" href="class_i_h_m.html#a1b35bcf72fd3d851ba71af65598c362b">00137</a>         QLabel *<a class="code" href="class_i_h_m.html#a1b35bcf72fd3d851ba71af65598c362b">labelNomScene</a>;
+<a name="l00138"></a><a class="code" href="class_i_h_m.html#a159218ec64a419fbd67da7384c77877e">00138</a>         QLineEdit *<a class="code" href="class_i_h_m.html#a159218ec64a419fbd67da7384c77877e">choixNomScene</a>;
+<a name="l00139"></a><a class="code" href="class_i_h_m.html#ab064c7c0e6d7524220bd1a48b6bd91af">00139</a>         QLabel *<a class="code" href="class_i_h_m.html#ab064c7c0e6d7524220bd1a48b6bd91af">labelAppareilScene</a>;
+<a name="l00140"></a><a class="code" href="class_i_h_m.html#ad94bca2930870559d6ab70a6f5848735">00140</a>         QComboBox *<a class="code" href="class_i_h_m.html#ad94bca2930870559d6ab70a6f5848735">choixAppareilScene</a>;
+<a name="l00141"></a><a class="code" href="class_i_h_m.html#a24ca62d061a6764cf4b276fe059f191d">00141</a>         QPushButton *<a class="code" href="class_i_h_m.html#a24ca62d061a6764cf4b276fe059f191d">boutonParametresCanauxScene</a>;
+<a name="l00142"></a><a class="code" href="class_i_h_m.html#a3e9210499461fcedaed45413e8258789">00142</a>         QScrollArea *<a class="code" href="class_i_h_m.html#a3e9210499461fcedaed45413e8258789">listeAppareilsScene</a>;
+<a name="l00143"></a><a class="code" href="class_i_h_m.html#a0e9eeb4e1715da475e91c374d386e93f">00143</a>         QList&lt;QLabel*&gt; <a class="code" href="class_i_h_m.html#a0e9eeb4e1715da475e91c374d386e93f">labelsAppareilsScene</a>;
+<a name="l00144"></a><a class="code" href="class_i_h_m.html#a024ad8d3b4fa89bbf5028d07a2caa466">00144</a>         QPushButton *<a class="code" href="class_i_h_m.html#a024ad8d3b4fa89bbf5028d07a2caa466">boutonSauvegarderScene</a>;
+<a name="l00145"></a>00145 
+<a name="l00146"></a><a class="code" href="class_i_h_m.html#a63b8fe50cf03c42fe76e05c5b7329457">00146</a>         <a class="code" href="class_my_slider.html" title="Déclaration de la classe myslider permettant d&#39;instancier des widgets de type slider personnalisés...">MySlider</a> *<a class="code" href="class_i_h_m.html#a63b8fe50cf03c42fe76e05c5b7329457">slidersCanauxScene</a>[<a class="code" href="_i_h_m_8h.html#ae384df2687241332ac364b3eb3d609bf">NB_SLIDERS</a>];
+<a name="l00147"></a><a class="code" href="class_i_h_m.html#a72e941bdfc315bcff297437719f2216b">00147</a>         QPushButton *<a class="code" href="class_i_h_m.html#a72e941bdfc315bcff297437719f2216b">boutonSauvegarderCanauxScene</a>;
+<a name="l00148"></a>00148 
+<a name="l00149"></a><a class="code" href="class_i_h_m.html#a8f0abd2426c03477623153ace6180c15">00149</a>         QLineEdit *<a class="code" href="class_i_h_m.html#a8f0abd2426c03477623153ace6180c15">numeroIdAjouterInterface</a>;
+<a name="l00150"></a>00150 
+<a name="l00151"></a><a class="code" href="class_i_h_m.html#ac01f31e03afa0f95fdce03b08481a126">00151</a>         QLineEdit *<a class="code" href="class_i_h_m.html#ac01f31e03afa0f95fdce03b08481a126">portInterfaceAjouterInterface</a>;
+<a name="l00152"></a><a class="code" href="class_i_h_m.html#a3a3cf50f2702ae56244b647fef1ecb60">00152</a>         QComboBox *<a class="code" href="class_i_h_m.html#a3a3cf50f2702ae56244b647fef1ecb60">listeTypeInterfaceAjouterInterface</a>;
+<a name="l00153"></a><a class="code" href="class_i_h_m.html#afb17f1ef0aeb7b74b17454246246c018">00153</a>         QPushButton *<a class="code" href="class_i_h_m.html#afb17f1ef0aeb7b74b17454246246c018">boutonAjouterInterface</a>;
+<a name="l00154"></a>00154 
+<a name="l00155"></a><a class="code" href="class_i_h_m.html#aab59fde2ae3bcb7fab2f73c19ee40fc0">00155</a>         QComboBox *<a class="code" href="class_i_h_m.html#aab59fde2ae3bcb7fab2f73c19ee40fc0">listeInterfacesSupprimables</a>;
+<a name="l00156"></a><a class="code" href="class_i_h_m.html#a391610318bd8b127aaf157a0f57b7894">00156</a>         QPushButton *<a class="code" href="class_i_h_m.html#a391610318bd8b127aaf157a0f57b7894">boutonSupprimerInterface</a>;
+<a name="l00157"></a>00157 
+<a name="l00158"></a><a class="code" href="class_i_h_m.html#a463624012fa64319cce2ec475db73e8a">00158</a>         QComboBox *<a class="code" href="class_i_h_m.html#a463624012fa64319cce2ec475db73e8a">listeChoixConsole</a>;
+<a name="l00159"></a><a class="code" href="class_i_h_m.html#a27f0f594f56ad4db711963de22f21fa4">00159</a>         QLineEdit *<a class="code" href="class_i_h_m.html#a27f0f594f56ad4db711963de22f21fa4">champAdresseIPConsole</a>;
+<a name="l00160"></a><a class="code" href="class_i_h_m.html#a42c854254740e5fbaa2f1c285c48d23a">00160</a>         QLineEdit *<a class="code" href="class_i_h_m.html#a42c854254740e5fbaa2f1c285c48d23a">champPortConsole</a>;
+<a name="l00161"></a><a class="code" href="class_i_h_m.html#af3570a87966465d21d7c19f7d84c6429">00161</a>         QPushButton *<a class="code" href="class_i_h_m.html#af3570a87966465d21d7c19f7d84c6429">boutonAjouterConsole</a>;
+<a name="l00162"></a><a class="code" href="class_i_h_m.html#a3142dde5394a4a50458aba1a9f583549">00162</a>         QPushButton *<a class="code" href="class_i_h_m.html#a3142dde5394a4a50458aba1a9f583549">boutonSupprimerConsole</a>;
+<a name="l00163"></a><a class="code" href="class_i_h_m.html#aa52d6bd3e5d14b01a2c1f84c0c4627c8">00163</a>         QPushButton *<a class="code" href="class_i_h_m.html#aa52d6bd3e5d14b01a2c1f84c0c4627c8">boutonModifierConsole</a>;
+<a name="l00164"></a>00164 
+<a name="l00165"></a><a class="code" href="class_i_h_m.html#a7c7a5a01c7a4607a0e7094191d4a8c3b">00165</a>         QLineEdit *<a class="code" href="class_i_h_m.html#a7c7a5a01c7a4607a0e7094191d4a8c3b">champAdresseIPModifierConsole</a>;
+<a name="l00166"></a><a class="code" href="class_i_h_m.html#afcf2283eeb5f54032fbeb4b3a77cc4c1">00166</a>         QLineEdit *<a class="code" href="class_i_h_m.html#afcf2283eeb5f54032fbeb4b3a77cc4c1">champPortModifierConsole</a>;
+<a name="l00167"></a><a class="code" href="class_i_h_m.html#a2e9f0585828ebb8cb878636587f60c2f">00167</a>         QPushButton *<a class="code" href="class_i_h_m.html#a2e9f0585828ebb8cb878636587f60c2f">boutonEnregistrerModificationConsole</a>;
+<a name="l00168"></a>00168 
+<a name="l00169"></a><a class="code" href="class_i_h_m.html#a40e881484e2230081816444910812a25">00169</a>         QLabel *<a class="code" href="class_i_h_m.html#a40e881484e2230081816444910812a25">labelSequencesDisponibles</a>;
+<a name="l00170"></a><a class="code" href="class_i_h_m.html#ad9ca4f7445c5c42404b1dc611c685f0a">00170</a>         QComboBox *<a class="code" href="class_i_h_m.html#ad9ca4f7445c5c42404b1dc611c685f0a">choixSequencesDisponibles</a>;
+<a name="l00171"></a><a class="code" href="class_i_h_m.html#af18f38ee31a47e5953bea5405d2ec76d">00171</a>         QPushButton *<a class="code" href="class_i_h_m.html#af18f38ee31a47e5953bea5405d2ec76d">boutonExecuterSequence</a>;
+<a name="l00172"></a><a class="code" href="class_i_h_m.html#a61dd8357fdc9b309c166f901a1ce0dac">00172</a>         QPushButton *<a class="code" href="class_i_h_m.html#a61dd8357fdc9b309c166f901a1ce0dac">boutonNouvelleSequence</a>;
+<a name="l00173"></a><a class="code" href="class_i_h_m.html#ad260b6926c716662fe85852dfb7fb037">00173</a>         QPushButton *<a class="code" href="class_i_h_m.html#ad260b6926c716662fe85852dfb7fb037">boutonSupprimmerSequence</a>;
+<a name="l00174"></a>00174 
+<a name="l00175"></a><a class="code" href="class_i_h_m.html#af522f75c11fcf9b8d1f6974aec7e2a9a">00175</a>         QLabel *<a class="code" href="class_i_h_m.html#af522f75c11fcf9b8d1f6974aec7e2a9a">labelnomSequence</a>;
+<a name="l00176"></a><a class="code" href="class_i_h_m.html#a61371d7aa89bfa761776bf8ace852072">00176</a>         QLineEdit *<a class="code" href="class_i_h_m.html#a61371d7aa89bfa761776bf8ace852072">choixnomSequence</a>;
+<a name="l00177"></a><a class="code" href="class_i_h_m.html#a692a0a906e4bb92d55c2c78ed4821344">00177</a>         QLabel *<a class="code" href="class_i_h_m.html#a692a0a906e4bb92d55c2c78ed4821344">labelScenesSequence</a>;
+<a name="l00178"></a><a class="code" href="class_i_h_m.html#a9b94b92247213a5896de138086884f57">00178</a>         QComboBox *<a class="code" href="class_i_h_m.html#a9b94b92247213a5896de138086884f57">choixScenesSequence</a>;
+<a name="l00179"></a><a class="code" href="class_i_h_m.html#a8805a61b94dbec70506ec224ac1f4475">00179</a>         QLabel *<a class="code" href="class_i_h_m.html#a8805a61b94dbec70506ec224ac1f4475">labelTemporisation</a>;
+<a name="l00180"></a><a class="code" href="class_i_h_m.html#a91d0f3ad38673213f8496313ec53e68a">00180</a>         QSpinBox *<a class="code" href="class_i_h_m.html#a91d0f3ad38673213f8496313ec53e68a">choixHeures</a>;
+<a name="l00181"></a><a class="code" href="class_i_h_m.html#ab712286b0faa3af9b3f7cf52a83483c8">00181</a>         QLabel *<a class="code" href="class_i_h_m.html#ab712286b0faa3af9b3f7cf52a83483c8">labelHeures</a>;
+<a name="l00182"></a><a class="code" href="class_i_h_m.html#a2e7f03e976be404cf84a902dd7038f56">00182</a>         QSpinBox *<a class="code" href="class_i_h_m.html#a2e7f03e976be404cf84a902dd7038f56">choixMinutes</a>;
+<a name="l00183"></a><a class="code" href="class_i_h_m.html#ad4d5d077f1dc49a7bc73e976041c1332">00183</a>         QLabel *<a class="code" href="class_i_h_m.html#ad4d5d077f1dc49a7bc73e976041c1332">labelMinutes</a>;
+<a name="l00184"></a><a class="code" href="class_i_h_m.html#ab54dcdcb99db85f0b9f5eea3c4e3f0bc">00184</a>         QSpinBox *<a class="code" href="class_i_h_m.html#ab54dcdcb99db85f0b9f5eea3c4e3f0bc">choixSecondes</a>;
+<a name="l00185"></a><a class="code" href="class_i_h_m.html#aac1089e88857924733a82ceff8859ff9">00185</a>         QLabel *<a class="code" href="class_i_h_m.html#aac1089e88857924733a82ceff8859ff9">labelSecondes</a>;
+<a name="l00186"></a><a class="code" href="class_i_h_m.html#a2257713810e430a6780098857cf1e5c2">00186</a>         QPushButton *<a class="code" href="class_i_h_m.html#a2257713810e430a6780098857cf1e5c2">boutonAjouterScene</a>;
+<a name="l00187"></a><a class="code" href="class_i_h_m.html#a150e094eb37dd72cf2c99d0dbba099d7">00187</a>         QScrollArea *<a class="code" href="class_i_h_m.html#a150e094eb37dd72cf2c99d0dbba099d7">listeScenesSequenceChoisies</a>;
+<a name="l00188"></a><a class="code" href="class_i_h_m.html#ae5e288110375050123ee880ca8728d43">00188</a>         QList &lt;QLabel*&gt; <a class="code" href="class_i_h_m.html#ae5e288110375050123ee880ca8728d43">labelsScenesSequences</a>;
+<a name="l00189"></a><a class="code" href="class_i_h_m.html#a51e563d7e6f927d4b593283d340859f6">00189</a>         QPushButton *<a class="code" href="class_i_h_m.html#a51e563d7e6f927d4b593283d340859f6">boutonEnregistrerSequence</a>;
+<a name="l00190"></a>00190 
+<a name="l00191"></a><a class="code" href="class_i_h_m.html#aa990ac6a682441d0def55fae4929d2f6">00191</a>         QLabel *<a class="code" href="class_i_h_m.html#aa990ac6a682441d0def55fae4929d2f6">labelCreationSpectacle</a>;
+<a name="l00192"></a><a class="code" href="class_i_h_m.html#af27d0eb8ed351139d5dd5b56dcfbecd7">00192</a>         QLabel *<a class="code" href="class_i_h_m.html#af27d0eb8ed351139d5dd5b56dcfbecd7">labelnomSpectacle</a>;
+<a name="l00193"></a><a class="code" href="class_i_h_m.html#a2e3ae26888b925afd5632b8cbe81715c">00193</a>         QLineEdit *<a class="code" href="class_i_h_m.html#a2e3ae26888b925afd5632b8cbe81715c">choixNomSpectacle</a>;
+<a name="l00194"></a><a class="code" href="class_i_h_m.html#a5825ae52e8e79adc89560f928dfdbdc9">00194</a>         QLabel *<a class="code" href="class_i_h_m.html#a5825ae52e8e79adc89560f928dfdbdc9">labelSequencesSpectacle</a>;
+<a name="l00195"></a><a class="code" href="class_i_h_m.html#aa0b06506a5b3cccd2978942a50330f4a">00195</a>         QComboBox *<a class="code" href="class_i_h_m.html#aa0b06506a5b3cccd2978942a50330f4a">choixSequencesSpectacle</a>;
+<a name="l00196"></a><a class="code" href="class_i_h_m.html#a988e745b1a12a3831b40915dce98f682">00196</a>         QPushButton *<a class="code" href="class_i_h_m.html#a988e745b1a12a3831b40915dce98f682">boutonchoixSequenceSpectacle</a>;
+<a name="l00197"></a><a class="code" href="class_i_h_m.html#ae09ef6747e5b3ea8f93119ba827c7716">00197</a>         QScrollArea *<a class="code" href="class_i_h_m.html#ae09ef6747e5b3ea8f93119ba827c7716">listeSequencesSpectacle</a>;
+<a name="l00198"></a><a class="code" href="class_i_h_m.html#ae7a14efb1d8311c62228e8c30f452f6f">00198</a>         QList&lt;QLabel*&gt; <a class="code" href="class_i_h_m.html#ae7a14efb1d8311c62228e8c30f452f6f">labelsSequencesSpectacle</a>;
+<a name="l00199"></a><a class="code" href="class_i_h_m.html#ac0c4ae49668433d1010e894931be7c87">00199</a>         QPushButton *<a class="code" href="class_i_h_m.html#ac0c4ae49668433d1010e894931be7c87">boutonSauvegarderSpectacle</a>;
+<a name="l00200"></a>00200 
+<a name="l00201"></a><a class="code" href="class_i_h_m.html#a3e895e0145158faead018f7732e5840f">00201</a>         QLabel *<a class="code" href="class_i_h_m.html#a3e895e0145158faead018f7732e5840f">labelJeuSpectacle</a>;
+<a name="l00202"></a><a class="code" href="class_i_h_m.html#a14ec0841c1d27827ca0f83a75bbff0ec">00202</a>         QLabel *<a class="code" href="class_i_h_m.html#a14ec0841c1d27827ca0f83a75bbff0ec">labelSpectaclesDisponibles</a>;
+<a name="l00203"></a><a class="code" href="class_i_h_m.html#a98651e9fce6f7a7c3555fbc349bfc52e">00203</a>         QComboBox *<a class="code" href="class_i_h_m.html#a98651e9fce6f7a7c3555fbc349bfc52e">choixSpectaclesDisponibles</a>;
+<a name="l00204"></a><a class="code" href="class_i_h_m.html#ac9ca2ce4f77527940ff0596fb887bfea">00204</a>         QSpacerItem *<a class="code" href="class_i_h_m.html#ac9ca2ce4f77527940ff0596fb887bfea">espace</a>;
+<a name="l00205"></a><a class="code" href="class_i_h_m.html#a5b1eb8d41caf6d6e33d33b8b7eb2f8c9">00205</a>         QPushButton *<a class="code" href="class_i_h_m.html#a5b1eb8d41caf6d6e33d33b8b7eb2f8c9">boutonExecuterSpectacle</a>;
+<a name="l00206"></a><a class="code" href="class_i_h_m.html#afb667e8296b5f28757bf18a3a91a2e22">00206</a>         QPushButton *<a class="code" href="class_i_h_m.html#afb667e8296b5f28757bf18a3a91a2e22">boutonSupprimerSpectacle</a>;
+<a name="l00207"></a>00207 
+<a name="l00208"></a><a class="code" href="class_i_h_m.html#a977f4a536e6473dbe0b821268b4c525e">00208</a>         QAction *<a class="code" href="class_i_h_m.html#a977f4a536e6473dbe0b821268b4c525e">actionQuitter</a>;
+<a name="l00209"></a>00209         <span class="comment">// Les layouts</span>
+<a name="l00210"></a><a class="code" href="class_i_h_m.html#a0f6f689cbb725af2e4b4defb30891a62">00210</a>         QVBoxLayout *<a class="code" href="class_i_h_m.html#a0f6f689cbb725af2e4b4defb30891a62">layoutListeProjecteursParametres</a>;
+<a name="l00211"></a><a class="code" href="class_i_h_m.html#a015b15ae1f6cf35db7d107b9c4a22ac1">00211</a>         QVBoxLayout *<a class="code" href="class_i_h_m.html#a015b15ae1f6cf35db7d107b9c4a22ac1">layoutlisteAppareilsScene</a>;
+<a name="l00212"></a><a class="code" href="class_i_h_m.html#a1db7664de6883a2b88ba4f461a9a58e4">00212</a>         QVBoxLayout *<a class="code" href="class_i_h_m.html#a1db7664de6883a2b88ba4f461a9a58e4">layoutListeScenesSequences</a>;
+<a name="l00213"></a><a class="code" href="class_i_h_m.html#afad7d2030ac5324fb16b443ce4542fda">00213</a>         QVBoxLayout *<a class="code" href="class_i_h_m.html#afad7d2030ac5324fb16b443ce4542fda">layoutListeSequenceSpectacle</a>;
+<a name="l00214"></a><a class="code" href="class_i_h_m.html#a1ba3e29c17fdcbce3f5908ac5aabee61">00214</a>         <a class="code" href="class_i_d_projecteur_sauvegarde.html">IDProjecteurSauvegarde</a> *<a class="code" href="class_i_h_m.html#a1ba3e29c17fdcbce3f5908ac5aabee61">projecteursEnregistres</a>[<a class="code" href="_i_h_m_8h.html#a939eeef544a0132fe2ee3f4e92bd1d7e">NB_PROJECTEURS</a>];
+<a name="l00215"></a>00215 
+<a name="l00216"></a>00216         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#adce114e775833d1c7c457a2cd8c479db" title="Crée la fenêtre principale.">creerIHM</a>();
+<a name="l00217"></a>00217         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a86cbb693792861490323777235f8674d" title="Méthode permettant de fixer la valeur des canaux.">setCanal</a>();
+<a name="l00218"></a>00218         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a97b02c607ec9f7601bd69396c15290c9" title="Connecte l&#39;envoi de l&#39;etat des faders depuis la console avec leur affichage dans l&#39;éventualité où la ...">activerPilotageConsole</a>();
+<a name="l00219"></a>00219         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a75f7b10b4055ba5e73d415f1d1878f3e" title="déconnecte l&#39;envoi de l&#39;etat des faders depuis la console avec leur affichage">desactiverPilotageConsole</a>();
+<a name="l00220"></a>00220         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a984d18154b618040db4cbaf662084a37" title="Désactive les sliders de l&#39;IHM.">desactiverPilotageIHM</a>();
+<a name="l00221"></a>00221         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a2d593c36297e1759e62289055dc32d1e" title="Active les sliders de l&#39;IHM.">activerPilotageIHM</a>();
+<a name="l00222"></a>00222         QStringList <a class="code" href="class_i_h_m.html#af5c3def6232dcabeb147cf1377cd2d09" title="Execute la commande Syteme passée en paramètre.">executerCommandeSysteme</a>(QString commande);
+<a name="l00223"></a>00223 
+<a name="l00224"></a><a class="code" href="class_i_h_m.html#a20cbb82e49004b6b5727f25c32c8411b">00224</a>         QString <a class="code" href="class_i_h_m.html#a20cbb82e49004b6b5727f25c32c8411b">cacheUuid</a>;
+<a name="l00225"></a>00225 
+<a name="l00226"></a>00226     <span class="keyword">public</span>:
+<a name="l00227"></a>00227         <span class="keyword">explicit</span> <a class="code" href="class_i_h_m.html#aee15d7e3421d408ba59b858b0f910847" title="Constructeur de la fenêtre principale.">IHM</a>(QWidget *parent = 0);
+<a name="l00228"></a>00228         <a class="code" href="class_i_h_m.html#af220622a4304f5a9ed1da28abb7da14d" title="Destructeur.">~IHM</a>();
+<a name="l00229"></a>00229         <span class="keywordtype">bool</span> <a class="code" href="class_i_h_m.html#aff8c9bec165bf1ea1a2b64f4623a03ba">afficherProjecteursEnregistres</a>();
+<a name="l00230"></a>00230         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#abaa469f1892ef581c27b13d974b248e4">recupererDerniereInterfaceUtilisee</a>();
+<a name="l00231"></a>00231         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#ae415a3603b36ede843c24cbf0fd6ce4f" title="ajoute un 0 à coté d&#39;un nombre si ce dernier est inferieur à 10">verifierAjoutZero</a>(QString &amp;nombre);
+<a name="l00232"></a>00232         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a350f401f209b9362efb55d0d196f0cbc" title="Exécution d&#39;une scène sur la chaîne DMX.">executerScene</a>(<a class="code" href="struct_scene.html" title="Structure permettant de représenter le contenu d&#39;un plan d&#39;éclairage d&#39;appareils XML.">Scene</a> scene);
+<a name="l00233"></a>00233         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#aadc7e220b5df2b9cf8ef68a0430daa95">executerSequence</a>(<a class="code" href="struct_sequence.html" title="Structure permettant de représenter le contenu d&#39;une séquence d&#39;enchainement de scènes temporisées...">Sequence</a> sequence);
+<a name="l00234"></a>00234     <span class="keyword">public</span> slots:
+<a name="l00235"></a>00235         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#aaa84950b9cbf6a6cceeb21c02ef300b1" title="Démarre la réception des données en provenance de la console WING.">demarrer</a>();
+<a name="l00236"></a>00236         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a01499e3b4034af0967ea9e3da2171d59" title="Méthode régissant l&#39;appui des touches de contrôles (Page Up, PAge Down, Back, Go) de la console wing...">afficherEtatTouchesControle</a>(<a class="code" href="struct_etat_touches_controle.html" title="Structure permettant de stocker les valeurs des touches de contrôle (Page Up, Page Back...">EtatTouchesControle</a> etatTouchesControle);
+<a name="l00237"></a>00237         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#aa949d5df380eab6e0f8b62d86e3c23c8" title="Affiche les valeurs des faders de la console WING sur les sliders de l&#39;IHM.">afficherEtatFaders</a>(<a class="code" href="struct_etat_faders.html" title="Structure permettant de stocker les valeurs des faders.">EtatFaders</a> etatFaders);
+<a name="l00238"></a>00238         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a56fc366ca9b703b30ad3036dcf839094" title="Envoie une valeur sur un canal DMX.">envoyerTrameDMX</a>(<span class="keywordtype">int</span> valeurFader,<span class="keywordtype">int</span> valeurCanal);
+<a name="l00239"></a>00239         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a0269cef9b33cbf56d13ea631df198726" title="Active ou désactive le pilotage des projecteurs depuis l&#39;IHM par rapport à l&#39;état du QComboBox listeC...">changerPilotageIHM</a>(QString choix);
+<a name="l00240"></a>00240         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#ae307a8fc15db2fb303f8839c27a7bc6f" title="Méthode permettant d&#39;incrémenter la valeur de départ du canal.">incrementerCanal</a>();
+<a name="l00241"></a>00241         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#af4fdd6900725b17a215baea9c97d1b13" title="Méthode permettant de décrémenter la valeur de départ du canal.">decrementerCanal</a>();
+<a name="l00242"></a>00242         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#aa7c2639a5e7bfae0d7d59b3f9275c099">changerCanalDepart</a>(<span class="keywordtype">int</span> canal);
+<a name="l00243"></a>00243         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a1b4afa3e8c198517a9146cca60dcc742" title="Méthode gérant le type de projecteurs séléctionné (sur la liste proposée), l&#39;affichage ou non des sli...">selectionnerProjecteursPilotage</a>(<span class="keywordtype">int</span> index);
+<a name="l00244"></a>00244         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a92300d9cb134c15b19c491db9cabc423" title="Detecte les interfaces séries connectées au PC, les affiches sur l&#39;IHM, et si l&#39;interface sélectionné...">detecterInterface</a>();
+<a name="l00245"></a>00245         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#aeeb6552c9b344f5242a3839b0ccd7608">selectionnerInterface</a>(<span class="keywordtype">int</span> index);
+<a name="l00246"></a>00246         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#ad1abf3ebda5b321c4ae47337b430f36b" title="Méthode permettant l&#39;enregistrement de projecteurs à partir de l&#39;utilitaire XML.">enregistrerProjecteur</a>(<span class="comment">/*QString uuid*/</span>);
+<a name="l00247"></a>00247         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#adc4ec13257d6ae27f9e21a652063f1b9" title="Création de la fenetre d&#39;interface pour créer un nouveau Projecteur.">genererFenetreNouveauProjecteur</a>();
+<a name="l00248"></a>00248         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a4b2ebc2211e8f73731cf24cff49e0479" title="Bloquage des LineEdit de noms de canaux en trop.">bloquerChoixNomCanaux</a>(<span class="keywordtype">int</span> valeur);
+<a name="l00249"></a>00249         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a2e7e1c2c7d48d680a3c7222721a7fbae" title="Création de la fenetre d&#39;interface pour créer une nouvelle Scène.">genererFenetreNouvelleScene</a>();
+<a name="l00250"></a>00250         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#acb94a793c3dc9346811b8fa5b6cb19c3" title="Création de la fenetre d&#39;interface pour créer une nouvelle Séquence.">genererFenetreNouvelleSequence</a>();
+<a name="l00251"></a>00251         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#aacc47d98fb2ea36d23571cc0bf86cd09" title="Création de la fenetre contenant les information d&#39;un projecteur au choix.">genererFenetreInformationsAppareil</a>();
+<a name="l00252"></a>00252         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a5a2469878392594028449e7eaa07a8d1" title="Création de la fenetre d&#39;options des canaux d&#39;un apparail à ajouter pour une scène.">genererFenetreCanauxScene</a>();
+<a name="l00253"></a>00253         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#ad3569109fd2dd3dca8518055c06bd9f2" title="Ouverture de la fenetre permettant l&#39;ajout d&#39;un projecteur dans le fichier XML.">ouvrirFenetreNouveauProjecteur</a>();
+<a name="l00254"></a>00254         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a2f96368af678080e1436c2e43ec02871" title="Ouverture de la fenetre permettant la modification d&#39;un projecteur dans le fichier XML...">ouvrirFenetreModifierProjecteur</a>(QString projecteur, QString uuid);
+<a name="l00255"></a>00255         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#ac831cc30a2625f9cfa536b49a0e39ac3" title="Affichage des informations d&#39;un projecteur depuis l&#39;IHM.">ouvrirFenetreInformationsProjecteur</a>(QString projecteur, QString uuid);
+<a name="l00256"></a>00256         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a4cbfd5100532c19c57684f39cc73554d" title="Affichage de la fenêtre d&#39;options de creation d&#39;une scène.">ouvrirFenetreNouvelleScene</a>();
+<a name="l00257"></a>00257         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a63a5bff53a8816605e331d9ba7061482" title="Affichage de la fenêtre d&#39;options d&#39;ajustements des canaux de l&#39;appareil à implémenter.">ouvrirFenetreCanauxScene</a>();
+<a name="l00258"></a>00258         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#afde2082ca4c1421938859298dce98aa0" title="Ouverture de la fenetre permettant l&#39;ajout d&#39;une sequence dans le fichier XML.">ouvrirFenetreNouvelleSequence</a>();
+<a name="l00259"></a>00259 
+<a name="l00260"></a>00260         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a30f076a5182c2ae51de19bb767d60b02" title="Enregistrement d&#39;une scène depuis l&#39;IHM.">enregistrerScene</a>();
+<a name="l00261"></a>00261         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a02af70ebb18a4f745b852626dd047f4d" title="Ajout d&#39;un appareil à la scène en cours de création.">ajouterAppareilScene</a>();
+<a name="l00262"></a>00262 
+<a name="l00263"></a>00263         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#af64d5fe4e3a4596c3dbd49970ff09f13">enregistrerSequence</a>();
+<a name="l00264"></a>00264         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a252943ea42b6c41bc5753c671cba0ca4" title="ajoute une scène dans le cache de la séquence à enregistrer">ajouterSceneSequence</a>();
+<a name="l00265"></a>00265         <span class="comment">//void modifierScene();</span>
+<a name="l00266"></a>00266 
+<a name="l00267"></a>00267         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#aef82c70f4b8a9bee729c3d5ba6af4ba6">executerSceneDefault</a>();
+<a name="l00268"></a>00268         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a66b39d06661613cd35db066d4e20dc92" title="Suppression d&#39;une scène depuis l&#39;IHM.">supprimerScene</a>();
+<a name="l00269"></a>00269         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#aa643b4cdc29030edb361238e15cdc5c4">executerSequenceDefault</a>();
+<a name="l00270"></a>00270         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a4739e672fc5edd9e5f1bbe7795844c3b">supprimerSequence</a>();
+<a name="l00271"></a>00271         <span class="comment">//void supprimerToutesScenes();</span>
+<a name="l00272"></a>00272         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a0b506c50659374f16563edf06fb53426" title="Supression d&#39;un projecteur du fichier XML depuis l&#39;IHM.">supprimerProjecteur</a>(<span class="comment">/*QString nom,*/</span> QString uuid);
+<a name="l00273"></a>00273         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a0c31b6a97763e9c0b9101b00cb92c2b6" title="Supression simultanée de tous les projecteurs depuis l&#39;IHM.">supprimerTousProjecteurs</a>();
+<a name="l00274"></a>00274         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#ab6d4472ec45a37cac7bffa30cb75033f" title="Récupere les données entrées dans les LineEdit de l&#39;ajout d&#39;interface et les place dans la liste inte...">recupererDonneesNouvelleInterface</a>();
+<a name="l00275"></a>00275         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a65c45bd913d3f33659f80735a59069ea" title="Ferme l&#39;application.">quitter</a>();
+<a name="l00276"></a>00276         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#ab7d88c23dfee168748cf686757c94457" title="Supprime l&#39;interface DMX du fichier adaptateurs.xml et de la QListe interfaces.">supprimerInterface</a>();
+<a name="l00277"></a>00277 
+<a name="l00278"></a>00278         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#ae07959b2de53ec3bb2bc322529b5d6ce" title="Ajoute une console à la QList consoles dont les paramètres seront définis par les QLineEdit champAdre...">ajouterConsole</a>();
+<a name="l00279"></a>00279         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a6942c65a3838403265ac11ab8ceaa844" title="Genere une nouvelle fenetre de dialogue qui contient les informations de la console à modifier...">genererFenetreModifierConsole</a>();
+<a name="l00280"></a>00280         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a2b3522b350b75895bff9a8c7af32a216">envoyerModificationConsole</a>();
+<a name="l00281"></a>00281         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#abb6f1e3f85d9fc5fbdb8ad1274c7d6a3" title="Supprime la console activement séléctionnée dans le QComboBox listeChoixConsole de la QList consoles...">supprimerConsole</a>();
+<a name="l00282"></a>00282 
+<a name="l00283"></a>00283         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a885f0ff36ec4a2959c3e7e7ca1e561aa" title="ajoute une séquence dans le cache du spectacle à enregistrer">ajouterSequenceSpectacle</a>();
+<a name="l00284"></a>00284         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a072de8f29e5e3dabd0e8363d47634c94">enregistrerSpectacle</a>();
+<a name="l00285"></a>00285         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#abe1a3ca86dc4ae47446d19a5aff8d371">executerSpectacle</a>();
+<a name="l00286"></a>00286         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a58a37489d00107cabe4f17fe594d5610">supprimerSpectacle</a>();
+<a name="l00287"></a>00287 
+<a name="l00288"></a>00288         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#aeecd26f179a99a1d33ea21f2b3067d46" title="Efface l&#39;affichage des projecteurs enregistrés dans le menu d&#39;ajout de projecteurs.">effacerAffichageProjecteursEnregistres</a>();
+<a name="l00289"></a>00289         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#abee2b4403a55949e3168c14f2def0f71" title="Réaffiche la liste mise à jour des projecteurs enregistrés dans le menu d&#39;ajout de projecteur...">mettreAJourProjecteursEnregistres</a>();
+<a name="l00290"></a>00290         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a491d465e08918db967f2fe0dc206a640">effacerAffichageProjecteursPilotage</a>();
+<a name="l00291"></a>00291         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a4b8590c442283a1f5850d2c4f14fc672" title="Réaffiche les projecteurs en index mis à jour dans listeProjecteursPilotage.">mettreAJourProjecteursPilotage</a>();
+<a name="l00292"></a>00292 
+<a name="l00293"></a>00293         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m.html#a9e41a6bda71a20e2c49c1785f39aba6b">envoyerCanalDepartWing</a>();
+<a name="l00294"></a>00294 
+<a name="l00295"></a>00295     signals :
+<a name="l00296"></a>00296 
+<a name="l00297"></a>00297 };
+<a name="l00298"></a>00298 
+<a name="l00299"></a>00299 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi Juin 7 2018 20:37:25 pour DMX 2018 par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

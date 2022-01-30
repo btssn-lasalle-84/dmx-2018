@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>DMX 2018:  Fichier source de DMXProjecteur.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="icone-dmx.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">DMX 2018
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2018</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">DMXProjecteur.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_d_m_x_projecteur_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef DMXPROJECTEUR__H</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define DMXPROJECTEUR__H</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;QtCore&gt;</span>
+<a name="l00005"></a>00005 
+<a name="l00006"></a>00006 
+<a name="l00020"></a>00020 <span class="keyword">class </span><a class="code" href="class_enttec_d_m_x_u_s_b.html" title="Classe permettant la communication avec l&#39;interface Enttec.">EnttecDMXUSB</a>;
+<a name="l00021"></a>00021 
+<a name="l00022"></a><a class="code" href="class_d_m_x_projecteur.html">00022</a> <span class="keyword">class </span><a class="code" href="class_d_m_x_projecteur.html" title="Definition de la classe DMXProjecteur.">DMXProjecteur</a>
+<a name="l00023"></a>00023 {
+<a name="l00024"></a>00024     <span class="keyword">protected</span>:
+<a name="l00025"></a><a class="code" href="class_d_m_x_projecteur.html#a6ac3f5d4f2a2325869dfcecce9cdcfbd">00025</a>         <a class="code" href="class_enttec_d_m_x_u_s_b.html" title="Classe permettant la communication avec l&#39;interface Enttec.">EnttecDMXUSB</a> *<a class="code" href="class_d_m_x_projecteur.html#a6ac3f5d4f2a2325869dfcecce9cdcfbd" title="Association vers la classe EnttecDMXUSB.">interfaceDMX</a>; 
+<a name="l00026"></a><a class="code" href="class_d_m_x_projecteur.html#aadb4fc8ffb43ab5770fa665bac88350f">00026</a>         QString <a class="code" href="class_d_m_x_projecteur.html#aadb4fc8ffb43ab5770fa665bac88350f">nom</a>;
+<a name="l00027"></a><a class="code" href="class_d_m_x_projecteur.html#a6a26fc56568fab72b63f0292307751aa">00027</a>         <span class="keywordtype">int</span> <a class="code" href="class_d_m_x_projecteur.html#a6a26fc56568fab72b63f0292307751aa">canalDebut</a>;
+<a name="l00028"></a><a class="code" href="class_d_m_x_projecteur.html#a6c5dff0cd1a009644f5e0c4f6de6113f">00028</a>         <span class="keywordtype">int</span> <a class="code" href="class_d_m_x_projecteur.html#a6c5dff0cd1a009644f5e0c4f6de6113f">nombreCanaux</a>;
+<a name="l00029"></a><a class="code" href="class_d_m_x_projecteur.html#a4c6402fe51efbd2ea27c492c8d4dd8ae">00029</a>         QString <a class="code" href="class_d_m_x_projecteur.html#a4c6402fe51efbd2ea27c492c8d4dd8ae">uuid</a>;
+<a name="l00030"></a><a class="code" href="class_d_m_x_projecteur.html#abf33320fa3ce0cc3e06db271bd835a6a">00030</a>         QString <a class="code" href="class_d_m_x_projecteur.html#abf33320fa3ce0cc3e06db271bd835a6a">type</a>;
+<a name="l00031"></a><a class="code" href="class_d_m_x_projecteur.html#a993bad0d7138d95ca9f5904efbf26bd5">00031</a>         QStringList <a class="code" href="class_d_m_x_projecteur.html#a993bad0d7138d95ca9f5904efbf26bd5">nomCanaux</a>;
+<a name="l00032"></a>00032                 
+<a name="l00033"></a>00033         <span class="keyword">public</span>:
+<a name="l00034"></a>00034                 <a class="code" href="class_d_m_x_projecteur.html#adf17c8acb7cc639bae48688dc8397876">DMXProjecteur</a>();
+<a name="l00035"></a>00035         <a class="code" href="class_d_m_x_projecteur.html#adf17c8acb7cc639bae48688dc8397876">DMXProjecteur</a>(QString <a class="code" href="class_d_m_x_projecteur.html#aadb4fc8ffb43ab5770fa665bac88350f">nom</a>, <span class="keywordtype">int</span> <a class="code" href="class_d_m_x_projecteur.html#a6a26fc56568fab72b63f0292307751aa">canalDebut</a>, <span class="keywordtype">int</span> <a class="code" href="class_d_m_x_projecteur.html#a6c5dff0cd1a009644f5e0c4f6de6113f">nombreCanaux</a>, QString <a class="code" href="class_d_m_x_projecteur.html#a4c6402fe51efbd2ea27c492c8d4dd8ae">uuid</a>, QString <a class="code" href="class_d_m_x_projecteur.html#abf33320fa3ce0cc3e06db271bd835a6a">type</a> = <span class="stringliteral">&quot;&quot;</span>);
+<a name="l00036"></a>00036         <span class="keyword">virtual</span> <a class="code" href="class_d_m_x_projecteur.html#a0e1dddd8f876269ffdd4f154648f26ba">~DMXProjecteur</a>();
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038         <span class="keywordtype">void</span> <a class="code" href="class_d_m_x_projecteur.html#ad5d62d9c0614bf932ec8d3f83357d149" title="Mutateur de l&#39;attribut interfaceDMX de la classe DMXProjecteur.">setEnttecDMXUSB</a>(<a class="code" href="class_enttec_d_m_x_u_s_b.html" title="Classe permettant la communication avec l&#39;interface Enttec.">EnttecDMXUSB</a> *<a class="code" href="class_d_m_x_projecteur.html#a6ac3f5d4f2a2325869dfcecce9cdcfbd" title="Association vers la classe EnttecDMXUSB.">interfaceDMX</a>);
+<a name="l00039"></a>00039         QString <a class="code" href="class_d_m_x_projecteur.html#a1087b2b62a7f3a9c397a8632311a3c7d" title="Accesseur de l&#39;attribut nom de la classe DMXProjecteur.">getNom</a>() <span class="keyword">const</span>;
+<a name="l00040"></a>00040         <span class="keywordtype">int</span> <a class="code" href="class_d_m_x_projecteur.html#a6c7bb8448c859c1abd6d56d064975aae" title="Accesseur de l&#39;attribut canalDebut de la classe DMXProjecteur.">getCanalDebut</a>() <span class="keyword">const</span>;
+<a name="l00041"></a>00041         <span class="keywordtype">int</span> <a class="code" href="class_d_m_x_projecteur.html#afeb64a0769f0f5fd2d1bf6a8c3877233" title="Accesseur de l&#39;attribut nombreCanaux de la classe DMXProjecteur.">getNombreCanaux</a>() <span class="keyword">const</span>;
+<a name="l00042"></a>00042         QString <a class="code" href="class_d_m_x_projecteur.html#a259e07dbbdcd5158f4e9286218d00418" title="Accesseur de l&#39;attribut uuid de la classe DMXProjecteur.">getUuid</a>() <span class="keyword">const</span>;
+<a name="l00043"></a>00043         QString <a class="code" href="class_d_m_x_projecteur.html#ad68c6a02919cc767e3b18aabcd736efb" title="Accesseur de l&#39;attribut type de la classe DMXProjecteur.">getType</a>() <span class="keyword">const</span>;
+<a name="l00044"></a>00044         QStringList <a class="code" href="class_d_m_x_projecteur.html#a47572e07441fa82e696963783e10c2f6" title="Accesseur de l&#39;attribut nomCanaux[] de la classe DMXProjecteur.">getNomCanaux</a>() <span class="keyword">const</span>;
+<a name="l00045"></a>00045         QString <a class="code" href="class_d_m_x_projecteur.html#a78751e7f9c3959ca4684268b7b637aa8" title="Accesseur de la case canal-canalDebut de l&#39;attribut nomCanaux[] de la classe DMXProjecteur.">getNomCanal</a>(<span class="keywordtype">int</span> canal) <span class="keyword">const</span>;
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047         <span class="keywordtype">void</span> <a class="code" href="class_d_m_x_projecteur.html#a387b6b5a0a75c240d97cbcbffb5e988b" title="Mutateur de l&#39;attribut canalDebut de la classe DMXProjecteur.">setCanalDebut</a>(<span class="keywordtype">int</span> debut);
+<a name="l00048"></a>00048         <span class="keywordtype">void</span> <a class="code" href="class_d_m_x_projecteur.html#a7a5e69028099a99b07809f1b366d4871" title="Mutateur de l&#39;attribut nomCanaux[] de la classe DMXProjecteur.">setNomCanaux</a>(QStringList <a class="code" href="class_d_m_x_projecteur.html#a993bad0d7138d95ca9f5904efbf26bd5">nomCanaux</a>);
+<a name="l00049"></a>00049 
+<a name="l00052"></a>00052         <span class="keywordtype">void</span> <a class="code" href="class_d_m_x_projecteur.html#a9c61c294668c0c5a3c7e5b76b52dc3d4" title="Mutateur de l&#39;attribut nom de la classe DMXProjecteur.">setNom</a>(QString <a class="code" href="class_d_m_x_projecteur.html#aadb4fc8ffb43ab5770fa665bac88350f">nom</a>);
+<a name="l00053"></a>00053         <span class="keywordtype">void</span> <a class="code" href="class_d_m_x_projecteur.html#a71388d7b5b90411919d59fc1a8c0cf40" title="Mutateur de l&#39;attribut nombreCanaux de la classe DMXProjecteur.">setNombreCanaux</a>(<span class="keywordtype">int</span> nombre);
+<a name="l00054"></a>00054         <span class="keywordtype">void</span> <a class="code" href="class_d_m_x_projecteur.html#a0f573e67aa6ece53fde78279e0cc5b17" title="Mutateur de l&#39;attribut uuid de la classe DMXProjecteur.">setUuid</a>(QString <a class="code" href="class_d_m_x_projecteur.html#a4c6402fe51efbd2ea27c492c8d4dd8ae">uuid</a>);
+<a name="l00055"></a>00055         <span class="keywordtype">void</span> <a class="code" href="class_d_m_x_projecteur.html#a40ea0cc63ec1a1278ae6601eb9d0d684" title="Mutateur de l&#39;attribut type de la classe DMXProjecteur.">setType</a>(QString <a class="code" href="class_d_m_x_projecteur.html#abf33320fa3ce0cc3e06db271bd835a6a">type</a>);
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057 };
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi Juin 7 2018 20:37:25 pour DMX 2018 par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

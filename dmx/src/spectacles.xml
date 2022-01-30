@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spectacles>
+  <spectacle nom="Spectacle Traviata" uuid="{4181d44e-3f5e-45fb-a676-ab5485383fbc}">
+    <sequence nom="Sequence d'introduction" uuid="{e65d1051-1999-4498-af49-5088c92cb6ba}"/>
+    <sequence nom="Sequence ambiance" uuid="{80baf6e4-9912-45a7-aed9-33e251410d3c}"/>
+  </spectacle>
+</spectacles>

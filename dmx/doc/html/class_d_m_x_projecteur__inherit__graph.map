@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_d_m_x_laser.html" title="{DMXLaser\n|&#45; canalControle\l&#45; canalExtinction\l&#45; canalPictures\l&#45; canalDeplacement\l&#45; canalRotation\l&#45; canalSens\l&#45; canalStretch\l&#45; canalSpeed\l&#45; canalSlowDrawSpeed\l&#45; canalTaille\l|+ DMXLaser()\l+ DMXLaser()\l+ ~DMXLaser()\l+ setCanaux()\l}" alt="" coords="5,416,163,709"/>
+<area shape="rect" id="node5" href="$class_d_m_x_lyre.html" title="{DMXLyre\n|&#45; canalPan\l&#45; canalTilt\l&#45; canalGlobos\l&#45; canalCouleur\l|+ DMXLyre()\l+ DMXLyre()\l+ ~DMXLyre()\l+ setCanaux()\l}" alt="" coords="187,468,293,657"/>
+<area shape="rect" id="node7" href="$class_d_m_x_p_a_r.html" title="{DMXPAR\n|&#45; canalCouleurRouge\l&#45; canalCouleurBleue\l&#45; canalCouleurVerte\l|+ DMXPAR()\l+ DMXPAR()\l+ ~DMXPAR()\l+ setCanaux()\l}" alt="" coords="317,477,461,649"/>
+<area shape="rect" id="node9" href="$class_d_m_x_scanner.html" title="{DMXScanner\n|&#45; canalPan\l&#45; canalTilt\l&#45; canalCouleur\l|+ DMXScanner()\l+ DMXScanner()\l+ ~DMXScanner()\l+ setCanaux()\l}" alt="" coords="485,477,613,649"/>
+<area shape="rect" id="node11" href="$class_d_m_x_special.html" title="{DMXSpecial\n||+ DMXSpecial()\l+ DMXSpecial()\l+ ~DMXSpecial()\l+ setCanaux()\l}" alt="" coords="637,494,760,631"/>
+</map>

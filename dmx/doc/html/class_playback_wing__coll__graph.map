@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$struct_etat_faders.html" title="Structure permettant de stocker les valeurs des faders." alt="" coords="5,58,91,299"/>
+<area shape="rect" id="node4" href="$class_x_m_l_utilitaire.html" title="Classe gérant les fichiers XML de l&#39;application." alt="" coords="115,6,344,351"/>
+<area shape="rect" id="node6" href="$struct_etat_touches_controle.html" title="Structure permettant de stocker les valeurs des touches de contrôle (Page Up, Page Back..." alt="" coords="368,110,512,247"/>
+</map>

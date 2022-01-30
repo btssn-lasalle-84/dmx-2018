@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>DMX 2018: Référence du fichier rs232.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="icone-dmx.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">DMX 2018
+   &#160;<span id="projectnumber">0.8</span>
+   </div>
+   <div id="projectbrief">BTS SN 2018</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#enum-members">Énumérations</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier rs232.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;iomanip&gt;</code><br/>
+<code>#include &lt;string&gt;</code><br/>
+<code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;errno.h&gt;</code><br/>
+<code>#include &lt;termios.h&gt;</code><br/>
+<code>#include &lt;linux/serial.h&gt;</code><br/>
+<code>#include &lt;termio.h&gt;</code><br/>
+<code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;string.h&gt;</code><br/>
+<code>#include &lt;unistd.h&gt;</code><br/>
+<code>#include &lt;sys/ioctl.h&gt;</code><br/>
+<code>#include &lt;sys/types.h&gt;</code><br/>
+<code>#include &lt;sys/stat.h&gt;</code><br/>
+<code>#include &lt;sys/signal.h&gt;</code><br/>
+<code>#include &lt;sys/time.h&gt;</code><br/>
+<code>#include &lt;fcntl.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="errcode_8h_source.html">errcode.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="types_8h_source.html">types.h</a>&quot;</code><br/>
+</div>
+<p><a href="rs232_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_r_s232.html">CRS232</a></td></tr>
+<tr><td colspan="2"><h2><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8h.html#a6830fdaf6dd802a9aac5ebec5c9a4064">MAX_COMPORTS</a>&#160;&#160;&#160;4</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8h.html#ae310f74f793edeb882f0c2d8d8b50bb8">MAXLINESIZE</a>&#160;&#160;&#160;128</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8h.html#a143aaad33e4d237641b36c260fd73f7c">ErrTimeout</a>&#160;&#160;&#160;9997</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8h.html#a74f2d4c747bce0b8f7f7c1f48e651876">TIMEOUT_INF</a>&#160;&#160;&#160;~((<a class="el" href="rs232_8h.html#af412159e5cef839836a5e7b19ee75d1c">timeout_t</a>) 0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>&#160;&#160;&#160;-1</td></tr>
+<tr><td colspan="2"><h2><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403">_Pending</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8h.html#a4783fb2dbe7e03f4ddba4b4e7eeba60f">Pending</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8h.html#af412159e5cef839836a5e7b19ee75d1c">timeout_t</a></td></tr>
+<tr><td colspan="2"><h2><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403">_Pending</a> { <a class="el" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403adfd3ca7840de6b30fc0ca91091753030">pendingInput</a>, 
+<a class="el" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403a4e7a62ac5b61aba22c039a2c7141ff99">pendingOutput</a>, 
+<a class="el" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403a6434a0ceaaf916d81bf6cd1864069c6f">pendingError</a>
+ }</td></tr>
+</table>
+<hr/><h2>Documentation des macros</h2>
+<a class="anchor" id="a143aaad33e4d237641b36c260fd73f7c"></a><!-- doxytag: member="rs232.h::ErrTimeout" ref="a143aaad33e4d237641b36c260fd73f7c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="rs232_8h.html#a143aaad33e4d237641b36c260fd73f7c">ErrTimeout</a>&#160;&#160;&#160;9997</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_enttec_d_m_x_u_s_b.html#a7e7738cf543b306d8083ae0fe443605d">EnttecDMXUSB::recieve()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5fdc7facea201bfce4ad308105f88d0c"></a><!-- doxytag: member="rs232.h::INVALID_HANDLE_VALUE" ref="a5fdc7facea201bfce4ad308105f88d0c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>&#160;&#160;&#160;-1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_c_r_s232.html#af8d5702391369e1c0fd21efaa7506b75">CRS232::flushInput()</a>, <a class="el" href="class_c_r_s232.html#a7937a41e618d11aaecb92381ab3f695c">CRS232::flushOutput()</a>, <a class="el" href="class_c_r_s232.html#ab8a5cc1b7c51df67e91f3b2c4fc7dd9c">CRS232::GetSerialCTS()</a>, <a class="el" href="class_c_r_s232.html#a3e8c6a80aad8f2233fb939ca85ac0447">CRS232::GetSerialDSR()</a>, <a class="el" href="class_c_r_s232.html#af0570125bbbf679b332fbd0a578274ca">CRS232::OpenSerial()</a>, <a class="el" href="class_c_r_s232.html#aa6fdd15db5cc32a9edfb961813153005">CRS232::RecvBufferEX()</a>, <a class="el" href="class_c_r_s232.html#aab90156596efb6afaacd471daa0f4a04">CRS232::RecvByte()</a>, <a class="el" href="class_c_r_s232.html#acc194cf92f3a0fafb42486c862b75c87">CRS232::SendBreak()</a>, <a class="el" href="class_c_r_s232.html#af5866081536f1f84b7e5725ed6c856d7">CRS232::SendBuffer()</a>, <a class="el" href="class_c_r_s232.html#a9425bef732f8383372f91c2d7e5902e7">CRS232::SendByte()</a>, <a class="el" href="class_c_r_s232.html#a47736fc11ea8c84a898c6c203a5b478e">CRS232::SetCustomBaudRate()</a>, <a class="el" href="class_c_r_s232.html#a07643d0f399c2ca1486437f9228c6924">CRS232::SetSerialBreak()</a>, <a class="el" href="class_c_r_s232.html#a83b476471994c539d364599b05fe792a">CRS232::SetSerialDTR()</a>, <a class="el" href="class_c_r_s232.html#a25bf37fb22f2edbf815b0ed48397b190">CRS232::SetSerialRTS()</a>, <a class="el" href="class_c_r_s232.html#ad2040f3f9530bab263aff423bcb6cb09">CRS232::SetSerialRTSDTR()</a>, <a class="el" href="class_c_r_s232.html#a7b7ccbd5c791be1db5d61176aa346cfb">CRS232::WaitForTxEmpty()</a>, et <a class="el" href="class_c_r_s232.html#adb8c4a81737d6762af8c00a4e9672b3d">CRS232::WaitingData()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6830fdaf6dd802a9aac5ebec5c9a4064"></a><!-- doxytag: member="rs232.h::MAX_COMPORTS" ref="a6830fdaf6dd802a9aac5ebec5c9a4064" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="rs232_8h.html#a6830fdaf6dd802a9aac5ebec5c9a4064">MAX_COMPORTS</a>&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae310f74f793edeb882f0c2d8d8b50bb8"></a><!-- doxytag: member="rs232.h::MAXLINESIZE" ref="ae310f74f793edeb882f0c2d8d8b50bb8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="rs232_8h.html#ae310f74f793edeb882f0c2d8d8b50bb8">MAXLINESIZE</a>&#160;&#160;&#160;128</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a74f2d4c747bce0b8f7f7c1f48e651876"></a><!-- doxytag: member="rs232.h::TIMEOUT_INF" ref="a74f2d4c747bce0b8f7f7c1f48e651876" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="rs232_8h.html#a74f2d4c747bce0b8f7f7c1f48e651876">TIMEOUT_INF</a>&#160;&#160;&#160;~((<a class="el" href="rs232_8h.html#af412159e5cef839836a5e7b19ee75d1c">timeout_t</a>) 0)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_c_r_s232.html#adb8c4a81737d6762af8c00a4e9672b3d">CRS232::WaitingData()</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Documentation des définitions de type</h2>
+<a class="anchor" id="a4783fb2dbe7e03f4ddba4b4e7eeba60f"></a><!-- doxytag: member="rs232.h::Pending" ref="a4783fb2dbe7e03f4ddba4b4e7eeba60f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403">_Pending</a>  <a class="el" href="rs232_8h.html#a4783fb2dbe7e03f4ddba4b4e7eeba60f">Pending</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af412159e5cef839836a5e7b19ee75d1c"></a><!-- doxytag: member="rs232.h::timeout_t" ref="af412159e5cef839836a5e7b19ee75d1c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned long <a class="el" href="rs232_8h.html#af412159e5cef839836a5e7b19ee75d1c">timeout_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Documentation du type de l'énumération</h2>
+<a class="anchor" id="a700db6d10d643e7d5f7b4b8527e20403"></a><!-- doxytag: member="rs232.h::_Pending" ref="a700db6d10d643e7d5f7b4b8527e20403" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403">_Pending</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>Valeurs énumérées: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a700db6d10d643e7d5f7b4b8527e20403adfd3ca7840de6b30fc0ca91091753030"></a><!-- doxytag: member="pendingInput" ref="a700db6d10d643e7d5f7b4b8527e20403adfd3ca7840de6b30fc0ca91091753030" args="" -->pendingInput</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a700db6d10d643e7d5f7b4b8527e20403a4e7a62ac5b61aba22c039a2c7141ff99"></a><!-- doxytag: member="pendingOutput" ref="a700db6d10d643e7d5f7b4b8527e20403a4e7a62ac5b61aba22c039a2c7141ff99" args="" -->pendingOutput</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a700db6d10d643e7d5f7b4b8527e20403a6434a0ceaaf916d81bf6cd1864069c6f"></a><!-- doxytag: member="pendingError" ref="a700db6d10d643e7d5f7b4b8527e20403a6434a0ceaaf916d81bf6cd1864069c6f" args="" -->pendingError</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+<div class="fragment"><pre class="fragment">{
+    <a class="code" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403adfd3ca7840de6b30fc0ca91091753030">pendingInput</a>,
+    <a class="code" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403a4e7a62ac5b61aba22c039a2c7141ff99">pendingOutput</a>,
+    <a class="code" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403a6434a0ceaaf916d81bf6cd1864069c6f">pendingError</a>
+} <a class="code" href="rs232_8h.html#a4783fb2dbe7e03f4ddba4b4e7eeba60f">Pending</a>;
+</pre></div>
+</div>
+</div>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Samedi Mars 24 2018 10:21:41 pour DMX 2018 par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

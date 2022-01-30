@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>DMX 2018:  Fichier source de rs232.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="icone-dmx.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">DMX 2018
+   &#160;<span id="projectnumber">0.8</span>
+   </div>
+   <div id="projectbrief">BTS SN 2018</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">rs232.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="rs232_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef RS232_H</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define RS232_H</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;iomanip&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;string&gt;</span>
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;stdio.h&gt;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;errno.h&gt;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &lt;termios.h&gt;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &lt;linux/serial.h&gt;</span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &lt;termio.h&gt;</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &lt;stdlib.h&gt;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &lt;string.h&gt;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &lt;unistd.h&gt;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &lt;sys/ioctl.h&gt;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &lt;sys/types.h&gt;</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &lt;sys/stat.h&gt;</span>
+<a name="l00019"></a>00019 <span class="preprocessor">#include &lt;sys/signal.h&gt;</span>
+<a name="l00020"></a>00020 <span class="preprocessor">#include &lt;sys/time.h&gt;</span>
+<a name="l00021"></a>00021 <span class="preprocessor">#include &lt;fcntl.h&gt;</span>
+<a name="l00022"></a>00022 
+<a name="l00023"></a>00023 <span class="preprocessor">#include &quot;<a class="code" href="errcode_8h.html">errcode.h</a>&quot;</span>
+<a name="l00024"></a>00024 <span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">types.h</a>&quot;</span>
+<a name="l00025"></a>00025 
+<a name="l00026"></a><a class="code" href="rs232_8h.html#a6830fdaf6dd802a9aac5ebec5c9a4064">00026</a> <span class="preprocessor">#define MAX_COMPORTS    4</span>
+<a name="l00027"></a><a class="code" href="rs232_8h.html#ae310f74f793edeb882f0c2d8d8b50bb8">00027</a> <span class="preprocessor"></span><span class="preprocessor">#define MAXLINESIZE     128</span>
+<a name="l00028"></a>00028 <span class="preprocessor"></span>
+<a name="l00029"></a><a class="code" href="rs232_8h.html#a143aaad33e4d237641b36c260fd73f7c">00029</a> <span class="preprocessor">#define ErrTimeout 9997</span>
+<a name="l00030"></a><a class="code" href="rs232_8h.html#a74f2d4c747bce0b8f7f7c1f48e651876">00030</a> <span class="preprocessor"></span><span class="preprocessor">#define TIMEOUT_INF ~((timeout_t) 0)</span>
+<a name="l00031"></a>00031 <span class="preprocessor"></span>
+<a name="l00032"></a><a class="code" href="rs232_8h.html#a5fdc7facea201bfce4ad308105f88d0c">00032</a> <span class="preprocessor">#define INVALID_HANDLE_VALUE -1</span>
+<a name="l00033"></a>00033 <span class="preprocessor"></span>
+<a name="l00034"></a>00034 <span class="comment">//#define DEBUG_RS232</span>
+<a name="l00035"></a>00035 
+<a name="l00036"></a><a class="code" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403">00036</a> <span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403">_Pending</a>
+<a name="l00037"></a>00037 {
+<a name="l00038"></a><a class="code" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403adfd3ca7840de6b30fc0ca91091753030">00038</a>     <a class="code" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403adfd3ca7840de6b30fc0ca91091753030">pendingInput</a>,
+<a name="l00039"></a><a class="code" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403a4e7a62ac5b61aba22c039a2c7141ff99">00039</a>     <a class="code" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403a4e7a62ac5b61aba22c039a2c7141ff99">pendingOutput</a>,
+<a name="l00040"></a><a class="code" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403a6434a0ceaaf916d81bf6cd1864069c6f">00040</a>     <a class="code" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403a6434a0ceaaf916d81bf6cd1864069c6f">pendingError</a>
+<a name="l00041"></a>00041 } <a class="code" href="rs232_8h.html#a4783fb2dbe7e03f4ddba4b4e7eeba60f">Pending</a>;
+<a name="l00042"></a>00042 
+<a name="l00043"></a><a class="code" href="rs232_8h.html#af412159e5cef839836a5e7b19ee75d1c">00043</a> <span class="keyword">typedef</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>  <a class="code" href="rs232_8h.html#af412159e5cef839836a5e7b19ee75d1c">timeout_t</a>;
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045 <span class="keyword">using namespace </span>std;
+<a name="l00046"></a>00046 
+<a name="l00047"></a><a class="code" href="class_c_r_s232.html">00047</a> <span class="keyword">class </span><a class="code" href="class_c_r_s232.html">CRS232</a>
+<a name="l00048"></a>00048 {
+<a name="l00049"></a>00049         <span class="keyword">private</span>:
+<a name="l00050"></a><a class="code" href="class_c_r_s232.html#a508c300a3fe187a5dec7b9e26f8ab62d">00050</a>         <span class="keywordtype">long</span> <a class="code" href="class_c_r_s232.html#a508c300a3fe187a5dec7b9e26f8ab62d">actual_speed</a>;
+<a name="l00051"></a><a class="code" href="class_c_r_s232.html#a367fe001dd70ab89bbe86bc0bf530279">00051</a>         <span class="keywordtype">int</span> actual_bits, actual_parity, <a class="code" href="class_c_r_s232.html#a367fe001dd70ab89bbe86bc0bf530279">actual_stops</a>;
+<a name="l00052"></a><a class="code" href="class_c_r_s232.html#a7a1c088ac127e846d48e1ea77ea590e4">00052</a>         <span class="keywordtype">int</span> <a class="code" href="class_c_r_s232.html#a7a1c088ac127e846d48e1ea77ea590e4">actual_flowcontrol</a>;
+<a name="l00053"></a><a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">00053</a>         <span class="keywordtype">int</span> <a class="code" href="class_c_r_s232.html#aaabf2d7bfe736160af853e79e0d17e60">fd</a>;
+<a name="l00054"></a><a class="code" href="class_c_r_s232.html#a86f8a1bf1888abc7f024fa3678bbc282">00054</a>         <span class="keyword">struct </span>termios old_termios;
+<a name="l00055"></a><a class="code" href="class_c_r_s232.html#a3a7e8906a8696f6df5f152bfb65f137c">00055</a>         <span class="keywordtype">long</span> <a class="code" href="class_c_r_s232.html#a3a7e8906a8696f6df5f152bfb65f137c">read_total_timeout</a>, read_interval_timeout;
+<a name="l00056"></a>00056         <span class="keywordtype">int</span> flushInput(<span class="keywordtype">void</span>);
+<a name="l00057"></a>00057         <span class="keywordtype">int</span> flushOutput(<span class="keywordtype">void</span>);
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059         <span class="keyword">public</span>:
+<a name="l00060"></a>00060         <a class="code" href="class_c_r_s232.html">CRS232</a>();
+<a name="l00061"></a>00061             <span class="keywordtype">int</span> OpenSerial(<span class="keywordtype">string</span> port);
+<a name="l00062"></a>00062         <span class="keywordtype">int</span> OpenSerial(<span class="keywordtype">string</span> port, <span class="keywordtype">int</span> flags);
+<a name="l00063"></a>00063             <span class="keywordtype">void</span> CloseSerial();
+<a name="l00064"></a>00064         <span class="keywordtype">int</span> WaitingData(<a class="code" href="rs232_8h.html#a4783fb2dbe7e03f4ddba4b4e7eeba60f">Pending</a> pending=<a class="code" href="rs232_8h.html#a700db6d10d643e7d5f7b4b8527e20403adfd3ca7840de6b30fc0ca91091753030">pendingInput</a>, <a class="code" href="rs232_8h.html#af412159e5cef839836a5e7b19ee75d1c">timeout_t</a> timeout= <a class="code" href="rs232_8h.html#a74f2d4c747bce0b8f7f7c1f48e651876">TIMEOUT_INF</a>);
+<a name="l00065"></a>00065         <span class="keywordtype">long</span> RecvBufferEX(<a class="code" href="types_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> *buffer, <a class="code" href="types_8h.html#ad342ac907eb044443153a22f964bf0af">DWORD</a> len, <a class="code" href="types_8h.html#ad342ac907eb044443153a22f964bf0af">DWORD</a> read_total_timeout=0);
+<a name="l00066"></a>00066         <a class="code" href="types_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> RecvByte(<a class="code" href="types_8h.html#ad342ac907eb044443153a22f964bf0af">DWORD</a> timeout=0);
+<a name="l00067"></a>00067             <span class="keywordtype">long</span> SendBuffer(<a class="code" href="types_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> *buffer, <a class="code" href="types_8h.html#ad342ac907eb044443153a22f964bf0af">DWORD</a> len);
+<a name="l00068"></a>00068         <span class="keywordtype">long</span> SendByte(<a class="code" href="types_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> buffer);
+<a name="l00069"></a>00069             <span class="keywordtype">int</span> SetSerialParams(<span class="keywordtype">long</span> speed = -1, <span class="keywordtype">int</span> bits = -1, <span class="keywordtype">int</span> parity = -1, <span class="keywordtype">int</span> stops = -1, <span class="keywordtype">int</span> flow_control = -1);
+<a name="l00070"></a>00070         <span class="keywordtype">int</span> SetCustomBaudRate(<span class="keywordtype">int</span> baud_rate=250000);
+<a name="l00071"></a>00071         <span class="keywordtype">void</span> Purge(<span class="keywordtype">void</span>);
+<a name="l00072"></a>00072         <span class="keywordtype">void</span> WaitForTxEmpty();
+<a name="l00073"></a>00073         <span class="keywordtype">int</span> SendBreak(<span class="keywordtype">void</span>);
+<a name="l00074"></a>00074         <span class="keywordtype">int</span> SetSerialTimeouts(<span class="keywordtype">long</span> init_read, <span class="keywordtype">long</span> while_read);
+<a name="l00075"></a>00075         <span class="keywordtype">int</span> SetSerialBreak(<span class="keywordtype">int</span> state);
+<a name="l00076"></a>00076         <span class="keywordtype">int</span> SetSerialDTR(<span class="keywordtype">int</span> dtr);
+<a name="l00077"></a>00077         <span class="keywordtype">int</span> SetSerialRTS(<span class="keywordtype">int</span> rts);
+<a name="l00078"></a>00078         <span class="keywordtype">int</span> GetSerialDSR() <span class="keyword">const</span>;
+<a name="l00079"></a>00079         <span class="keywordtype">int</span> GetSerialCTS() <span class="keyword">const</span>;
+<a name="l00080"></a>00080         <span class="keywordtype">int</span> SetSerialRTSDTR(<span class="keywordtype">int</span> state);
+<a name="l00081"></a>00081 };
+<a name="l00082"></a>00082 
+<a name="l00083"></a>00083 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Samedi Mars 24 2018 10:21:41 pour DMX 2018 par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

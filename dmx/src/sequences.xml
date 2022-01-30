@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<sequences>
+  <sequence nom="Sequence d'introduction" uuid="{e65d1051-1999-4498-af49-5088c92cb6ba}">
+    <scene temps="10" uuid="{5a5bbbef-1911-44a8-8fb7-c8bca7224c6f}"/>
+    <scene temps="10" uuid="{16e6fe5a-b726-4c2d-8243-223fe9739f5c}"/>
+    <scene temps="10" uuid="{620b30c6-46ec-4d84-af44-b829cf07cf6c}"/>
+  </sequence>
+  <sequence nom="Sequence ambiance" uuid="{80baf6e4-9912-45a7-aed9-33e251410d3c}">
+    <scene temps="5" uuid="{620b30c6-46ec-4d84-af44-b829cf07cf6c}"/>
+    <scene temps="5" uuid="{730b8d28-a36d-41ac-85b4-c2e007f61a35}"/>
+    <scene temps="10" uuid="{620b30c6-46ec-4d84-af44-b829cf07cf6c}"/>
+    <scene temps="10" uuid="{730b8d28-a36d-41ac-85b4-c2e007f61a35}"/>
+    <scene temps="5" uuid="{5a5bbbef-1911-44a8-8fb7-c8bca7224c6f}"/>
+    <scene temps="5" uuid="{16e6fe5a-b726-4c2d-8243-223fe9739f5c}"/>
+  </sequence>
+</sequences>

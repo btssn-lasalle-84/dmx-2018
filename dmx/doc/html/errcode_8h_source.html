@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>DMX 2018:  Fichier source de errcode.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="icone-dmx.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">DMX 2018
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2018</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">errcode.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="errcode_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//=========================================================================//</span>
+<a name="l00002"></a>00002 <span class="comment">//-------------------------------------------------------------------------//</span>
+<a name="l00003"></a>00003 <span class="comment">// errcode.h -- error codes                                                //</span>
+<a name="l00004"></a>00004 <span class="comment">// This file is part of PonyProg.                                          //</span>
+<a name="l00005"></a>00005 <span class="comment">//-------------------------------------------------------------------------//</span>
+<a name="l00006"></a>00006 <span class="comment">//                                                                         //</span>
+<a name="l00007"></a>00007 <span class="comment">//  PonyProg - Serial Device Programmer                                    //</span>
+<a name="l00008"></a>00008 <span class="comment">//                                                                         //</span>
+<a name="l00009"></a>00009 <span class="comment">//  Copyright (C) 1997, 1998  Claudio Lanconelli                           //</span>
+<a name="l00010"></a>00010 <span class="comment">//                                                                         //</span>
+<a name="l00011"></a>00011 <span class="comment">//  e-mail: lanconel@cs.unibo.it                                           //</span>
+<a name="l00012"></a>00012 <span class="comment">//  http://www.cs.unibo.it/~lanconel                                       //</span>
+<a name="l00013"></a>00013 <span class="comment">//                                                                         //</span>
+<a name="l00014"></a>00014 <span class="comment">//-------------------------------------------------------------------------//</span>
+<a name="l00015"></a>00015 <span class="comment">//                                                                         //</span>
+<a name="l00016"></a>00016 <span class="comment">// This program is free software; you can redistribute it and/or           //</span>
+<a name="l00017"></a>00017 <span class="comment">// modify it under the terms of the GNU  General Public License            //</span>
+<a name="l00018"></a>00018 <span class="comment">// as published by the Free Software Foundation; either version2 of        //</span>
+<a name="l00019"></a>00019 <span class="comment">// the License, or (at your option) any later version.                     //</span>
+<a name="l00020"></a>00020 <span class="comment">//                                                                         //</span>
+<a name="l00021"></a>00021 <span class="comment">// This program is distributed in the hope that it will be useful,         //</span>
+<a name="l00022"></a>00022 <span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of          //</span>
+<a name="l00023"></a>00023 <span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU       //</span>
+<a name="l00024"></a>00024 <span class="comment">// General Public License for more details.                                //</span>
+<a name="l00025"></a>00025 <span class="comment">//                                                                         //</span>
+<a name="l00026"></a>00026 <span class="comment">// You should have received a copy of the GNU  General Public License      //</span>
+<a name="l00027"></a>00027 <span class="comment">// along with this program (see COPYING);     if not, write to the         //</span>
+<a name="l00028"></a>00028 <span class="comment">// Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA. //</span>
+<a name="l00029"></a>00029 <span class="comment">//                                                                         //</span>
+<a name="l00030"></a>00030 <span class="comment">//-------------------------------------------------------------------------//</span>
+<a name="l00031"></a>00031 <span class="comment">//=========================================================================//</span>
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033 <span class="preprocessor">#ifndef _ERRCODE_H</span>
+<a name="l00034"></a>00034 <span class="preprocessor"></span><span class="preprocessor">#define _ERRCODE_H</span>
+<a name="l00035"></a>00035 <span class="preprocessor"></span>
+<a name="l00047"></a><a class="code" href="errcode_8h.html#aba51915c87d64af47fb1cc59348961c9">00047</a> <span class="preprocessor">#define OK                      0</span>
+<a name="l00048"></a><a class="code" href="errcode_8h.html#a9ad73643b862d17f759047e3fd0f5cd5">00048</a> <span class="preprocessor"></span><span class="preprocessor">#define BADPARAM                -2                      // Parametri alla funzione errati</span>
+<a name="l00049"></a>00049 <span class="preprocessor"></span>
+<a name="l00050"></a><a class="code" href="errcode_8h.html#a555d564d1f055c83c305f435f2945615">00050</a> <span class="preprocessor">#define FILENOTFOUND            -3                      // File non aperto in lettura</span>
+<a name="l00051"></a><a class="code" href="errcode_8h.html#acbdb73f47d6fa3a4ad95ba9646b0b351">00051</a> <span class="preprocessor"></span><span class="preprocessor">#define CREATEERROR             -4                      // File non aperto in scrittura</span>
+<a name="l00052"></a><a class="code" href="errcode_8h.html#a1ad67fee7f3bdc65f82d9cd6a14c9956">00052</a> <span class="preprocessor"></span><span class="preprocessor">#define BADFILETYPE             -5                      // File di tipo errato</span>
+<a name="l00053"></a><a class="code" href="errcode_8h.html#a5ea607e855f306e771b1181d04e0398e">00053</a> <span class="preprocessor"></span><span class="preprocessor">#define READERROR               -6                      // Errore in lettura dal file</span>
+<a name="l00054"></a><a class="code" href="errcode_8h.html#aa8a2cdd490f9efba3da67fd8b5adaf7d">00054</a> <span class="preprocessor"></span><span class="preprocessor">#define WRITEERROR              -7                      // Errore in scrittura da file</span>
+<a name="l00055"></a><a class="code" href="errcode_8h.html#ae3b48d3f73625a7b66545c2ff31a0b57">00055</a> <span class="preprocessor"></span><span class="preprocessor">#define NOTHINGTOSAVE           -8                      // Nessun contenuto da salvare</span>
+<a name="l00056"></a><a class="code" href="errcode_8h.html#a0d8ea2480bdec71b156da8302bd72309">00056</a> <span class="preprocessor"></span><span class="preprocessor">#define NOTSUPPORTED            -9                      // Funzionalita` non supportata (ancora)</span>
+<a name="l00057"></a>00057 <span class="preprocessor"></span>
+<a name="l00058"></a><a class="code" href="errcode_8h.html#a1157489cbbb51914628e5608a1bcc11a">00058</a> <span class="preprocessor">#define E2P_TIMEOUT             -10</span>
+<a name="l00059"></a>00059 <span class="preprocessor"></span>
+<a name="l00060"></a>00060 <span class="comment">//#define IICERR_NOERR          OK</span>
+<a name="l00061"></a><a class="code" href="errcode_8h.html#a1a33ca57f6d8803cd7c8629054a8c36e">00061</a> <span class="preprocessor">#define IICERR_BUSBUSY          -11</span>
+<a name="l00062"></a><a class="code" href="errcode_8h.html#adc1a267bbdad9cba77552202c99439ed">00062</a> <span class="preprocessor"></span><span class="preprocessor">#define IICERR_NOTACK           -12</span>
+<a name="l00063"></a><a class="code" href="errcode_8h.html#af483829e215fff7e20e04fc7934e8cc3">00063</a> <span class="preprocessor"></span><span class="preprocessor">#define IICERR_NOADDRACK        -13</span>
+<a name="l00064"></a><a class="code" href="errcode_8h.html#a491cbcc88718820a7c3377e11691ffb7">00064</a> <span class="preprocessor"></span><span class="preprocessor">#define IICERR_SDACONFLICT      -14</span>
+<a name="l00065"></a><a class="code" href="errcode_8h.html#adbd7d1ee84a4b0c72d0bd4e6f24118ec">00065</a> <span class="preprocessor"></span><span class="preprocessor">#define IICERR_SCLCONFLICT      -15</span>
+<a name="l00066"></a><a class="code" href="errcode_8h.html#a1359b167ba60537816bb03ea98c559af">00066</a> <span class="preprocessor"></span><span class="preprocessor">#define E2ERR_OPENFAILED        -16</span>
+<a name="l00067"></a><a class="code" href="errcode_8h.html#aa2f7c372ba6b71bbd46b29ebb13fe968">00067</a> <span class="preprocessor"></span><span class="preprocessor">#define E2ERR_ACCESSDENIED      -17</span>
+<a name="l00068"></a><a class="code" href="errcode_8h.html#a1769e6aec9947a2b7f2e6f5adcb51cf1">00068</a> <span class="preprocessor"></span><span class="preprocessor">#define E2ERR_NOTINSTALLED      -18</span>
+<a name="l00069"></a><a class="code" href="errcode_8h.html#aec780c088c8ca77a81084f86a2a48ef4">00069</a> <span class="preprocessor"></span><span class="preprocessor">#define IICERR_TIMEOUT          -19</span>
+<a name="l00070"></a><a class="code" href="errcode_8h.html#abc365a911bad8e72a54f4965d27966ac">00070</a> <span class="preprocessor"></span><span class="preprocessor">#define IICERR_STOP             -20</span>
+<a name="l00071"></a>00071 <span class="preprocessor"></span>
+<a name="l00072"></a><a class="code" href="errcode_8h.html#aed01a026bf502ac2d1e85033bd6ea75c">00072</a> <span class="preprocessor">#define E2ERR_WRITEFAILED       -21</span>
+<a name="l00073"></a>00073 <span class="preprocessor"></span>
+<a name="l00074"></a><a class="code" href="errcode_8h.html#a2210e625fa3dfbb4203ed24702b7b4e4">00074</a> <span class="preprocessor">#define DEVICE_BADTYPE          -23</span>
+<a name="l00075"></a><a class="code" href="errcode_8h.html#ac6339a16999b24718a9fd32b019307d4">00075</a> <span class="preprocessor"></span><span class="preprocessor">#define DEVICE_UNKNOWN          -24</span>
+<a name="l00076"></a><a class="code" href="errcode_8h.html#aaefef489ea7ebe4a77277bfaa83178ce">00076</a> <span class="preprocessor"></span><span class="preprocessor">#define DEVICE_LOCKED           -25</span>
+<a name="l00077"></a><a class="code" href="errcode_8h.html#a90bf2d06eecaeb188b7ca43531c606b3">00077</a> <span class="preprocessor"></span><span class="preprocessor">#define OP_ABORTED              -26</span>
+<a name="l00078"></a>00078 <span class="preprocessor"></span>
+<a name="l00079"></a><a class="code" href="errcode_8h.html#a5e4ac554a7625dd8aee820db0b4a13f6">00079</a> <span class="preprocessor">#define BUFFEROVERFLOW          -30</span>
+<a name="l00080"></a><a class="code" href="errcode_8h.html#ac2483638fbdbedaf6bda94bee4157009">00080</a> <span class="preprocessor"></span><span class="preprocessor">#define OUTOFMEMORY             -31</span>
+<a name="l00081"></a><a class="code" href="errcode_8h.html#ab482cf976e04e451eed9a068127dc87f">00081</a> <span class="preprocessor"></span><span class="preprocessor">#define BUFFERUNDERFLOW         -32</span>
+<a name="l00082"></a>00082 <span class="preprocessor"></span>
+<a name="l00083"></a>00083 <span class="comment">//Codici di errore restituiti dall&#39;interprete di comandi a menu</span>
+<a name="l00084"></a><a class="code" href="errcode_8h.html#a27472757f5c849e8988e8af7373207ab">00084</a> <span class="preprocessor">#define CMD_BUFFEREMPTY         -39</span>
+<a name="l00085"></a><a class="code" href="errcode_8h.html#a1956991e5f9e3935a032f50b152ce0c0">00085</a> <span class="preprocessor"></span><span class="preprocessor">#define CMD_NOTHINGTOWRITE      -40</span>
+<a name="l00086"></a><a class="code" href="errcode_8h.html#a19f90ab9245c3d980af99ad05440106f">00086</a> <span class="preprocessor"></span><span class="preprocessor">#define CMD_NOTHINGTOVERIFY     -41</span>
+<a name="l00087"></a><a class="code" href="errcode_8h.html#a97eb3a74c139cf0ec9005558b8dd9977">00087</a> <span class="preprocessor"></span><span class="preprocessor">#define CMD_NOTHINGTOLOAD       -42</span>
+<a name="l00088"></a><a class="code" href="errcode_8h.html#a49d1f26cffa6e17290a00894cc2c132b">00088</a> <span class="preprocessor"></span><span class="preprocessor">#define CMD_NOTHINGTOSAVE       -43</span>
+<a name="l00089"></a><a class="code" href="errcode_8h.html#ae9f23f6e7f8bf5f38a2fc0e7ba0ff53b">00089</a> <span class="preprocessor"></span><span class="preprocessor">#define CMD_WRITEFAILED         -44</span>
+<a name="l00090"></a><a class="code" href="errcode_8h.html#a519919ae5c9a3945255f3758308ab3bc">00090</a> <span class="preprocessor"></span><span class="preprocessor">#define CMD_VERIFYFAILED        -45</span>
+<a name="l00091"></a><a class="code" href="errcode_8h.html#a7ac747b26928551e415046b437dfaa16">00091</a> <span class="preprocessor"></span><span class="preprocessor">#define CMD_ROLLOVERFAILED      -46</span>
+<a name="l00092"></a>00092 <span class="preprocessor"></span>
+<a name="l00093"></a>00093 <span class="preprocessor">#endif</span>
+<a name="l00094"></a>00094 <span class="preprocessor"></span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi Juin 7 2018 20:37:25 pour DMX 2018 par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

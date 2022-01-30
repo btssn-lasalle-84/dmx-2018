@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>DMX 2018:  Fichier source de xmlutilitaire.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="icone-dmx.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">DMX 2018
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2018</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">xmlutilitaire.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="xmlutilitaire_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef XMLUTILITAIRE_H</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define XMLUTILITAIRE_H</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;QtCore&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;QtXml&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &quot;<a class="code" href="scene_8h.html" title="Déclaration des structures Scene et SceneSequence.">scene.h</a>&quot;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;<a class="code" href="sequence_8h.html" title="Déclaration de la structure Sequence.">sequence.h</a>&quot;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;spectacle.h&quot;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="id_projecteur_sauvegarde_8h.html">idProjecteurSauvegarde.h</a>&quot;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &quot;<a class="code" href="interface_8h.html">interface.h</a>&quot;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &quot;<a class="code" href="console_8h.html">console.h</a>&quot;</span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;<a class="code" href="_playback_wing_8h.html" title="Déclaration de la classe PlaybackWing.">PlaybackWing.h</a>&quot;</span>
+<a name="l00013"></a>00013 
+<a name="l00026"></a>00026 <span class="keyword">class </span><a class="code" href="class_d_m_x_projecteur.html" title="Definition de la classe DMXProjecteur.">DMXProjecteur</a>;
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028 
+<a name="l00040"></a><a class="code" href="class_x_m_l_utilitaire.html">00040</a> <span class="keyword">class </span><a class="code" href="class_x_m_l_utilitaire.html" title="Classe gérant les fichiers XML de l&#39;application.">XMLUtilitaire</a> : <span class="keyword">public</span> QObject
+<a name="l00041"></a>00041 {
+<a name="l00042"></a>00042     Q_OBJECT
+<a name="l00043"></a>00043     <span class="keyword">public</span>:
+<a name="l00044"></a>00044         <a class="code" href="class_x_m_l_utilitaire.html#af71c486ede03862b097895363d124ad0">XMLUtilitaire</a>(QObject *parent = 0);
+<a name="l00045"></a>00045         <a class="code" href="class_x_m_l_utilitaire.html#abbe885717b9b2ff417b5f84579d3e6b3">~XMLUtilitaire</a>();
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047         <span class="keywordtype">bool</span> <a class="code" href="class_x_m_l_utilitaire.html#a88e7a4708875481c245b9d6c8189f061" title="Méthode recuperant tous les appareils depuis appareils.xml pour affecter leurs differentes valeurs da...">lireAppareils</a>(QVector&lt;DMXProjecteur*&gt; &amp;projecteursDMX);
+<a name="l00048"></a>00048         <span class="keywordtype">bool</span> <a class="code" href="class_x_m_l_utilitaire.html#a2e7e0cfee51d1caef93bc6357ec8ea01" title="Réecrit le fichier adaptateurs.xml et supprimant les éléments et en écrivant ceux présent dans la QLi...">ecrireInterfaces</a>(<span class="keyword">const</span> QList&lt;Interface&gt; &amp;interfaces);
+<a name="l00049"></a>00049         <span class="keywordtype">bool</span> <a class="code" href="class_x_m_l_utilitaire.html#a50f6455e776f8a3e4d0026d7e8bb731c" title="Lit le fichier adaptateurs.xml et remplis la QList interfaces passée en paramètre en conséquence...">lireInterfaces</a>(QList&lt;Interface&gt; &amp;interfaces);
+<a name="l00050"></a>00050         <span class="keywordtype">bool</span> <a class="code" href="class_x_m_l_utilitaire.html#a1f5cd657948070f069747fb9a2ba7048" title="Méthode recuperant les caracteristiques des projecteurs enregistrés dans appareils.xml pour les retranscrir sous forme de widget IDProjecteurSauvegarde affiché dans l&#39;IHM.">afficherProjecteursEnregistres</a>(<a class="code" href="class_i_d_projecteur_sauvegarde.html">IDProjecteurSauvegarde</a> *projecteur[]);
+<a name="l00051"></a>00051         <span class="keywordtype">bool</span> <a class="code" href="class_x_m_l_utilitaire.html#a36778c15306f194ccef23e665b8e44e8" title="Méthode de suppression de tous les projecteurs depuis appareils.xml.">supprimerProjecteursEnregistres</a>();
+<a name="l00052"></a>00052         <span class="keywordtype">bool</span> <a class="code" href="class_x_m_l_utilitaire.html#afc1beaaab97915a4f223fa2843d84d82" title="Méthode d&#39;ajout d&#39;un projecteur dans appareils.xml.">enregistrerAppareil</a>(QString nom, QString type, <span class="keywordtype">int</span> nbCanaux, <span class="keywordtype">int</span> canalDepart, QString nomsCanaux[]);
+<a name="l00053"></a>00053         <span class="keywordtype">bool</span> <a class="code" href="class_x_m_l_utilitaire.html#a111a2cd111a284e7eb5162e5fc5dfcc1" title="Méthode de suppression d&#39;un projecteur dans appareils.xml.">supprimerAppareil</a>(QString uuid);
+<a name="l00054"></a>00054         <span class="keywordtype">bool</span> <a class="code" href="class_x_m_l_utilitaire.html#a681771cdd48b39a1dbc8a13ef9c3579d" title="Méthode de modification d&#39;un projecteur dans appareils.xml.">modifierAppareil</a>(QString uuid, QString nom, QString type, <span class="keywordtype">int</span> nbCanaux, <span class="keywordtype">int</span> canalDepart, QString nomsCanaux[]);
+<a name="l00055"></a>00055         <span class="keywordtype">int</span> <a class="code" href="class_x_m_l_utilitaire.html#aeef59fcde8ad1a24e6173697c5ccd229" title="Accesseur du nombres d&#39;appareils depuis appareils.xml.">getNbAppareils</a>();
+<a name="l00056"></a>00056         <span class="keywordtype">int</span> <a class="code" href="class_x_m_l_utilitaire.html#abe3ef6558189689934e5d061ad30cb81" title="Méthode recuperant toutes les scenes depuis scenes.xml pour affecter leurs differentes valeurs dans l...">lireScenes</a>(QVector&lt;Scene&gt; &amp;scenesEnregistrees);
+<a name="l00057"></a>00057         <span class="keywordtype">bool</span> <a class="code" href="class_x_m_l_utilitaire.html#abeeeaa76d1c89563996c676fb0575ab7" title="Méthode d&#39;enregistrement d&#39;une scene dans scenes.xml.">enregistrerScene</a>(<a class="code" href="struct_scene.html" title="Structure permettant de représenter le contenu d&#39;un plan d&#39;éclairage d&#39;appareils XML.">Scene</a> scene);
+<a name="l00058"></a>00058         <span class="keywordtype">bool</span> <a class="code" href="class_x_m_l_utilitaire.html#afc42500fa8436134afb268ccb55ec399" title="Méthode de suppression d&#39;une scene dans scenes.xml.">supprimerScene</a>(QString uuid);
+<a name="l00059"></a>00059         <span class="keywordtype">int</span> <a class="code" href="class_x_m_l_utilitaire.html#afe13c976f99749d69a634486204d233d" title="Méthode de lecture des élements contenus dans sequences.xml.">lireSequences</a>(QVector&lt;Sequence&gt; &amp;sequencesEnregistrees);
+<a name="l00060"></a>00060         <span class="keywordtype">bool</span> <a class="code" href="class_x_m_l_utilitaire.html#a8cd6c1d2017e255562ab011a7e69eb8d" title="Méthode de lecture d&#39;une scene requise pour une sequence dans scenes.xml.">lireSceneSequence</a>(<a class="code" href="struct_scene_sequence.html">SceneSequence</a> &amp;scene);
+<a name="l00061"></a>00061         <span class="keywordtype">bool</span> <a class="code" href="class_x_m_l_utilitaire.html#a31c167f48c453e4e73c0248e932a3ba1" title="Méthode d&#39;enregistrement d&#39;une séquence dans sequences.xml.">enregistrerSequence</a>(<a class="code" href="struct_sequence.html" title="Structure permettant de représenter le contenu d&#39;une séquence d&#39;enchainement de scènes temporisées...">Sequence</a> sequence);
+<a name="l00062"></a>00062         <span class="keywordtype">bool</span> <a class="code" href="class_x_m_l_utilitaire.html#aff090631794a68cb979da0a1597fd4e6" title="Méthode de suppression d&#39;une séquence dans sequences.xml.">supprimerSequence</a>(QString uuid);
+<a name="l00063"></a>00063         <span class="keywordtype">int</span> <a class="code" href="class_x_m_l_utilitaire.html#abf7b07c235f2cd3855267303c9442e9b" title="Méthode de lecture des élements contenus dans spectacles.xml.">lireSpectacles</a>(QVector&lt;Spectacle&gt; &amp;spectaclesEnregistres);
+<a name="l00064"></a>00064         <span class="keywordtype">bool</span> <a class="code" href="class_x_m_l_utilitaire.html#a64b0117ecfbc9b60dd56403d29da41a1" title="Méthode de lecture d&#39;une sequence requise pour un spectacle dans sequences.xml.">lireSequenceSpectacle</a>(<a class="code" href="struct_sequence.html" title="Structure permettant de représenter le contenu d&#39;une séquence d&#39;enchainement de scènes temporisées...">Sequence</a> &amp;sequence);
+<a name="l00065"></a>00065         <span class="keywordtype">bool</span> <a class="code" href="class_x_m_l_utilitaire.html#aacdfe592caf27a19d73ce23e0ec01d59">ecrireSpectacles</a>(QVector&lt;Spectacle&gt; &amp;spectacles);
+<a name="l00066"></a>00066         <span class="keywordtype">bool</span> <a class="code" href="class_x_m_l_utilitaire.html#a24db19cd063571bb6bcc0a33d7b82eb3" title="Lit le fichier consoles.xml et remplis la QList consoles passée en paramètre en conséquence.">lireConsoles</a>(QList&lt;Console&gt; &amp;consoles);
+<a name="l00067"></a>00067         <span class="keywordtype">bool</span> <a class="code" href="class_x_m_l_utilitaire.html#af57112b2d1cf361cfef8730a322f47ec" title="Réecrit le fichier consoles.xml et supprimant les éléments et en écrivant ceux présent dans la QList ...">ecrireConsole</a>(<span class="keyword">const</span> QList&lt;Console&gt; &amp;consoles);
+<a name="l00068"></a>00068 
+<a name="l00069"></a>00069     <span class="keyword">private</span>:
+<a name="l00070"></a><a class="code" href="class_x_m_l_utilitaire.html#a62a456ad008010056744cb5a10d709d8">00070</a>         QFile <a class="code" href="class_x_m_l_utilitaire.html#a62a456ad008010056744cb5a10d709d8">fichierAppareils</a>;
+<a name="l00071"></a><a class="code" href="class_x_m_l_utilitaire.html#a67177f0568d9eaaac48416cfffcd0a57">00071</a>         QFile <a class="code" href="class_x_m_l_utilitaire.html#a67177f0568d9eaaac48416cfffcd0a57">fichierSpectacles</a>;
+<a name="l00072"></a><a class="code" href="class_x_m_l_utilitaire.html#a53158e562a46d1e39ef9e3bee3dd4d7a">00072</a>         QFile <a class="code" href="class_x_m_l_utilitaire.html#a53158e562a46d1e39ef9e3bee3dd4d7a">fichierScenes</a>;
+<a name="l00073"></a><a class="code" href="class_x_m_l_utilitaire.html#adbae90c978b3ddea6e4cc54599a19eeb">00073</a>         QFile <a class="code" href="class_x_m_l_utilitaire.html#adbae90c978b3ddea6e4cc54599a19eeb">fichierSequences</a>;
+<a name="l00074"></a><a class="code" href="class_x_m_l_utilitaire.html#a22cea7ea269766b18f3dbd3791739cf2">00074</a>         QFile <a class="code" href="class_x_m_l_utilitaire.html#a22cea7ea269766b18f3dbd3791739cf2">fichierInterfaces</a>;
+<a name="l00075"></a><a class="code" href="class_x_m_l_utilitaire.html#a9584e815730f0c5ef75e5d6dcefd6d82">00075</a>         QFile <a class="code" href="class_x_m_l_utilitaire.html#a9584e815730f0c5ef75e5d6dcefd6d82">fichierConsoles</a>;
+<a name="l00076"></a>00076 
+<a name="l00077"></a>00077         <a class="code" href="class_d_m_x_projecteur.html" title="Definition de la classe DMXProjecteur.">DMXProjecteur</a>* <a class="code" href="class_x_m_l_utilitaire.html#ab58080d110f2093b854897644a0655af" title="Méthode retournant un objet herité de DMXProjecteur dont la classe dépend du QDomElement en argument...">creerAppareil</a>(<span class="keyword">const</span> QDomElement &amp;elementAppareil);
+<a name="l00078"></a>00078 };
+<a name="l00079"></a>00079 
+<a name="l00080"></a>00080 <span class="preprocessor">#endif // XMLUTILITAIRE_H</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi Juin 7 2018 20:37:25 pour DMX 2018 par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>DMX 2018:  Fichier source de DMXLaser.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="icone-dmx.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">DMX 2018
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2018</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">DMXLaser.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_d_m_x_laser_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef DMXLASER__H</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define DMXLASER__H</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;<a class="code" href="_d_m_x_projecteur_8h.html">DMXProjecteur.h</a>&quot;</span>
+<a name="l00005"></a>00005 
+<a name="l00006"></a><a class="code" href="class_d_m_x_laser.html">00006</a> <span class="keyword">class </span><a class="code" href="class_d_m_x_laser.html">DMXLaser</a> : <span class="keyword">public</span> <a class="code" href="class_d_m_x_projecteur.html" title="Definition de la classe DMXProjecteur.">DMXProjecteur</a>
+<a name="l00007"></a>00007 {
+<a name="l00008"></a>00008         <span class="keyword">private</span>:
+<a name="l00009"></a><a class="code" href="class_d_m_x_laser.html#a6bbe68337e3088c80f9073f7bd39f80e">00009</a>         <span class="keywordtype">int</span> <a class="code" href="class_d_m_x_laser.html#a6bbe68337e3088c80f9073f7bd39f80e">canalControle</a>;
+<a name="l00010"></a><a class="code" href="class_d_m_x_laser.html#a5fa32577a27a8b7990cb3fb308818ddf">00010</a>         <span class="keywordtype">int</span> <a class="code" href="class_d_m_x_laser.html#a5fa32577a27a8b7990cb3fb308818ddf">canalExtinction</a>;
+<a name="l00011"></a><a class="code" href="class_d_m_x_laser.html#ad75ec937f4a07523ecddc8b02ba2931c">00011</a>         <span class="keywordtype">int</span> <a class="code" href="class_d_m_x_laser.html#ad75ec937f4a07523ecddc8b02ba2931c">canalPictures</a>;
+<a name="l00012"></a><a class="code" href="class_d_m_x_laser.html#aad04566fa2045e3dbf1a3a555ad4cea2">00012</a>         <span class="keywordtype">int</span> <a class="code" href="class_d_m_x_laser.html#aad04566fa2045e3dbf1a3a555ad4cea2">canalDeplacement</a>;
+<a name="l00013"></a><a class="code" href="class_d_m_x_laser.html#ab78f3ce2c3b9f5d0e44fc4c789fd49f9">00013</a>         <span class="keywordtype">int</span> <a class="code" href="class_d_m_x_laser.html#ab78f3ce2c3b9f5d0e44fc4c789fd49f9">canalRotation</a>;
+<a name="l00014"></a><a class="code" href="class_d_m_x_laser.html#aceee006aa2276e2a2be346f791765760">00014</a>         <span class="keywordtype">int</span> <a class="code" href="class_d_m_x_laser.html#aceee006aa2276e2a2be346f791765760">canalSens</a>;
+<a name="l00015"></a><a class="code" href="class_d_m_x_laser.html#a5fdf580a6a5e12fb14111bf6d782c9f5">00015</a>         <span class="keywordtype">int</span> <a class="code" href="class_d_m_x_laser.html#a5fdf580a6a5e12fb14111bf6d782c9f5">canalStretch</a>;
+<a name="l00016"></a><a class="code" href="class_d_m_x_laser.html#a6af6f124e8bf3e5023f8019f01bfa41b">00016</a>         <span class="keywordtype">int</span> <a class="code" href="class_d_m_x_laser.html#a6af6f124e8bf3e5023f8019f01bfa41b">canalSpeed</a>;
+<a name="l00017"></a><a class="code" href="class_d_m_x_laser.html#af55959954a378534d222f09f871ed51d">00017</a>         <span class="keywordtype">int</span> <a class="code" href="class_d_m_x_laser.html#af55959954a378534d222f09f871ed51d">canalSlowDrawSpeed</a>;
+<a name="l00018"></a><a class="code" href="class_d_m_x_laser.html#a3cc6f959b74134ac871511bb86c78aad">00018</a>         <span class="keywordtype">int</span> <a class="code" href="class_d_m_x_laser.html#a3cc6f959b74134ac871511bb86c78aad">canalTaille</a>;
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020         <span class="keyword">public</span>:
+<a name="l00021"></a>00021                 <a class="code" href="class_d_m_x_laser.html#ad75cb00c18b3bde9e6c80de564c98c70">DMXLaser</a>();
+<a name="l00022"></a>00022         <a class="code" href="class_d_m_x_laser.html#ad75cb00c18b3bde9e6c80de564c98c70">DMXLaser</a>(QString <a class="code" href="class_d_m_x_projecteur.html#aadb4fc8ffb43ab5770fa665bac88350f">nom</a>, <span class="keywordtype">int</span> <a class="code" href="class_d_m_x_projecteur.html#a6a26fc56568fab72b63f0292307751aa">canalDebut</a>, <span class="keywordtype">int</span> <a class="code" href="class_d_m_x_projecteur.html#a6c5dff0cd1a009644f5e0c4f6de6113f">nombreCanaux</a>, QString <a class="code" href="class_d_m_x_projecteur.html#a4c6402fe51efbd2ea27c492c8d4dd8ae">uuid</a>, QString <a class="code" href="class_d_m_x_projecteur.html#abf33320fa3ce0cc3e06db271bd835a6a">type</a> = <span class="stringliteral">&quot;LASER&quot;</span>);
+<a name="l00023"></a>00023         <span class="keyword">virtual</span> <a class="code" href="class_d_m_x_laser.html#aa29a64c38ca2eea5b3c10fb2a4a5b2ab">~DMXLaser</a>();
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025         <span class="keywordtype">void</span> <a class="code" href="class_d_m_x_laser.html#ade7e8c1b5e841694e7b2ea4e3c6de855">setCanaux</a>(<span class="keywordtype">int</span> controle, <span class="keywordtype">int</span> extinction, <span class="keywordtype">int</span> pictures, <span class="keywordtype">int</span> deplacement, <span class="keywordtype">int</span> rotation, <span class="keywordtype">int</span> sens, <span class="keywordtype">int</span> stretch, <span class="keywordtype">int</span> speed, <span class="keywordtype">int</span> slowDrawSpeed, <span class="keywordtype">int</span> taille);
+<a name="l00026"></a>00026 };
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi Juin 7 2018 20:37:24 pour DMX 2018 par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

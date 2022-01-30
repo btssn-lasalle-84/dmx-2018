@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interfaces>
+  <interface utilisee="1" id="2">
+    <port>/dev/ttyUSB0</port>
+    <type>1</type>
+  </interface>
+  <interface utilisee="0" id="2">
+    <port>/dev/ttyUSB1</port>
+    <type>1</type>
+  </interface>
+</interfaces>
